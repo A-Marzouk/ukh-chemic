@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/ukhApp/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/jakub-onderka/php-console-color" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/beyondcode/laravel-dump-server" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/composer" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/erusev/parsedown" />
+      <path value="$PROJECT_DIR$/ukhApp/vendor/dnoegel/php-xdg-base-dir" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
+  <component name="PhpUnit">
+    <phpunit_settings>
+      <PhpUnitSettings load_method="CUSTOM_LOADER" custom_loader_path="$PROJECT_DIR$/ukhApp/vendor/autoload.php" />
+    </phpunit_settings>
+  </component>
+</project>

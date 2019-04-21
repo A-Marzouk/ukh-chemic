@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/ukhApp/tests" isTestSource="true" packagePrefix="Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/ukhApp/app" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/beyondcode/laravel-dump-server" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/dnoegel/php-xdg-base-dir" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/doctrine/inflector" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/doctrine/instantiator" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/dragonmantank/cron-expression" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/egulias/email-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/erusev/parsedown" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/fideloper/proxy" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/filp/whoops" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/hamcrest/hamcrest-php" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/jakub-onderka/php-console-color" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/jakub-onderka/php-console-highlighter" />
+      <excludeFolder url="file://$MODULE_DIR$/ukhApp/vendor/laravel/framework" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

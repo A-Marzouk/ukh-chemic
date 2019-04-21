@@ -1,0 +1,13 @@
+body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.noDecor{
+  a{
+    outline: none;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+}
+

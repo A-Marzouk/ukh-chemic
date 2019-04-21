@@ -1,0 +1,40 @@
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.noDecor a {
+  outline: none;
+}
+
+.noDecor a:hover {
+  text-decoration: none;
+}
+
+.deleteWorkBtn {
+  height: 30px;
+  border: 1px solid #DADADA;
+  border-radius: 5px;
+  padding-top: 3px;
+  text-align: center;
+  width: 89px;
+  float: right;
+}
+
+.deleteWorkBtn a {
+  color: #6C7A89;
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  text-align: center;
+  padding-right: 7px;
+}
+
+.deleteWorkBtn img {
+  width: 18px;
+  padding-right: 7px;
+  padding-bottom: 2px;
+  height: 12px;
+}
+
