@@ -34,11 +34,11 @@
             <div class="row">
                 <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
                     <div class="header-bar-email d-flex align-items-center">
-                        <i class="fa fa-envelope"></i><a href="#">info@ukh.com.ua</a>
+                        <i class="fa fa-envelope"></i><a href="mailto:info@ukh.com.ua">info@ukh.com.ua</a>
                     </div><!-- .header-bar-email -->
 
                     <div class="header-bar-text lg-flex align-items-center">
-                        <p><i class="fa fa-phone"></i>+38 (056) 787-38-05</p>
+                        <p><i class="fa fa-phone"></i><a href="tel:+38 (056) 787-38-05">+38 (056) 787-38-05</a></p>
                     </div><!-- .header-bar-text -->
                 </div><!-- .col -->
 
@@ -63,12 +63,12 @@
             </div><!-- .row -->
         </div><!-- .container-fluid -->
     </div><!-- .top-header-bar -->
-    <div class="nav-bar">
+    <div class="nav-bar p-0">
         <div class="container">
             <div class="row">
                 <div class="col-9 col-lg-3">
                     <div class="site-branding">
-                        <h1 class="site-title"><a href="/" rel="home">UKH<span>ua</span></a></h1>
+                        <img src="images/favicon-default.png" alt="logo" style="height: 100px;margin-top: 5px;">
                     </div><!-- .site-branding -->
                 </div><!-- .col -->
 

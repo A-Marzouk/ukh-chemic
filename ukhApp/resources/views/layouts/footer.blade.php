@@ -5,7 +5,9 @@
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-3">
                     <div class="foot-about">
-                        <div class="site-title"><a href="/" rel="home"><span style="color: black;">UKH</span><span>ua</span></a></div>
+                        <div class="site-title d-flex align-items-center">
+                            <a href="/" rel="home"><span style="color: black;">UKH</span><span>ua</span></a>
+                        </div>
                         <p>
                             Политика работы предприятия ориентирована на индивидуальный подход к каждому клиенту,
                             а так же на осуществление самых разнообразных поставок из любой страны мира.

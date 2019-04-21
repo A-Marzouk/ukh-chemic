@@ -19,7 +19,7 @@
                             </div><!-- .entry-content -->
 
                             <footer class="entry-footer read-more">
-                                <a href="#">Подробнее</a>
+                                <a href="#about">Подробнее</a>
                             </footer><!-- .entry-footer -->
                         </div><!-- .hero-content-wrap -->
                     </div><!-- .col -->
