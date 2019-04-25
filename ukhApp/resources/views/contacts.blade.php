@@ -41,10 +41,11 @@
                     <h3>Контактная форма </h3>
 
                     <form>
-                        <input type="text" placeholder="Имя..">
-                        <input type="email" placeholder="Почта..">
-                        <input type="text" placeholder="Тема..">
-                        <textarea placeholder="Сообщение.." rows="4"></textarea>
+                        <input type="text" placeholder="Имя.. *">
+                        <input type="email" placeholder="Почта.. *">
+                        <input type="text" placeholder="Номер телефона.. *">
+                        <input type="text" placeholder="Тема.. *">
+                        <textarea placeholder="Сообщение.. *" rows="2"></textarea>
                         <input type="submit" value="Отправить">
                     </form>
                 </div><!-- .contact-form -->

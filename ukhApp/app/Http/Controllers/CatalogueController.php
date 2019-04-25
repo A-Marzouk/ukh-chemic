@@ -29,7 +29,7 @@ class CatalogueController extends Controller
     }
 
     public function getCategories(){
-        return Category::all();
+        return Category::where('is_active',1)->get();
     }
 
     public function getCategoryProducts($category_name){
