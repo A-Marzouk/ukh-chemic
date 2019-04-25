@@ -73,8 +73,8 @@
 </footer><!-- .site-footer -->
 
 <!-- Modal -->
-<div class="modal fade d-flex align-items-center" id="order-phone-call"  tabindex="-1" role="dialog" aria-labelledby="order-phone-call-area" aria-hidden="true">
-    <div class="modal-dialog" role="document" >
+<div class="modal fade" id="order-phone-call" style="z-index: 99999" tabindex="-1" role="dialog" aria-labelledby="order-phone-call-area" aria-hidden="true">
+    <div class="modal-dialog" role="document" style="margin-top: 120px;" >
         <div class="modal-content border-0">
             <div class="modal-header" style="
                 font-size: 13px;
@@ -104,6 +104,7 @@
         </div>
     </div>
 </div>
+
 
 <script type='text/javascript' src='js/jquery.js'></script>
 <script type='text/javascript' src='js/swiper.min.js'></script>

@@ -68,7 +68,7 @@
             <div class="row">
                 <div class="col-9 col-lg-3">
                     <div class="site-branding">
-                        <img src="images/favicon-default.png" alt="logo" style="height: 100px;margin-top: 5px;">
+                        <img src="images/favicon-default.png" alt="logo" style="height: 90px ; margin-top: 5px;;">
                     </div><!-- .site-branding -->
                 </div><!-- .col -->
 

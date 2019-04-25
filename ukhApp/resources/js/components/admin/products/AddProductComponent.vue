@@ -77,8 +77,6 @@
             submitForm(){
                 // post data :
                 axios.post('/admin/add/product',this.toBeEditedProduct).then( (response) => {
-                    //
-                    console.log(response.data);
                     if(this.toBeEditedProduct.id === ""){
                         this.$emit('productAdded',this.toBeEditedProduct);
                     }
