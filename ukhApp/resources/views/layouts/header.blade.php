@@ -56,7 +56,7 @@
                                     <i class="fa fa-mobile-phone" style="color: greenyellow; font-size: 25px;padding-top: 5px;"></i>
                                 </a>
                             </li>
-                            <a href="#" style="padding-top: 5px;">Заказать звонок</a>
+                            <a href="javascript:void(0)"  data-toggle="modal" data-target="#order-phone-call" style="padding-top: 5px;">Заказать звонок</a>
                         </ul>
                     </div><!-- .header-bar-menu -->
                 </div><!-- .col -->
@@ -113,3 +113,5 @@
         </div><!-- .container -->
     </div><!-- .nav-bar -->
 </header><!-- .site-header -->
+
+{{-- modals --}}

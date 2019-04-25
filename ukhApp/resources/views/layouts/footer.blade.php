@@ -72,6 +72,38 @@
     </div><!-- .footer-widgets -->
 </footer><!-- .site-footer -->
 
+<!-- Modal -->
+<div class="modal fade d-flex align-items-center" id="order-phone-call"  tabindex="-1" role="dialog" aria-labelledby="order-phone-call-area" aria-hidden="true">
+    <div class="modal-dialog" role="document" >
+        <div class="modal-content border-0">
+            <div class="modal-header" style="
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 1;
+                color: #fff;
+                text-transform: uppercase;
+                text-decoration: none;
+                letter-spacing: 0.1rem;
+                outline: none;
+                background: #19c880;
+            ">
+                <div class="modal-title">Заказ обратного звонка</div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" style="color: white">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body p-0">
+                <div class="contact-form mt-0 pr-0 p-3">
+                    <form>
+                        <input type="text" placeholder="Имя.. *">
+                        <input type="text" placeholder="Номер телефона.. *">
+                        <input type="submit" value="Отправить">
+                    </form>
+                </div><!-- .contact-form -->
+            </div>
+        </div>
+    </div>
+</div>
 
 <script type='text/javascript' src='js/jquery.js'></script>
 <script type='text/javascript' src='js/swiper.min.js'></script>
