@@ -40,6 +40,9 @@
                         {{ key }} :
                     </div>
                     <div class="col-md-6">
+                        <div v-if="key === 'photo'">
+                            <img :src="value" alt="product photo">
+                        </div>
                         {{ value }}
                     </div>
                 </div>

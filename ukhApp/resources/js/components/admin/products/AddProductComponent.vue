@@ -32,11 +32,11 @@
                                     <input type="text" class="form-control" id="international_name" name="international_name" v-model="toBeEditedProduct.international_name" required>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="package" class="panelFormLabel">Международное название:</label>
+                                    <label for="package" class="panelFormLabel">Package:</label>
                                     <input type="text" class="form-control" id="package" name="package" v-model="toBeEditedProduct.package" required>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="manufacturer" class="panelFormLabel">Международное название:</label>
+                                    <label for="manufacturer" class="panelFormLabel">manufacturer:</label>
                                     <input type="text" class="form-control" id="manufacturer" name="manufacturer" v-model="toBeEditedProduct.manufacturer" required>
                                 </div>
                                 <div class="form-group col-md-12">
