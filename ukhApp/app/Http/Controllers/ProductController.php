@@ -9,8 +9,10 @@
 namespace App\Http\Controllers;
 
 
+use App\classes\Notification;
 use App\Product;
 use Illuminate\Http\Request;
+use Mockery\Matcher\Not;
 
 class ProductController extends Controller
 {
@@ -36,6 +38,7 @@ class ProductController extends Controller
             'description' => 'max:1500',
         ]);
 
+        $newProduct = false ;
         if(isset($request->id)){
             // edit
             $product = Product::where('id',$request->id)->first();
@@ -44,6 +47,8 @@ class ProductController extends Controller
             // add
             $product = new Product;
             $product->category_id = $request->category_id ;
+            $newProduct = true ;
+
         }
 
         $product->name = $request->name;
@@ -55,6 +60,12 @@ class ProductController extends Controller
         $product->package = $request->package;
         $product->description = $request->description;
         $product->save();
+
+        if($newProduct){
+            Notification::productHasBeenAdded();
+        }else{
+            Notification::productHasBeenEdited();
+        }
 
         return $product->id;
 
