@@ -2310,6 +2310,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2320,6 +2332,7 @@ __webpack_require__.r(__webpack_exports__);
       products: [],
       categories: [],
       canAdd: true,
+      currentCategory: '',
       toBeEditedProduct: {
         'id': '',
         'category_id': '',
@@ -2342,10 +2355,15 @@ __webpack_require__.r(__webpack_exports__);
         _this.products = products;
       });
     },
-    getProductsByCategoryName: function getProductsByCategoryName(categoryName) {
+    getProductsByCategoryName: function getProductsByCategoryName() {
       var _this2 = this;
 
-      axios.get('/admin/get/products/' + categoryName).then(function (response) {
+      if (this.currentCategory === "" || this.currentCategory === 'all') {
+        return this.getProducts();
+      }
+
+      axios.get('/admin/get/products/' + this.currentCategory).then(function (response) {
+        console.log(response.data);
         var products = response.data;
         $.each(products, function (i) {});
         _this2.products = products;
@@ -2404,18 +2422,15 @@ __webpack_require__.r(__webpack_exports__);
     },
     getImageSrc: function getImageSrc(src) {
       if (src.charAt(0) !== '/') {
-        console.log(src);
         return '/' + src;
       }
 
-      console.log('other src :' + src);
       return src;
     }
   },
   created: function created() {
     this.getProducts();
     this.getCategories();
-    alert(55);
   }
 });
 
@@ -39807,7 +39822,71 @@ var render = function() {
     "div",
     [
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", { attrs: { for: "selectCategory" } }),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.currentCategory,
+                    expression: "currentCategory"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: { id: "selectCategory" },
+                on: {
+                  change: [
+                    function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.currentCategory = $event.target.multiple
+                        ? $$selectedVal
+                        : $$selectedVal[0]
+                    },
+                    _vm.getProductsByCategoryName
+                  ]
+                }
+              },
+              [
+                _c("option", { attrs: { value: "", selected: "" } }, [
+                  _vm._v("Выбери категорию")
+                ]),
+                _vm._v(" "),
+                _vm._l(_vm.categories, function(category, index) {
+                  return _c(
+                    "option",
+                    { key: "b" + index, domProps: { value: category.ID_NAME } },
+                    [
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(category.title) +
+                          "\n                    "
+                      )
+                    ]
+                  )
+                }),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "all", selected: "" } }, [
+                  _vm._v("Все продукты")
+                ])
+              ],
+              2
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6" }, [
           _c(
             "span",
             {
@@ -39822,7 +39901,7 @@ var render = function() {
       _vm._v(" "),
       _c("hr"),
       _vm._v(" "),
-      _c("h1", [_vm._v("Products list")]),
+      _c("h2", [_vm._v("Products list")]),
       _vm._v(" "),
       _c(
         "transition-group",
@@ -39976,7 +40055,7 @@ var staticRenderFns = [
         _c("img", {
           attrs: { src: "/images/icons/add_blue.png", alt: "edit profile" }
         }),
-        _vm._v("\n                        Add product\n                    ")
+        _vm._v("\n                    Add product\n                ")
       ]
     )
   }

@@ -27,6 +27,7 @@ Route::get('/catalogue/edit/products','CatalogueController@editProductsImagesPat
 Route::get('/admin/get/products','ProductController@getProducts')->name('admin.get.products');
 Route::post('/admin/add/product','ProductController@addProduct')->name('admin.add.product');
 Route::post('/admin/delete/product','ProductController@addProduct')->name('admin.delete.product');
+Route::get('/admin/get/products/{category_id_name}', 'AdminController@getProductsByCategory')->name('admin.products.category');
 
 
 

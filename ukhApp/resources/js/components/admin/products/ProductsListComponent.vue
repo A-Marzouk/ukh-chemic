@@ -1,17 +1,29 @@
 <template>
     <div>
         <div class="row">
-            <div class="col-md-12">
-                    <span class="deleteWorkBtn noDecor" @click="clearData" style="width:137px">
-                        <a href="javascript:void(0)" data-toggle="modal" data-target="#addProductModal">
-                            <img src="/images/icons/add_blue.png" alt="edit profile">
-                            Add product
-                        </a>
-                    </span>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="selectCategory"></label>
+                    <select id="selectCategory" class="form-control" v-model="currentCategory" @change="getProductsByCategoryName">
+                        <option value="" selected>Выбери категорию</option>
+                        <option v-for="(category,index) in categories" v-bind:key="'b'+index" :value="category.ID_NAME">
+                            {{category.title}}
+                        </option>
+                        <option value="all" selected>Все продукты</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <span class="deleteWorkBtn noDecor" @click="clearData" style="width:137px">
+                    <a href="javascript:void(0)" data-toggle="modal" data-target="#addProductModal">
+                        <img src="/images/icons/add_blue.png" alt="edit profile">
+                        Add product
+                    </a>
+                </span>
             </div>
         </div>
         <hr>
-        <h1>Products list</h1>
+        <h2>Products list</h2>
         <transition-group name="list" class="row">
             <product-component v-for="(product,index) in products" v-bind:key="'a'+index" class="list-item workExperience col-12" style="margin: 0px 10px 20px;">
 
@@ -41,7 +53,7 @@
                     </div>
                     <div class="col-md-6">
                         <div v-if="key === 'photo'">
-                            <img :src="value" alt="product photo">
+                            <img :src="getImageSrc(value)" alt="product photo">
                         </div>
                         {{ value }}
                     </div>
@@ -64,6 +76,7 @@
                 products: [],
                 categories: [],
                 canAdd:true,
+                currentCategory:'',
                 toBeEditedProduct:{
                     'id':'',
                     'category_id':'',
@@ -86,6 +99,21 @@
                         });
                         this.products = products;
 
+                    }
+                );
+            },
+            getProductsByCategoryName() {
+                if(this.currentCategory === "" || this.currentCategory === 'all' ){
+                    return this.getProducts() ;
+                }
+
+                axios.get('/admin/get/products/' + this.currentCategory ).then(
+                    (response) => {
+                        console.log(response.data);
+                        let products =  response.data;
+                        $.each(products, function(i){
+                        });
+                        this.products = products;
                     }
                 );
             },
@@ -140,7 +168,13 @@
                         this.categories = response.data;
                     }
                 );
-            }
+            },
+            getImageSrc(src) {
+                if (src.charAt(0) !== '/') {
+                    return '/' + src;
+                }
+                return src;
+            },
         },
 
         created() {
