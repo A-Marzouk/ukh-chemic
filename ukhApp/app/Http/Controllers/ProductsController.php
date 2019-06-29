@@ -10,11 +10,12 @@ namespace App\Http\Controllers;
 
 
 use App\classes\Notification;
+use App\classes\Upload;
 use App\Product;
 use Illuminate\Http\Request;
 use Mockery\Matcher\Not;
 
-class ProductController extends Controller
+class ProductsController extends Controller
 {
     public function __construct(){
         $this->middleware('auth');
@@ -59,6 +60,13 @@ class ProductController extends Controller
         $product->manufacturer = $request->manufacturer;
         $product->package = $request->package;
         $product->description = $request->description;
+
+        if(isset($request->productImage)){
+            $result = Upload::productImage('productImage',date(time()) );
+            $product->photo = $result['path'];
+        }
+
+
         $product->save();
 
         if($newProduct){
@@ -67,7 +75,7 @@ class ProductController extends Controller
             Notification::productHasBeenEdited();
         }
 
-        return $product->id;
+        return $product;
 
     }
 

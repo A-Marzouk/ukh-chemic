@@ -5,11 +5,11 @@
                 <div class="form-group">
                     <label for="selectCategory"></label>
                     <select id="selectCategory" class="form-control" v-model="currentCategory" @change="getProductsByCategoryName">
-                        <option value="" selected>Выбери категорию</option>
+                        <option value="none" selected>Выберите категорию</option>
                         <option v-for="(category,index) in categories" v-bind:key="'b'+index" :value="category.ID_NAME">
                             {{category.title}}
                         </option>
-                        <option value="all" selected>Все продукты</option>
+                        <option value="all">Все продукты</option>
                     </select>
                 </div>
             </div>
@@ -23,7 +23,10 @@
             </div>
         </div>
         <hr>
-        <h2>Products list</h2>
+        <h2>Лист продуктов</h2>
+        <div v-show="products.length < 1">
+            Выберите категорию пожалуйста
+        </div>
         <transition-group name="list" class="row">
             <product-component v-for="(product,index) in products" v-bind:key="'a'+index" class="list-item workExperience col-12" style="margin: 0px 10px 20px;">
 
@@ -71,6 +74,7 @@
 
     export default {
         components: {AddProductComponent},
+        props:['saved_category'],
         data() {
             return {
                 products: [],
@@ -85,7 +89,8 @@
                     'old_price' :'',
                     'international_name' :'',
                     'package' :'',
-                    'description':''
+                    'description':'',
+                    'photo':''
                 },
             }
         },
@@ -103,8 +108,12 @@
                 );
             },
             getProductsByCategoryName() {
-                if(this.currentCategory === "" || this.currentCategory === 'all' ){
+                if(this.currentCategory === 'all' ){
                     return this.getProducts() ;
+                }
+
+                if(this.currentCategory === "none" ){
+                    this.products = [] ;
                 }
 
                 axios.get('/admin/get/products/' + this.currentCategory ).then(
@@ -175,11 +184,17 @@
                 }
                 return src;
             },
+            getSavedCategoryProducts(){
+                if(this.saved_category.length > 0){
+                    this.currentCategory =  this.saved_category ;
+                    this.getProductsByCategoryName();
+                }
+            }
         },
 
         created() {
-            this.getProducts();
             this.getCategories();
+            this.getSavedCategoryProducts();
         }
     }
 </script>

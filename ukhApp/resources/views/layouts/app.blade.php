@@ -19,7 +19,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/default_styles.css">
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/ukhApp/public/css/app.css">
     <link rel="icon" href="/images/favicon-default.png">
 
 </head>
@@ -80,6 +80,14 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        {{-- Changes saved --}}
+        <div class="changesSavedText d-none" id="changesSaved">
+            <span class="alert alert-success">
+                Изменения сохранены
+            </span>
+        </div>
+
     </div>
 </body>
 </html>

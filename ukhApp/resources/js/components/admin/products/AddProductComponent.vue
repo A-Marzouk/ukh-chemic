@@ -54,6 +54,19 @@
                                     </select>
                                 </div>
 
+                                <div class="form-group col-md-12">
+                                    <label for="file">
+                                       Загрузить картинку продукта
+                                    </label>
+                                    <input type="file"
+                                           id="file"
+                                           ref="file"
+                                           v-on:change="handleFileUpload"
+                                           name="productImage"
+                                           class="form-control"
+                                    />
+                                </div>
+
                             </div>
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary">Save</button>
@@ -71,20 +84,38 @@
         props:['toBeEditedProduct','categories'],
         data(){
             return{
+                productImage:''
             }
         },
         methods:{
             submitForm(){
                 // post data :
-                axios.post('/admin/add/product',this.toBeEditedProduct).then( (response) => {
+                let product = this.toBeEditedProduct;
+                let form_data = new FormData();
+                for ( var key in product) {
+                    form_data.append(key, product[key]);
+                }
+                form_data.append('productImage',this.productImage);
+
+                axios.post('/admin/add/product',form_data).then( (response) => {
                     if(this.toBeEditedProduct.id === ""){
                         this.$emit('productAdded',this.toBeEditedProduct);
                     }
                     // save the product id :
                     this.toBeEditedProduct.id = response.data.id;
-
+                    this.toBeEditedProduct.photo = response.data.photo;
                 });
+                // changes saved :
+                $('#changesSaved').removeClass('d-none');
+                setTimeout(function() {
+                    $('#changesSaved').addClass('d-none');
+                }, 3500);
+
                 $('#closeProductModal').click();
+
+            },
+            handleFileUpload() {
+                this.productImage = this.$refs.file.files[0];
             },
         },
         mounted(){

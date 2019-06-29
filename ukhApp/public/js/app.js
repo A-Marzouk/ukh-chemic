@@ -2195,25 +2195,57 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['toBeEditedProduct', 'categories'],
   data: function data() {
-    return {};
+    return {
+      productImage: ''
+    };
   },
   methods: {
     submitForm: function submitForm() {
       var _this = this;
 
       // post data :
-      axios.post('/admin/add/product', this.toBeEditedProduct).then(function (response) {
+      var product = this.toBeEditedProduct;
+      var form_data = new FormData();
+
+      for (var key in product) {
+        form_data.append(key, product[key]);
+      }
+
+      form_data.append('productImage', this.productImage);
+      axios.post('/admin/add/product', form_data).then(function (response) {
         if (_this.toBeEditedProduct.id === "") {
           _this.$emit('productAdded', _this.toBeEditedProduct);
         } // save the product id :
 
 
         _this.toBeEditedProduct.id = response.data.id;
-      });
+        _this.toBeEditedProduct.photo = response.data.photo;
+      }); // changes saved :
+
+      $('#changesSaved').removeClass('d-none');
+      setTimeout(function () {
+        $('#changesSaved').addClass('d-none');
+      }, 3500);
       $('#closeProductModal').click();
+    },
+    handleFileUpload: function handleFileUpload() {
+      this.productImage = this.$refs.file.files[0];
     }
   },
   mounted: function mounted() {}
@@ -2322,11 +2354,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     AddProductComponent: _AddProductComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
+  props: ['saved_category'],
   data: function data() {
     return {
       products: [],
@@ -2341,7 +2377,8 @@ __webpack_require__.r(__webpack_exports__);
         'old_price': '',
         'international_name': '',
         'package': '',
-        'description': ''
+        'description': '',
+        'photo': ''
       }
     };
   },
@@ -2358,8 +2395,12 @@ __webpack_require__.r(__webpack_exports__);
     getProductsByCategoryName: function getProductsByCategoryName() {
       var _this2 = this;
 
-      if (this.currentCategory === "" || this.currentCategory === 'all') {
+      if (this.currentCategory === 'all') {
         return this.getProducts();
+      }
+
+      if (this.currentCategory === "none") {
+        this.products = [];
       }
 
       axios.get('/admin/get/products/' + this.currentCategory).then(function (response) {
@@ -2426,11 +2467,17 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       return src;
+    },
+    getSavedCategoryProducts: function getSavedCategoryProducts() {
+      if (this.saved_category.length > 0) {
+        this.currentCategory = this.saved_category;
+        this.getProductsByCategoryName();
+      }
     }
   },
   created: function created() {
-    this.getProducts();
     this.getCategories();
+    this.getSavedCategoryProducts();
   }
 });
 
@@ -39721,6 +39768,25 @@ var render = function() {
                           }),
                           0
                         )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-md-12" }, [
+                        _c("label", { attrs: { for: "file" } }, [
+                          _vm._v(
+                            "\n                                   Загрузить картинку продукта\n                                "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          ref: "file",
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "file",
+                            id: "file",
+                            name: "productImage"
+                          },
+                          on: { change: _vm.handleFileUpload }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -39859,8 +39925,8 @@ var render = function() {
                 }
               },
               [
-                _c("option", { attrs: { value: "", selected: "" } }, [
-                  _vm._v("Выбери категорию")
+                _c("option", { attrs: { value: "none", selected: "" } }, [
+                  _vm._v("Выберите категорию")
                 ]),
                 _vm._v(" "),
                 _vm._l(_vm.categories, function(category, index) {
@@ -39877,7 +39943,7 @@ var render = function() {
                   )
                 }),
                 _vm._v(" "),
-                _c("option", { attrs: { value: "all", selected: "" } }, [
+                _c("option", { attrs: { value: "all" } }, [
                   _vm._v("Все продукты")
                 ])
               ],
@@ -39901,7 +39967,22 @@ var render = function() {
       _vm._v(" "),
       _c("hr"),
       _vm._v(" "),
-      _c("h2", [_vm._v("Products list")]),
+      _c("h2", [_vm._v("Лист продуктов")]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.products.length < 1,
+              expression: "products.length < 1"
+            }
+          ]
+        },
+        [_vm._v("\n        Выберите категорию пожалуйста\n    ")]
+      ),
       _vm._v(" "),
       _c(
         "transition-group",
