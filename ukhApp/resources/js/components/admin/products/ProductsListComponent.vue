@@ -52,13 +52,30 @@
                 </div>
                 <div class="row" v-for="(value,key) in product">
                     <div class="col-md-4">
-                        {{ key }} :
+                        <div v-if=" key === 'id'">ID</div>
+                        <div v-else-if="key === 'ID_NAME'">Название продукта в УРЛ</div>
+                        <div v-else-if="key === 'category_id'">Kатегория</div>
+                        <div v-else-if=" key === 'name'">Название</div>
+                        <div v-else-if="key === 'price'">Цена за 25 кг</div>
+                        <div v-else-if="key === 'price_500'">Цена за 500 кг</div>
+                        <div v-else-if="key === 'price_1000'">Цена за 1000 кг</div>
+                        <div v-else-if=" key === 'old_price' ">Старая Цена за 25 кг (Скидка)</div>
+                        <div v-else-if="key === 'international_name'">Международное название</div>
+                        <div v-else-if="key === 'photo'">Картинка</div>
+                        <div v-else-if="key === 'manufacturer'">Производитель</div>
+                        <div v-else-if="key === 'package'">Упаковка</div>
+                        <div v-else-if="key === 'description'">Описание</div>
+                        <div v-else-if="key === 'created_at'">Дата создания </div>
+                        <div v-else-if="key === 'updated_at'">Дата обновления</div>
+                        <div v-else>{{key}}</div>
                     </div>
                     <div class="col-md-6">
                         <div v-if="key === 'photo'">
                             <img :src="getImageSrc(value)" alt="product photo">
                         </div>
-                        {{ value }}
+                        <div v-else>
+                            {{ value }}
+                        </div>
                     </div>
                 </div>
                 <hr>
@@ -86,6 +103,8 @@
                     'category_id':'',
                     'name' :'',
                     'price':'',
+                    'price_500':'',
+                    'price_1000':'',
                     'old_price' :'',
                     'international_name' :'',
                     'package' :'',

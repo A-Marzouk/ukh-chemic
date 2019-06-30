@@ -2208,6 +2208,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['toBeEditedProduct', 'categories'],
   data: function data() {
@@ -2357,6 +2365,23 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2374,6 +2399,8 @@ __webpack_require__.r(__webpack_exports__);
         'category_id': '',
         'name': '',
         'price': '',
+        'price_500': '',
+        'price_1000': '',
         'old_price': '',
         'international_name': '',
         'package': '',
@@ -39455,7 +39482,7 @@ var render = function() {
                             staticClass: "panelFormLabel",
                             attrs: { for: "price" }
                           },
-                          [_vm._v("Цена :")]
+                          [_vm._v("Цена : (25 кг (мешок) )")]
                         ),
                         _vm._v(" "),
                         _c("input", {
@@ -39485,6 +39512,92 @@ var render = function() {
                               _vm.$set(
                                 _vm.toBeEditedProduct,
                                 "price",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-md-6" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "panelFormLabel",
+                            attrs: { for: "price_500" }
+                          },
+                          [_vm._v("Цена : ( 500 кг ) ")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.toBeEditedProduct.price_500,
+                              expression: "toBeEditedProduct.price_500"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "number",
+                            min: "0",
+                            max: "9999999",
+                            id: "price_500",
+                            name: "price_500"
+                          },
+                          domProps: { value: _vm.toBeEditedProduct.price_500 },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.toBeEditedProduct,
+                                "price_500",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-md-6" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "panelFormLabel",
+                            attrs: { for: "price_1000" }
+                          },
+                          [_vm._v("Цена : ( 1000 кг ) ")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.toBeEditedProduct.price_1000,
+                              expression: "toBeEditedProduct.price_1000"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "number",
+                            min: "0",
+                            max: "9999999",
+                            id: "price_1000",
+                            name: "price_1000"
+                          },
+                          domProps: { value: _vm.toBeEditedProduct.price_1000 },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.toBeEditedProduct,
+                                "price_1000",
                                 $event.target.value
                               )
                             }
@@ -39587,7 +39700,7 @@ var render = function() {
                             staticClass: "panelFormLabel",
                             attrs: { for: "package" }
                           },
-                          [_vm._v("Package:")]
+                          [_vm._v("Упаковка:")]
                         ),
                         _vm._v(" "),
                         _c("input", {
@@ -39629,7 +39742,7 @@ var render = function() {
                             staticClass: "panelFormLabel",
                             attrs: { for: "manufacturer" }
                           },
-                          [_vm._v("manufacturer:")]
+                          [_vm._v("Производитель:")]
                         ),
                         _vm._v(" "),
                         _c("input", {
@@ -40070,11 +40183,37 @@ var render = function() {
               _vm._l(product, function(value, key) {
                 return _c("div", { staticClass: "row" }, [
                   _c("div", { staticClass: "col-md-4" }, [
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(key) +
-                        " :\n                "
-                    )
+                    key === "id"
+                      ? _c("div", [_vm._v("ID")])
+                      : key === "ID_NAME"
+                      ? _c("div", [_vm._v("Название продукта в УРЛ")])
+                      : key === "category_id"
+                      ? _c("div", [_vm._v("Kатегория")])
+                      : key === "name"
+                      ? _c("div", [_vm._v("Название")])
+                      : key === "price"
+                      ? _c("div", [_vm._v("Цена за 25 кг")])
+                      : key === "price_500"
+                      ? _c("div", [_vm._v("Цена за 500 кг")])
+                      : key === "price_1000"
+                      ? _c("div", [_vm._v("Цена за 1000 кг")])
+                      : key === "old_price"
+                      ? _c("div", [_vm._v("Старая Цена за 25 кг (Скидка)")])
+                      : key === "international_name"
+                      ? _c("div", [_vm._v("Международное название")])
+                      : key === "photo"
+                      ? _c("div", [_vm._v("Картинка")])
+                      : key === "manufacturer"
+                      ? _c("div", [_vm._v("Производитель")])
+                      : key === "package"
+                      ? _c("div", [_vm._v("Упаковка")])
+                      : key === "description"
+                      ? _c("div", [_vm._v("Описание")])
+                      : key === "created_at"
+                      ? _c("div", [_vm._v("Дата создания ")])
+                      : key === "updated_at"
+                      ? _c("div", [_vm._v("Дата обновления")])
+                      : _c("div", [_vm._v(_vm._s(key))])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col-md-6" }, [
@@ -40087,12 +40226,13 @@ var render = function() {
                             }
                           })
                         ])
-                      : _vm._e(),
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(value) +
-                        "\n                "
-                    )
+                      : _c("div", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(value) +
+                              "\n                    "
+                          )
+                        ])
                   ])
                 ])
               }),

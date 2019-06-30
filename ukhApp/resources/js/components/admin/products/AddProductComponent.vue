@@ -20,8 +20,16 @@
                                     <input type="text" class="form-control" id="id_name" name="ID_NAME" v-model="toBeEditedProduct.ID_NAME" required>
                                 </div>
                                 <div class="form-group col-md-6">
-                                    <label for="price" class="panelFormLabel">Цена :</label>
+                                    <label for="price" class="panelFormLabel">Цена : (25 кг (мешок) )</label>
                                     <input type="number" min="0" max="9999999" class="form-control" id="price" name="price" v-model="toBeEditedProduct.price" required>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="price_500" class="panelFormLabel">Цена : ( 500 кг ) </label>
+                                    <input type="number" min="0" max="9999999" class="form-control" id="price_500" name="price_500" v-model="toBeEditedProduct.price_500" >
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="price_1000" class="panelFormLabel">Цена : ( 1000 кг ) </label>
+                                    <input type="number" min="0" max="9999999" class="form-control" id="price_1000" name="price_1000" v-model="toBeEditedProduct.price_1000" >
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="old_price" class="panelFormLabel">Старая цена :</label>
@@ -32,11 +40,11 @@
                                     <input type="text" class="form-control" id="international_name" name="international_name" v-model="toBeEditedProduct.international_name" required>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="package" class="panelFormLabel">Package:</label>
+                                    <label for="package" class="panelFormLabel">Упаковка:</label>
                                     <input type="text" class="form-control" id="package" name="package" v-model="toBeEditedProduct.package" required>
                                 </div>
                                 <div class="form-group col-md-12">
-                                    <label for="manufacturer" class="panelFormLabel">manufacturer:</label>
+                                    <label for="manufacturer" class="panelFormLabel">Производитель:</label>
                                     <input type="text" class="form-control" id="manufacturer" name="manufacturer" v-model="toBeEditedProduct.manufacturer" required>
                                 </div>
                                 <div class="form-group col-md-12">

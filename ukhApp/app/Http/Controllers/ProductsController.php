@@ -55,6 +55,8 @@ class ProductsController extends Controller
         $product->name = $request->name;
         $product->ID_NAME = $request->ID_NAME;
         $product->price = $request->price;
+        $product->price_500 = $request->price_500;
+        $product->price_1000 = $request->price_1000;
         $product->old_price = $request->old_price;
         $product->international_name = $request->international_name;
         $product->manufacturer = $request->manufacturer;
