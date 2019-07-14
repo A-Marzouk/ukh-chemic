@@ -28,6 +28,7 @@ Route::get('/admin/get/products','ProductsController@getProducts')->name('admin.
 Route::post('/admin/add/product','ProductsController@addProduct')->name('admin.add.product');
 Route::post('/admin/delete/product','ProductsController@addProduct')->name('admin.delete.product');
 Route::get('/admin/get/products/{category_id_name}', 'AdminController@getProductsByCategory')->name('admin.products.category');
+Route::get('/admin/export/products', 'ProductsController@export')->name('admin.products.export');
 
 
 
