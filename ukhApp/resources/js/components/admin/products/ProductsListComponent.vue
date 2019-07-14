@@ -70,7 +70,7 @@
                         <div v-else>{{key}}</div>
                     </div>
                     <div class="col-md-6">
-                        <div v-if="key === 'photo'">
+                        <div v-if="key === 'photo'" class="p-5">
                             <img :src="getImageSrc(value)" alt="product photo">
                         </div>
                         <div v-else>
@@ -137,7 +137,6 @@
 
                 axios.get('/admin/get/products/' + this.currentCategory ).then(
                     (response) => {
-                        console.log(response.data);
                         let products =  response.data;
                         $.each(products, function(i){
                         });

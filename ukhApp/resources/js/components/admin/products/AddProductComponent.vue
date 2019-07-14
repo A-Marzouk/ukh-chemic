@@ -66,6 +66,9 @@
                                     <label for="file">
                                        Загрузить картинку продукта
                                     </label>
+                                    <div class="border-dark p-5">
+                                        <img :src="getImageSrc(toBeEditedProduct.photo)" alt="product photo" style="width:250px; height:250px;">
+                                    </div>
                                     <input type="file"
                                            id="file"
                                            ref="file"
@@ -124,6 +127,12 @@
             },
             handleFileUpload() {
                 this.productImage = this.$refs.file.files[0];
+            },
+            getImageSrc(src) {
+                if (src.charAt(0) !== '/') {
+                    return '/' + src;
+                }
+                return src;
             },
         },
         mounted(){

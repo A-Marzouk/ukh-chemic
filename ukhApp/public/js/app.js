@@ -2216,6 +2216,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['toBeEditedProduct', 'categories'],
   data: function data() {
@@ -2254,6 +2257,13 @@ __webpack_require__.r(__webpack_exports__);
     },
     handleFileUpload: function handleFileUpload() {
       this.productImage = this.$refs.file.files[0];
+    },
+    getImageSrc: function getImageSrc(src) {
+      if (src.charAt(0) !== '/') {
+        return '/' + src;
+      }
+
+      return src;
     }
   },
   mounted: function mounted() {}
@@ -2431,7 +2441,6 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       axios.get('/admin/get/products/' + this.currentCategory).then(function (response) {
-        console.log(response.data);
         var products = response.data;
         $.each(products, function (i) {});
         _this2.products = products;
@@ -39890,6 +39899,16 @@ var render = function() {
                           )
                         ]),
                         _vm._v(" "),
+                        _c("div", { staticClass: "border-dark p-5" }, [
+                          _c("img", {
+                            staticStyle: { width: "250px", height: "250px" },
+                            attrs: {
+                              src: _vm.getImageSrc(_vm.toBeEditedProduct.photo),
+                              alt: "product photo"
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
                         _c("input", {
                           ref: "file",
                           staticClass: "form-control",
@@ -40218,7 +40237,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "col-md-6" }, [
                     key === "photo"
-                      ? _c("div", [
+                      ? _c("div", { staticClass: "p-5" }, [
                           _c("img", {
                             attrs: {
                               src: _vm.getImageSrc(value),
