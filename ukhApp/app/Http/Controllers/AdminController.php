@@ -43,4 +43,8 @@ class AdminController extends Controller
         return view('admin.products',compact('savedCategory'));
     }
 
+    public function showExcelActionPage(){
+        return view('admin.excel_actions');
+    }
+
 }

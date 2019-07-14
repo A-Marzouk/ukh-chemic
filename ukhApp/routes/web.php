@@ -29,6 +29,8 @@ Route::post('/admin/add/product','ProductsController@addProduct')->name('admin.a
 Route::post('/admin/delete/product','ProductsController@deleteProduct')->name('admin.delete.product');
 Route::get('/admin/get/products/{category_id_name}', 'AdminController@getProductsByCategory')->name('admin.products.category');
 Route::get('/admin/export/products', 'ProductsController@export')->name('admin.products.export');
+Route::post('/admin/import/products', 'ProductsController@import')->name('admin.products.import');
+Route::get('/admin/excel/actions', 'AdminController@showExcelActionPage')->name('admin.excel');
 
 
 

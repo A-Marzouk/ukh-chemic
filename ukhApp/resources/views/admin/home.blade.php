@@ -3,9 +3,14 @@
 @section('content')
 <div class="container">
     <div class="row">
-        <div class="col-12 p-4">
+        <div class="col-6 p-4">
             <a href="{{route('admin.products')}}" class="btn btn-dark">
-                Products
+                Все продукты
+            </a>
+        </div>
+        <div class="col-6 p-4">
+            <a href="{{route('admin.excel')}}" class="btn btn-dark">
+                Выгрузить / Загрузить Продукты
             </a>
         </div>
     </div>

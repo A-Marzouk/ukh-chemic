@@ -12,6 +12,7 @@ namespace App\Http\Controllers;
 use App\classes\Notification;
 use App\classes\Upload;
 use App\Exports\ProductsExport;
+use App\Imports\ProductsImport;
 use App\Product;
 use Illuminate\Http\Request;
 use Maatwebsite\Excel\Facades\Excel;
@@ -94,6 +95,15 @@ class ProductsController extends Controller
     public function export()
     {
         return Excel::download(new ProductsExport, 'products.xlsx');
+    }
+    public function import(Request $request)
+    {
+
+        $result  = Upload::productsSheet('productsExcelSheet',date(time()) );
+        $filePth = $result['path'];
+
+        Excel::import(new ProductsImport, $filePth);
+        return redirect(route('admin.products'));
     }
 
 }
