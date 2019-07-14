@@ -42,4 +42,5 @@ class AdminController extends Controller
         $savedCategory = $category_id_name;
         return view('admin.products',compact('savedCategory'));
     }
+
 }
