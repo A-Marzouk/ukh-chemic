@@ -33,7 +33,7 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="old_price" class="panelFormLabel">Старая цена :</label>
-                                    <input type="number" min="0" max="9999999" class="form-control" id="old_price" name="old_price" v-model="toBeEditedProduct.old_price" required>
+                                    <input type="number" min="0" max="9999999" class="form-control" id="old_price" name="old_price" v-model="toBeEditedProduct.old_price">
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="international_name" class="panelFormLabel">Международное название:</label>

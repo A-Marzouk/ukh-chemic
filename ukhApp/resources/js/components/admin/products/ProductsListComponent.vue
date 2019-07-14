@@ -71,7 +71,7 @@
                     </div>
                     <div class="col-md-6">
                         <div v-if="key === 'photo'" class="p-5">
-                            <img :src="getImageSrc(value)" alt="product photo">
+                            <img :src="getImageSrc(value)" alt="product photo" style="width: 300px; height:300px;">
                         </div>
                         <div v-else>
                             {{ value }}

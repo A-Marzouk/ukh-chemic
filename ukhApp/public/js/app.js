@@ -39639,8 +39639,7 @@ var render = function() {
                             min: "0",
                             max: "9999999",
                             id: "old_price",
-                            name: "old_price",
-                            required: ""
+                            name: "old_price"
                           },
                           domProps: { value: _vm.toBeEditedProduct.old_price },
                           on: {
@@ -40239,6 +40238,7 @@ var render = function() {
                     key === "photo"
                       ? _c("div", { staticClass: "p-5" }, [
                           _c("img", {
+                            staticStyle: { width: "300px", height: "300px" },
                             attrs: {
                               src: _vm.getImageSrc(value),
                               alt: "product photo"

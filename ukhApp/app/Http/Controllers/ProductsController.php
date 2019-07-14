@@ -28,9 +28,19 @@ class ProductsController extends Controller
 
 
     public function addProduct(Request $request){
-        if(!$this->validate($request)){
-            return;
-        }
+
+        $request->validate([
+            'name' => 'max:190|required',
+            'ID_NAME ' => 'max:190',
+            'price' => 'max:10',
+            'old_price' => 'max:10',
+            'international_name' => 'max:190',
+            'photo' => 'max:190',
+            'manufacturer' => 'max:190',
+            'package' => 'max:190',
+            'description' => 'max:1500',
+        ]);
+
         $newProduct = false ;
         if(isset($request->id)){
             // edit
@@ -47,8 +57,8 @@ class ProductsController extends Controller
         $product->name = $request->name;
         $product->ID_NAME = $request->ID_NAME;
         $product->price = $request->price;
-        $product->price_500 = $request->price_500;
-        $product->price_1000 = $request->price_1000;
+        $product->price_500 = $request->price_500 || '';
+        $product->price_1000 = $request->price_1000 || '';
         $product->old_price = $request->old_price;
         $product->international_name = $request->international_name;
         $product->manufacturer = $request->manufacturer;
@@ -84,20 +94,6 @@ class ProductsController extends Controller
     public function export()
     {
         return Excel::download(new ProductsExport, 'products.xlsx');
-    }
-
-    protected function validate(Request $request){
-        $request->validate([
-            'name' => 'max:190|required',
-            'ID_NAME ' => 'max:190',
-            'price' => 'max:10',
-            'old_price' => 'max:10',
-            'international_name' => 'max:190',
-            'photo' => 'max:190',
-            'manufacturer' => 'max:190',
-            'package' => 'max:190',
-            'description' => 'max:1500',
-        ]);
     }
 
 }
