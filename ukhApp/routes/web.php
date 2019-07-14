@@ -41,3 +41,4 @@ Route::get('/register',function (){
 
 Route::get('/ukh-admin', 'AdminController@admin')->name('admin.home');
 Route::get('/ukh-admin/products', 'AdminController@viewProducts')->name('admin.products');
+Route::get('/ukh-admin/{category_id_name}/products', 'AdminController@viewCategoryProducts')->name('admin.category.products');

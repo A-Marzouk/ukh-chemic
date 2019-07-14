@@ -36,4 +36,10 @@ class AdminController extends Controller
         Session::put('category_id_name', $category_id_name);
         return $categoryProducts ;
     }
+
+    public function viewCategoryProducts($category_id_name){
+        Session::put('category_id_name', $category_id_name);
+        $savedCategory = $category_id_name;
+        return view('admin.products',compact('savedCategory'));
+    }
 }

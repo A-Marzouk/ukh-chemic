@@ -12,7 +12,7 @@
     <div class="row">
         @foreach($categories as $category)
             <div class="col-5 p-4">
-                <a href="{{route('admin.products.category',$category->ID_NAME)}}" class="btn btn-outline-primary btn-block">
+                <a href="{{route('admin.category.products',$category->ID_NAME)}}" class="btn btn-outline-primary btn-block">
                     {{$category->title}}
                 </a>
             </div>
