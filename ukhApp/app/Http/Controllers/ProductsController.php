@@ -94,6 +94,7 @@ class ProductsController extends Controller
 
     public function export()
     {
+        Notification::productsAction('Exported');
         return Excel::download(new ProductsExport, 'products.xlsx');
     }
     public function import(Request $request)
@@ -103,6 +104,7 @@ class ProductsController extends Controller
         $filePth = $result['path'];
 
         Excel::import(new ProductsImport, $filePth);
+        Notification::productsAction('Imported');
         return redirect(route('admin.products'));
     }
 

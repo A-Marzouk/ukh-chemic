@@ -39508,6 +39508,7 @@ var render = function() {
                             type: "number",
                             min: "0",
                             max: "9999999",
+                            step: "any",
                             id: "price",
                             name: "price",
                             required: ""
@@ -39550,8 +39551,9 @@ var render = function() {
                           staticClass: "form-control",
                           attrs: {
                             type: "number",
+                            step: "any",
                             min: "0",
-                            max: "9999999",
+                            max: "999999",
                             id: "price_500",
                             name: "price_500"
                           },
@@ -39595,6 +39597,7 @@ var render = function() {
                             type: "number",
                             min: "0",
                             max: "9999999",
+                            step: "any",
                             id: "price_1000",
                             name: "price_1000"
                           },
@@ -39636,6 +39639,7 @@ var render = function() {
                           staticClass: "form-control",
                           attrs: {
                             type: "number",
+                            step: "any",
                             min: "0",
                             max: "9999999",
                             id: "old_price",

@@ -21,19 +21,19 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="price" class="panelFormLabel">Цена : (25 кг (мешок) )</label>
-                                    <input type="number" min="0" max="9999999" class="form-control" id="price" name="price" v-model="toBeEditedProduct.price" required>
+                                    <input type="number" min="0" max="9999999" step="any" class="form-control" id="price" name="price" v-model="toBeEditedProduct.price" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="price_500" class="panelFormLabel">Цена : ( 500 кг ) </label>
-                                    <input type="number" min="0" max="9999999" class="form-control" id="price_500" name="price_500" v-model="toBeEditedProduct.price_500" >
+                                    <input type="number" step="any" min="0" max="999999" class="form-control" id="price_500" name="price_500" v-model="toBeEditedProduct.price_500" >
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="price_1000" class="panelFormLabel">Цена : ( 1000 кг ) </label>
-                                    <input type="number" min="0" max="9999999" class="form-control" id="price_1000" name="price_1000" v-model="toBeEditedProduct.price_1000" >
+                                    <input type="number" min="0" max="9999999" step="any" class="form-control" id="price_1000" name="price_1000" v-model="toBeEditedProduct.price_1000" >
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="old_price" class="panelFormLabel">Старая цена :</label>
-                                    <input type="number" min="0" max="9999999" class="form-control" id="old_price" name="old_price" v-model="toBeEditedProduct.old_price">
+                                    <input type="number"  step="any" min="0" max="9999999" class="form-control" id="old_price" name="old_price" v-model="toBeEditedProduct.old_price">
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="international_name" class="panelFormLabel">Международное название:</label>

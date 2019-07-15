@@ -31,4 +31,14 @@ class Notification
 
         $telegram->sendMessage($msg);
     }
+
+    public static function productsAction($action){
+        $telegram = new Telegram('-393205618');
+
+        $msg      = "Products have been " . $action . ".\n" ;
+        $msg      .= "at .\n" ;
+        $msg      .= date(now()) ;
+
+        $telegram->sendMessage($msg);
+    }
 }
