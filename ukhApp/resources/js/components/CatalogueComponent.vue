@@ -128,7 +128,7 @@
 
                                             <footer class="entry-footer flex flex-wrap justify-content-between align-items-center">
                                                 <div class="course-cost" v-show="product.price">
-                                                    {{ product.price }} грн <span class="price-drop" v-show="product.old_price">200 грн</span>
+                                                    {{ product.price }} грн
                                                 </div><!-- .course-cost -->
                                             </footer><!-- .entry-footer -->
                                             <div class="buy-course">
@@ -155,7 +155,7 @@
 
                                             <footer class="entry-footer flex flex-wrap justify-content-between align-items-center">
                                                 <div class="course-cost" v-show="product.price">
-                                                    {{ product.price }} грн <span class="price-drop" v-show="product.old_price">200 грн</span>
+                                                    {{ product.price }} грн
                                                 </div><!-- .course-cost -->
                                             </footer><!-- .entry-footer -->
                                             <div class="buy-course">

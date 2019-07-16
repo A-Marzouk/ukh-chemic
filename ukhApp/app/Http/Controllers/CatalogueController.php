@@ -10,6 +10,7 @@ namespace App\Http\Controllers;
 
 
 use App\Category;
+use App\Photo;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
