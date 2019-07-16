@@ -39168,14 +39168,26 @@ var render = function() {
                                 "figure",
                                 { staticClass: "course-thumbnail" },
                                 [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _c("img", {
+                                  _c(
+                                    "a",
+                                    {
                                       attrs: {
-                                        src: product.photo,
-                                        alt: "product image"
+                                        href:
+                                          "/catalogue/" +
+                                          product.category_id +
+                                          "/" +
+                                          product.id
                                       }
-                                    })
-                                  ])
+                                    },
+                                    [
+                                      _c("img", {
+                                        attrs: {
+                                          src: product.photo,
+                                          alt: "product image"
+                                        }
+                                      })
+                                    ]
+                                  )
                                 ]
                               ),
                               _vm._v(" "),
@@ -39874,7 +39886,24 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "container" }, [
       _c("div", { staticClass: "related-courses" }, [
-        _vm._m(3),
+        _c(
+          "header",
+          {
+            staticClass:
+              "entry-heading flex flex-wrap justify-content-between align-items-center"
+          },
+          [
+            _c("h2", { staticClass: "entry-title" }, [
+              _vm._v("Похожие товары")
+            ]),
+            _vm._v(" "),
+            _c(
+              "a",
+              { attrs: { href: "/catalogue#/" + _vm.category.ID_NAME } },
+              [_vm._v("Показать все")]
+            )
+          ]
+        ),
         _vm._v(" "),
         _c(
           "div",
@@ -39964,7 +39993,7 @@ var render = function() {
                       ]
                     ),
                     _vm._v(" "),
-                    _vm._m(4, true)
+                    _vm._m(3, true)
                   ])
                 ])
               ]
@@ -40012,23 +40041,6 @@ var staticRenderFns = [
         _vm._v("ADD to cart")
       ])
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "header",
-      {
-        staticClass:
-          "entry-heading flex flex-wrap justify-content-between align-items-center"
-      },
-      [
-        _c("h2", { staticClass: "entry-title" }, [_vm._v("Похожие товары")]),
-        _vm._v(" "),
-        _c("a", { attrs: { href: "#" } }, [_vm._v("Показать все")])
-      ]
-    )
   },
   function() {
     var _vm = this

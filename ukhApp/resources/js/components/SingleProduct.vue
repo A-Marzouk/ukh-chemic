@@ -104,7 +104,7 @@
                 <header class="entry-heading flex flex-wrap justify-content-between align-items-center">
                     <h2 class="entry-title">Похожие товары</h2>
 
-                    <a href="#">Показать все</a>
+                    <a :href="'/catalogue#/' + category.ID_NAME ">Показать все</a>
                 </header><!-- .entry-heading -->
 
                 <div class="row mx-m-25">

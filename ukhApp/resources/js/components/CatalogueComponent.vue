@@ -141,7 +141,7 @@
                                 <div v-show="searchResults.length > 0" v-for="(product,index) in searchResults" v-bind:key="'c'+index" class="col-12 col-md-4 px-25">
                                     <div class="course-content">
                                         <figure class="course-thumbnail">
-                                            <a href="#"><img  :src="product.photo" alt="product image"></a>
+                                            <a :href="'/catalogue/' + product.category_id +'/' + product.id "><img  :src="product.photo" alt="product image"></a>
                                         </figure><!-- .course-thumbnail -->
 
                                         <div class="course-content-wrap">
