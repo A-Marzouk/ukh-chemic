@@ -23,6 +23,14 @@ class CatalogueController extends Controller
         $this->route = Route::currentRouteName();
     }
 
+
+    public function showProductSinglePage($category_name,$product_id){
+        $currentRoute = $this->route ;
+        $product  = Product::find($product_id);
+        $category = Category::find($product->category_id);
+        return view('single-product',compact('product','currentRoute','category'));
+    }
+
     public function showCataloguePage(){
         $currentRoute = $this->route ;
         return view('catalogue',compact('currentRoute'));

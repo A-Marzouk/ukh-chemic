@@ -1986,6 +1986,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2118,6 +2119,541 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SingleProduct.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SingleProduct.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['product'],
+  data: function data() {
+    return {};
+  },
+  mounted: function mounted() {
+    console.log(this.product);
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/admin/products/AddProductComponent.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/admin/products/AddProductComponent.vue?vue&type=script&lang=js& ***!
@@ -2195,25 +2731,75 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['toBeEditedProduct', 'categories'],
   data: function data() {
-    return {};
+    return {
+      productImage: ''
+    };
   },
   methods: {
     submitForm: function submitForm() {
       var _this = this;
 
       // post data :
-      axios.post('/admin/add/product', this.toBeEditedProduct).then(function (response) {
+      var product = this.toBeEditedProduct;
+      var form_data = new FormData();
+
+      for (var key in product) {
+        form_data.append(key, product[key]);
+      }
+
+      form_data.append('productImage', this.productImage);
+      axios.post('/admin/add/product', form_data).then(function (response) {
         if (_this.toBeEditedProduct.id === "") {
           _this.$emit('productAdded', _this.toBeEditedProduct);
         } // save the product id :
 
 
         _this.toBeEditedProduct.id = response.data.id;
-      });
+        _this.toBeEditedProduct.photo = response.data.photo;
+      }); // changes saved :
+
+      $('#changesSaved').removeClass('d-none');
+      setTimeout(function () {
+        $('#changesSaved').addClass('d-none');
+      }, 3500);
       $('#closeProductModal').click();
+    },
+    handleFileUpload: function handleFileUpload() {
+      this.productImage = this.$refs.file.files[0];
+    },
+    getImageSrc: function getImageSrc(src) {
+      if (src.charAt(0) !== '/') {
+        return '/' + src;
+      }
+
+      return src;
     }
   },
   mounted: function mounted() {}
@@ -2310,25 +2896,62 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     AddProductComponent: _AddProductComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
+  props: ['saved_category'],
   data: function data() {
     return {
       products: [],
       categories: [],
       canAdd: true,
+      currentCategory: '',
       toBeEditedProduct: {
         'id': '',
         'category_id': '',
         'name': '',
         'price': '',
+        'price_500': '',
+        'price_1000': '',
         'old_price': '',
         'international_name': '',
         'package': '',
-        'description': ''
+        'description': '',
+        'photo': ''
       }
     };
   },
@@ -2342,10 +2965,18 @@ __webpack_require__.r(__webpack_exports__);
         _this.products = products;
       });
     },
-    getProductsByCategoryName: function getProductsByCategoryName(categoryName) {
+    getProductsByCategoryName: function getProductsByCategoryName() {
       var _this2 = this;
 
-      axios.get('/admin/get/products/' + categoryName).then(function (response) {
+      if (this.currentCategory === 'all') {
+        return this.getProducts();
+      }
+
+      if (this.currentCategory === "none") {
+        this.products = [];
+      }
+
+      axios.get('/admin/get/products/' + this.currentCategory).then(function (response) {
         var products = response.data;
         $.each(products, function (i) {});
         _this2.products = products;
@@ -2404,18 +3035,21 @@ __webpack_require__.r(__webpack_exports__);
     },
     getImageSrc: function getImageSrc(src) {
       if (src.charAt(0) !== '/') {
-        console.log(src);
         return '/' + src;
       }
 
-      console.log('other src :' + src);
       return src;
+    },
+    getSavedCategoryProducts: function getSavedCategoryProducts() {
+      if (this.saved_category.length > 0) {
+        this.currentCategory = this.saved_category;
+        this.getProductsByCategoryName();
+      }
     }
   },
   created: function created() {
-    this.getProducts();
     this.getCategories();
-    alert(55);
+    this.getSavedCategoryProducts();
   }
 });
 
@@ -38707,14 +39341,26 @@ var render = function() {
                                 "figure",
                                 { staticClass: "course-thumbnail" },
                                 [
-                                  _c("a", { attrs: { href: "#" } }, [
-                                    _c("img", {
+                                  _c(
+                                    "a",
+                                    {
                                       attrs: {
-                                        src: product.photo,
-                                        alt: "product image"
+                                        href:
+                                          "/catalogue/" +
+                                          _vm.currentCategory.ID_NAME +
+                                          "/" +
+                                          product.id
                                       }
-                                    })
-                                  ])
+                                    },
+                                    [
+                                      _c("img", {
+                                        attrs: {
+                                          src: product.photo,
+                                          alt: "product image"
+                                        }
+                                      })
+                                    ]
+                                  )
                                 ]
                               ),
                               _vm._v(" "),
@@ -39252,6 +39898,3323 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SingleProduct.vue?vue&type=template&id=3da200a8&":
+/*!****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SingleProduct.vue?vue&type=template&id=3da200a8& ***!
+  \****************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _vm._m(0)
+}
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "single-courses-page" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12 offset-lg-1 col-lg-10" }, [
+            _c("div", { staticClass: "featured-image" }, [
+              _c("img", {
+                attrs: {
+                  src: "/images/single-course-featured-img.jpg",
+                  alt: ""
+                }
+              }),
+              _vm._v(" "),
+              _c("div", { staticClass: "course-cost" }, [_vm._v("Free")])
+            ])
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "row" }, [
+          _c("div", { staticClass: "col-12 offset-lg-1 col-lg-1" }, [
+            _c("div", { staticClass: "post-share" }, [
+              _c("h3", [_vm._v("share")]),
+              _vm._v(" "),
+              _c(
+                "ul",
+                { staticClass: "flex flex-wrap align-items-center p-0 m-0" },
+                [
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _c("i", { staticClass: "fa fa-facebook" })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _c("i", { staticClass: "fa fa-twitter" })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _c("i", { staticClass: "fa fa-google-plus" })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _c("i", { staticClass: "fa fa-instagram" })
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _c("a", { attrs: { href: "#" } }, [
+                      _c("i", { staticClass: "fa fa-thumb-tack" })
+                    ])
+                  ])
+                ]
+              )
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-12 col-lg-8" }, [
+            _c("div", { staticClass: "single-course-wrap" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "course-info flex flex-wrap align-items-center"
+                },
+                [
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "course-author flex flex-wrap align-items-center mt-3"
+                    },
+                    [
+                      _c("img", {
+                        attrs: { src: "/images/course-author.jpg", alt: "" }
+                      }),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "author-wrap" }, [
+                        _c("label", { staticClass: "m-0" }, [
+                          _vm._v("Teacher")
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "author-name" }, [
+                          _c("a", { attrs: { href: "#" } }, [
+                            _vm._v("Ms. Lara Croft")
+                          ])
+                        ])
+                      ])
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "course-cats mt-3" }, [
+                    _c("label", { staticClass: "m-0" }, [_vm._v("Categories")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "author-name" }, [
+                      _c("a", { attrs: { href: "#" } }, [_vm._v("Web design")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "course-students mt-3" }, [
+                    _c("label", { staticClass: "m-0" }, [_vm._v("Student")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "author-name" }, [
+                      _c("a", { attrs: { href: "#" } }, [
+                        _vm._v("26 (REGISTERED)")
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "buy-course mt-3" }, [
+                    _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
+                      _vm._v("ADD to cart")
+                    ])
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "single-course-cont-section" }, [
+                _c("h2", [_vm._v("What Will I Learn?")]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "p-0 m-0 green-ticked" }, [
+                  _c("li", [
+                    _vm._v("Learn C++, the games industry standard language.")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Develop strong and transferrable problem solving skills."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Gain an excellent knowledge of modern game development."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Learn how object oriented programming works in practice."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Gain a more fundamental understanding of computer operation."
+                    )
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("Requirements")]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "p-0 m-0 black-doted" }, [
+                  _c("li", [
+                    _vm._v(
+                      "64-bit PC capable of running Unreal 4 (recommended)."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Or a Mac capable of running Unreal 4 (must support Metal)."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [_vm._v("About 15GB of free disc space.")])
+                ]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("Description")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v("EW Testing Grounds FPS shipped, including...")
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Much more C++ and Blueprint.")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("AI Blackboards & Behavior Trees.")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Environmental Query System (EQS).")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Humanoid Animation Blending.")]),
+                _vm._v(" "),
+                _c("p", [_vm._v("Never-ending Level Design.")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "The course now has high quality hand written subtitles throughout, available as closed captions so you can turn them on or off at your convenience."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "This course started as a runaway success on Kickstarter. Get involved now, and get access to all future content as it's added. The final course will be over 50 hours of content and 300+ lectures."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Learn how to create and mod video games using Unreal Engine 4, the free-to-use game development platform used by AAA studios and indie developers worldwide."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "We start super simple so you need no prior experience of Unreal or coding! With our online tutorials, you'll be amazed what you can achieve."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Benefit from our world-class support from both other students, and the instructors who are on the forums regularly. Go on to build several games including a tank game, and a First Person Shooter."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "You will have access to a course forum where you can discuss topics on a course-wide basis, or down to the individual video. Our thriving discussion forum will help you learn and share ideas with other students."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "You will learn C++, the powerful industry standard language from scratch. By the end of the course you'll be very confident in the basics of coding and game development, and hungry to learn more."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    '"Any serious game programmer needs to know C++"Jason Gregory, Lead Programmer at Naughty Dog (creators of Uncharted & The Last of Us)'
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Anyone who wants to learn to create games: Unreal Engine is a fantastic platform which enables you to make AAA-quality games. Furthermore these games can be created for Windows, consoles, MacOS, iOS, Android and Web from a single source!"
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "If you're a complete beginner, we'll teach you all the coding and game design principles you'll need. If you're an artist, we'll teach you to bring your assets to life. If you're a coder, we'll teach you game design principles."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("p", [_vm._v("What this course DOESN'T cover...")]),
+                _vm._v(" "),
+                _c("p", [
+                  _vm._v(
+                    "Whereas this course is already huge, we can't possibly cover everything in that time. Here are some things we will not be covering..."
+                  )
+                ]),
+                _vm._v(" "),
+                _c("h2", [_vm._v("Who is the target audience?")]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "p-0 m-0 black-doted" }, [
+                  _c("li", [
+                    _vm._v("Competent and confident with using a computer.")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Artists who want to bring their assets alive in a game engine."
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v("Developers who want to re-skill across to coding.")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v("Complete beginners who are willing to work hard.")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", [
+                    _vm._v(
+                      "Existing programmers who want to re-skill to game development."
+                    )
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "single-course-accordion-cont mt-3" }, [
+                _c(
+                  "header",
+                  {
+                    staticClass:
+                      "entry-header flex flex-wrap justify-content-between align-items-center"
+                  },
+                  [
+                    _c("h2", [_vm._v("Curriculum For This Course")]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "number-of-lectures" }, [
+                      _vm._v("340 Lectures")
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "total-lectures-time" }, [
+                      _vm._v("42:57:42")
+                    ])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "entry-contents" }, [
+                  _c("div", { staticClass: "accordion-wrap type-accordion" }, [
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center active"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Introduction to this Course")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("7 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("21:29")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Introduction to Front End Development")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("4 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("26:45")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap align-items-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Introduction to HTML\t")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("12 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("58:36")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Intermediate HTML")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("12 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("01:12")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Introduction to this Course")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("7 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("21:29")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Introduction to CSS")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("12 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("01:39")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Intermediate CSS")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("16 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("01:25")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Bootstrap")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("16 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("01:59")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Introduction to JavaScript")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("12 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("56:21")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("DOM Manipulation")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("13 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("01:15")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Color Game Project")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("10 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("01:47")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Intro to jQuery")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("9 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("01:09")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Advanced jQuery")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("5 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("34:34")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "h3",
+                      {
+                        staticClass:
+                          "entry-title flex flex-wrap justify-content-between align-items-lg-center"
+                      },
+                      [
+                        _c("span", { staticClass: "arrow-r" }, [
+                          _c("i", { staticClass: "fa fa-plus" }),
+                          _c("i", { staticClass: "fa fa-minus" })
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "lecture-group-title" }, [
+                          _vm._v("Data Associations")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "number-of-lectures" }, [
+                          _vm._v("4 Lectures")
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "total-lectures-time" }, [
+                          _vm._v("38:07")
+                        ])
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "entry-content" }, [
+                      _c("ul", { staticClass: "p-0 m-0" }, [
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("A Note On Asking For Help")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Introducing Our TA")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:43")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Our Class Chat Room")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("07:48")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Why This Course?")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("01:39")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Download")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("2 pages")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Syllabus Walkthrough")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("09:40")]
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "li",
+                          {
+                            staticClass:
+                              "flex flex-column flex-lg-row align-items-lg-center"
+                          },
+                          [
+                            _c("span", { staticClass: "lecture-title" }, [
+                              _vm._v("Lecture Slides")
+                            ]),
+                            _c("span", { staticClass: "lectures-preview" }, [
+                              _vm._v("Preview")
+                            ]),
+                            _c(
+                              "span",
+                              {
+                                staticClass:
+                                  "lectures-time text-left text-lg-right"
+                              },
+                              [_vm._v("00:03")]
+                            )
+                          ]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "instructors-info" }, [
+                _c("header", { staticClass: "entry-heading" }, [
+                  _c("h2", { staticClass: "entry-title" }, [
+                    _vm._v("Instructors")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "instructor-short-info flex flex-wrap" },
+                  [
+                    _c("div", { staticClass: "instructors-stats" }, [
+                      _c("img", {
+                        attrs: { src: "/images/instructor.jpg", alt: "" }
+                      }),
+                      _vm._v(" "),
+                      _c("ul", { staticClass: "p-0 m-0 mt-3" }, [
+                        _c("li", [
+                          _c("i", { staticClass: "fa fa-star" }),
+                          _vm._v(" 4.7 .7 Average rating")
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c("i", { staticClass: "fa fa-comment" }),
+                          _vm._v(" 25,182 Reviews")
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c("i", { staticClass: "fa fa-user" }),
+                          _vm._v(" 11,085 Students")
+                        ]),
+                        _vm._v(" "),
+                        _c("li", [
+                          _c("i", { staticClass: "fa fa-play-circle" }),
+                          _vm._v(" 2 Courses")
+                        ])
+                      ])
+                    ]),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "instructors-details" }, [
+                      _c(
+                        "div",
+                        { staticClass: "ratings flex align-items-center" },
+                        [
+                          _c("i", { staticClass: "fa fa-star" }),
+                          _vm._v(" "),
+                          _c("i", { staticClass: "fa fa-star" }),
+                          _vm._v(" "),
+                          _c("i", { staticClass: "fa fa-star" }),
+                          _vm._v(" "),
+                          _c("i", { staticClass: "fa fa-star" }),
+                          _vm._v(" "),
+                          _c("i", { staticClass: "fa fa-star-o" }),
+                          _vm._v(" "),
+                          _c("span", [_vm._v(" (4 votes)")])
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c("h2", { staticClass: "entry-title mt-3" }, [
+                        _vm._v(
+                          "The Unreal Engine Developer Course Learn C++ & Make Games"
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course-teacher mt-3" }, [
+                        _vm._v(
+                          "\n                                    Teacher: "
+                        ),
+                        _c("a", { attrs: { href: "#" } }, [
+                          _vm._v("Ms. Lara Croft")
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "entry-content mt-3" }, [
+                        _c("p", [
+                          _vm._v(
+                            "Hi! I'm Colt. I'm a developer with a serious love for teaching. I've spent the last few years teaching people to program at 2 different immersive bootcamps where I've helped hundreds of people become web developers and change their lives. My graduates work at companies like Google, Salesforce, and Square."
+                          )
+                        ])
+                      ])
+                    ])
+                  ]
+                )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "related-courses" }, [
+                _c(
+                  "header",
+                  {
+                    staticClass:
+                      "entry-heading flex flex-wrap justify-content-between align-items-center"
+                  },
+                  [
+                    _c("h2", { staticClass: "entry-title" }, [
+                      _vm._v("Related Courses")
+                    ]),
+                    _vm._v(" "),
+                    _c("a", { attrs: { href: "#" } }, [_vm._v("View all")])
+                  ]
+                ),
+                _vm._v(" "),
+                _c("div", { staticClass: "row mx-m-25" }, [
+                  _c("div", { staticClass: "col-12 col-lg-6 px-25" }, [
+                    _c("div", { staticClass: "course-content" }, [
+                      _c("figure", { staticClass: "course-thumbnail" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _c("img", {
+                            attrs: { src: "/images/3.jpg", alt: "" }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course-content-wrap" }, [
+                        _c("header", { staticClass: "entry-header" }, [
+                          _c("h2", { staticClass: "entry-title" }, [
+                            _c("a", { attrs: { href: "#" } }, [
+                              _vm._v("The Complete Digital Marketing Course")
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "entry-meta flex flex-wrap align-items-center"
+                            },
+                            [
+                              _c("div", { staticClass: "course-author" }, [
+                                _c("a", { attrs: { href: "#" } }, [
+                                  _vm._v("Ms. Lucius")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "course-date" }, [
+                                _vm._v("Dec 18, 2018")
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "footer",
+                          {
+                            staticClass:
+                              "entry-footer flex flex-wrap justify-content-between align-items-center"
+                          },
+                          [
+                            _c("div", { staticClass: "course-cost" }, [
+                              _vm._v(
+                                "\n                                                $55 "
+                              ),
+                              _c("span", { staticClass: "price-drop" }, [
+                                _vm._v("$78")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "course-ratings flex justify-content-end align-items-center"
+                              },
+                              [
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "fa fa-star-o" }),
+                                _vm._v(" "),
+                                _c(
+                                  "span",
+                                  { staticClass: "course-ratings-count" },
+                                  [_vm._v("(4 votes)")]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-12 col-lg-6 px-25" }, [
+                    _c("div", { staticClass: "course-content" }, [
+                      _c("figure", { staticClass: "course-thumbnail" }, [
+                        _c("a", { attrs: { href: "#" } }, [
+                          _c("img", {
+                            attrs: { src: "/images/2.jpg", alt: "" }
+                          })
+                        ])
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "course-content-wrap" }, [
+                        _c("header", { staticClass: "entry-header" }, [
+                          _c("h2", { staticClass: "entry-title" }, [
+                            _c("a", { attrs: { href: "#" } }, [
+                              _vm._v(
+                                "The Ultimate Drawing Course Beginner to Advanced"
+                              )
+                            ])
+                          ]),
+                          _vm._v(" "),
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "entry-meta flex flex-wrap align-items-center"
+                            },
+                            [
+                              _c("div", { staticClass: "course-author" }, [
+                                _c("a", { attrs: { href: "#" } }, [
+                                  _vm._v("Michelle Golden")
+                                ])
+                              ]),
+                              _vm._v(" "),
+                              _c("div", { staticClass: "course-date" }, [
+                                _vm._v("Mar 14, 2018")
+                              ])
+                            ]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c(
+                          "footer",
+                          {
+                            staticClass:
+                              "entry-footer flex flex-wrap justify-content-between align-items-center"
+                          },
+                          [
+                            _c("div", { staticClass: "course-cost" }, [
+                              _c("span", { staticClass: "free-cost" }, [
+                                _vm._v("Free")
+                              ])
+                            ]),
+                            _vm._v(" "),
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "course-ratings flex justify-content-end align-items-center"
+                              },
+                              [
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", {
+                                  staticClass: "fa fa-star checked"
+                                }),
+                                _vm._v(" "),
+                                _c("span", { staticClass: "fa fa-star-o" }),
+                                _vm._v(" "),
+                                _c(
+                                  "span",
+                                  { staticClass: "course-ratings-count" },
+                                  [_vm._v("(4 votes)")]
+                                )
+                              ]
+                            )
+                          ]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ])
+            ])
+          ])
+        ])
+      ])
+    ])
+  }
+]
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/admin/products/AddProductComponent.vue?vue&type=template&id=b04e42e2&":
 /*!*************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/admin/products/AddProductComponent.vue?vue&type=template&id=b04e42e2& ***!
@@ -39393,7 +43356,7 @@ var render = function() {
                             staticClass: "panelFormLabel",
                             attrs: { for: "price" }
                           },
-                          [_vm._v("Цена :")]
+                          [_vm._v("Цена : (25 кг (мешок) )")]
                         ),
                         _vm._v(" "),
                         _c("input", {
@@ -39410,6 +43373,7 @@ var render = function() {
                             type: "number",
                             min: "0",
                             max: "9999999",
+                            step: "any",
                             id: "price",
                             name: "price",
                             required: ""
@@ -39423,6 +43387,94 @@ var render = function() {
                               _vm.$set(
                                 _vm.toBeEditedProduct,
                                 "price",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-md-6" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "panelFormLabel",
+                            attrs: { for: "price_500" }
+                          },
+                          [_vm._v("Цена : ( 500 кг ) ")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.toBeEditedProduct.price_500,
+                              expression: "toBeEditedProduct.price_500"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "number",
+                            step: "any",
+                            min: "0",
+                            max: "999999",
+                            id: "price_500",
+                            name: "price_500"
+                          },
+                          domProps: { value: _vm.toBeEditedProduct.price_500 },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.toBeEditedProduct,
+                                "price_500",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-md-6" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "panelFormLabel",
+                            attrs: { for: "price_1000" }
+                          },
+                          [_vm._v("Цена : ( 1000 кг ) ")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.toBeEditedProduct.price_1000,
+                              expression: "toBeEditedProduct.price_1000"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "number",
+                            min: "0",
+                            max: "9999999",
+                            step: "any",
+                            id: "price_1000",
+                            name: "price_1000"
+                          },
+                          domProps: { value: _vm.toBeEditedProduct.price_1000 },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.toBeEditedProduct,
+                                "price_1000",
                                 $event.target.value
                               )
                             }
@@ -39452,11 +43504,11 @@ var render = function() {
                           staticClass: "form-control",
                           attrs: {
                             type: "number",
+                            step: "any",
                             min: "0",
                             max: "9999999",
                             id: "old_price",
-                            name: "old_price",
-                            required: ""
+                            name: "old_price"
                           },
                           domProps: { value: _vm.toBeEditedProduct.old_price },
                           on: {
@@ -39525,7 +43577,7 @@ var render = function() {
                             staticClass: "panelFormLabel",
                             attrs: { for: "package" }
                           },
-                          [_vm._v("Package:")]
+                          [_vm._v("Упаковка:")]
                         ),
                         _vm._v(" "),
                         _c("input", {
@@ -39567,7 +43619,7 @@ var render = function() {
                             staticClass: "panelFormLabel",
                             attrs: { for: "manufacturer" }
                           },
-                          [_vm._v("manufacturer:")]
+                          [_vm._v("Производитель:")]
                         ),
                         _vm._v(" "),
                         _c("input", {
@@ -39706,6 +43758,35 @@ var render = function() {
                           }),
                           0
                         )
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-md-12" }, [
+                        _c("label", { attrs: { for: "file" } }, [
+                          _vm._v(
+                            "\n                                   Загрузить картинку продукта\n                                "
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "border-dark p-5" }, [
+                          _c("img", {
+                            staticStyle: { width: "250px", height: "250px" },
+                            attrs: {
+                              src: _vm.getImageSrc(_vm.toBeEditedProduct.photo),
+                              alt: "product photo"
+                            }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("input", {
+                          ref: "file",
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "file",
+                            id: "file",
+                            name: "productImage"
+                          },
+                          on: { change: _vm.handleFileUpload }
+                        })
                       ])
                     ]),
                     _vm._v(" "),
@@ -39807,7 +43888,71 @@ var render = function() {
     "div",
     [
       _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-12" }, [
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c("label", { attrs: { for: "selectCategory" } }),
+            _vm._v(" "),
+            _c(
+              "select",
+              {
+                directives: [
+                  {
+                    name: "model",
+                    rawName: "v-model",
+                    value: _vm.currentCategory,
+                    expression: "currentCategory"
+                  }
+                ],
+                staticClass: "form-control",
+                attrs: { id: "selectCategory" },
+                on: {
+                  change: [
+                    function($event) {
+                      var $$selectedVal = Array.prototype.filter
+                        .call($event.target.options, function(o) {
+                          return o.selected
+                        })
+                        .map(function(o) {
+                          var val = "_value" in o ? o._value : o.value
+                          return val
+                        })
+                      _vm.currentCategory = $event.target.multiple
+                        ? $$selectedVal
+                        : $$selectedVal[0]
+                    },
+                    _vm.getProductsByCategoryName
+                  ]
+                }
+              },
+              [
+                _c("option", { attrs: { value: "none", selected: "" } }, [
+                  _vm._v("Выберите категорию")
+                ]),
+                _vm._v(" "),
+                _vm._l(_vm.categories, function(category, index) {
+                  return _c(
+                    "option",
+                    { key: "b" + index, domProps: { value: category.ID_NAME } },
+                    [
+                      _vm._v(
+                        "\n                        " +
+                          _vm._s(category.title) +
+                          "\n                    "
+                      )
+                    ]
+                  )
+                }),
+                _vm._v(" "),
+                _c("option", { attrs: { value: "all" } }, [
+                  _vm._v("Все продукты")
+                ])
+              ],
+              2
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6" }, [
           _c(
             "span",
             {
@@ -39822,7 +43967,22 @@ var render = function() {
       _vm._v(" "),
       _c("hr"),
       _vm._v(" "),
-      _c("h1", [_vm._v("Products list")]),
+      _c("h2", [_vm._v("Лист продуктов")]),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.products.length < 1,
+              expression: "products.length < 1"
+            }
+          ]
+        },
+        [_vm._v("\n        Выберите категорию пожалуйста\n    ")]
+      ),
       _vm._v(" "),
       _c(
         "transition-group",
@@ -39910,29 +44070,57 @@ var render = function() {
               _vm._l(product, function(value, key) {
                 return _c("div", { staticClass: "row" }, [
                   _c("div", { staticClass: "col-md-4" }, [
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(key) +
-                        " :\n                "
-                    )
+                    key === "id"
+                      ? _c("div", [_vm._v("ID")])
+                      : key === "ID_NAME"
+                      ? _c("div", [_vm._v("Название продукта в УРЛ")])
+                      : key === "category_id"
+                      ? _c("div", [_vm._v("Kатегория")])
+                      : key === "name"
+                      ? _c("div", [_vm._v("Название")])
+                      : key === "price"
+                      ? _c("div", [_vm._v("Цена за 25 кг")])
+                      : key === "price_500"
+                      ? _c("div", [_vm._v("Цена за 500 кг")])
+                      : key === "price_1000"
+                      ? _c("div", [_vm._v("Цена за 1000 кг")])
+                      : key === "old_price"
+                      ? _c("div", [_vm._v("Старая Цена за 25 кг (Скидка)")])
+                      : key === "international_name"
+                      ? _c("div", [_vm._v("Международное название")])
+                      : key === "photo"
+                      ? _c("div", [_vm._v("Картинка")])
+                      : key === "manufacturer"
+                      ? _c("div", [_vm._v("Производитель")])
+                      : key === "package"
+                      ? _c("div", [_vm._v("Упаковка")])
+                      : key === "description"
+                      ? _c("div", [_vm._v("Описание")])
+                      : key === "created_at"
+                      ? _c("div", [_vm._v("Дата создания ")])
+                      : key === "updated_at"
+                      ? _c("div", [_vm._v("Дата обновления")])
+                      : _c("div", [_vm._v(_vm._s(key))])
                   ]),
                   _vm._v(" "),
                   _c("div", { staticClass: "col-md-6" }, [
                     key === "photo"
-                      ? _c("div", [
+                      ? _c("div", { staticClass: "p-5" }, [
                           _c("img", {
+                            staticStyle: { width: "300px", height: "300px" },
                             attrs: {
                               src: _vm.getImageSrc(value),
                               alt: "product photo"
                             }
                           })
                         ])
-                      : _vm._e(),
-                    _vm._v(
-                      "\n                    " +
-                        _vm._s(value) +
-                        "\n                "
-                    )
+                      : _c("div", [
+                          _vm._v(
+                            "\n                        " +
+                              _vm._s(value) +
+                              "\n                    "
+                          )
+                        ])
                   ])
                 ])
               }),
@@ -39976,7 +44164,7 @@ var staticRenderFns = [
         _c("img", {
           attrs: { src: "/images/icons/add_blue.png", alt: "edit profile" }
         }),
-        _vm._v("\n                        Add product\n                    ")
+        _vm._v("\n                    Add product\n                ")
       ]
     )
   }
@@ -54840,9 +59028,10 @@ Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]);
 //
 
 Vue.component('catalogue-component', __webpack_require__(/*! ./components/CatalogueComponent.vue */ "./resources/js/components/CatalogueComponent.vue")["default"]);
+Vue.component('single-product', __webpack_require__(/*! ./components/SingleProduct.vue */ "./resources/js/components/SingleProduct.vue")["default"]);
 Vue.component('products-list-component', __webpack_require__(/*! ./components/admin/products/ProductsListComponent */ "./resources/js/components/admin/products/ProductsListComponent.vue")["default"]);
-Vue.component('product-component', __webpack_require__(/*! ./components/admin/products/ProductComponent */ "./resources/js/components/admin/products/ProductComponent.vue")["default"]); // Vue.component('add-product-component', require('./components/admin/products/AddProductComponent').default);
-
+Vue.component('product-component', __webpack_require__(/*! ./components/admin/products/ProductComponent */ "./resources/js/components/admin/products/ProductComponent.vue")["default"]);
+Vue.component('add-product-component', __webpack_require__(/*! ./components/admin/products/AddProductComponent */ "./resources/js/components/admin/products/AddProductComponent.vue")["default"]);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -54857,13 +59046,17 @@ if ($('#products').length !== 0) {
 
 ;
 
+if ($('#single_product').length !== 0) {
+  var single_product = new Vue({
+    el: '#single_product'
+  });
+}
+
+;
+
 if ($('#catalogue').length !== 0) {
-  var Foo = {
-    template: '<div>foo</div>'
-  };
   var routes = [{
-    path: '/:category_name',
-    component: Foo
+    path: '/:category_name'
   }];
   var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
     routes: routes // short for `routes: routes`
@@ -55017,6 +59210,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CatalogueComponent_vue_vue_type_template_id_aca65382___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CatalogueComponent_vue_vue_type_template_id_aca65382___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/SingleProduct.vue":
+/*!***************************************************!*\
+  !*** ./resources/js/components/SingleProduct.vue ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SingleProduct_vue_vue_type_template_id_3da200a8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SingleProduct.vue?vue&type=template&id=3da200a8& */ "./resources/js/components/SingleProduct.vue?vue&type=template&id=3da200a8&");
+/* harmony import */ var _SingleProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SingleProduct.vue?vue&type=script&lang=js& */ "./resources/js/components/SingleProduct.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _SingleProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SingleProduct_vue_vue_type_template_id_3da200a8___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _SingleProduct_vue_vue_type_template_id_3da200a8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/SingleProduct.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/SingleProduct.vue?vue&type=script&lang=js&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/SingleProduct.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SingleProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./SingleProduct.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SingleProduct.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SingleProduct_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/SingleProduct.vue?vue&type=template&id=3da200a8&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/SingleProduct.vue?vue&type=template&id=3da200a8& ***!
+  \**********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SingleProduct_vue_vue_type_template_id_3da200a8___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./SingleProduct.vue?vue&type=template&id=3da200a8& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SingleProduct.vue?vue&type=template&id=3da200a8&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SingleProduct_vue_vue_type_template_id_3da200a8___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SingleProduct_vue_vue_type_template_id_3da200a8___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -9,6 +9,7 @@
 namespace App\Http\Controllers;
 
 
+use App\Category;
 use App\classes\Notification;
 use App\classes\Upload;
 use App\Exports\ProductsExport;
@@ -27,6 +28,15 @@ class ProductsController extends Controller
         return Product::all();
     }
 
+
+    public function getProductCategoryByID($product_id){
+        $product = Product::find($product_id); ;
+        if($product){
+            return Category::find($product->category_id);
+        }
+
+        return 'No category match!';
+    }
 
     public function addProduct(Request $request){
 

@@ -15,6 +15,7 @@ Route::get('/','HomeController@showWelcomePage')->name('welcome');
 Route::get('/contacts','HomeController@showContactsPage')->name('contacts');
 
 Route::get('/catalogue','CatalogueController@showCataloguePage')->name('catalogue');
+Route::get('/catalogue/get-product-category/{product_id}','ProductsController@getProductCategoryByID')->name('get.product.category');
 Route::get('/catalogue/get/categories','CatalogueController@getCategories')->name('get.categories');
 Route::get('/catalogue/get/{category_name}/products','CatalogueController@getCategoryProducts')->name('get.category.products');
 Route::post('/catalogue/search','CatalogueController@search')->name('search.product');
@@ -44,3 +45,6 @@ Route::get('/register',function (){
 Route::get('/ukh-admin', 'AdminController@admin')->name('admin.home');
 Route::get('/ukh-admin/products', 'AdminController@viewProducts')->name('admin.products');
 Route::get('/ukh-admin/{category_id_name}/products', 'AdminController@viewCategoryProducts')->name('admin.category.products');
+
+// public route for products :
+Route::get('/catalogue/{category_name}/{product_id}','CatalogueController@showProductSinglePage')->name('catalogue.single.product');

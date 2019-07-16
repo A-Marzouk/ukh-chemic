@@ -17,14 +17,15 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/elegant-fonts.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="icon" href="images/favicon-default.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/elegant-fonts.css">
+    <link rel="stylesheet" href="/css/themify-icons.css">
+    <link rel="stylesheet" href="/css/swiper.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    {{--<link rel="stylesheet" href="/css/app.css">--}}
+    <link rel="stylesheet" href="/ukhApp/public/css/app.css">
+    <link rel="icon" href="/images/favicon-default.png">
 </head>
 <body>
 
@@ -68,7 +69,7 @@
             <div class="row">
                 <div class="col-9 col-lg-3">
                     <div class="site-branding">
-                        <img src="images/favicon-default.png" alt="logo" style="height: 90px ; margin-top: 5px;;">
+                        <img src="/images/favicon-default.png" alt="logo" style="height: 90px ; margin-top: 5px;;">
                     </div><!-- .site-branding -->
                 </div><!-- .col -->
 

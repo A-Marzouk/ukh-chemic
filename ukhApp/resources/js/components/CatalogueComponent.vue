@@ -108,12 +108,13 @@
                         </div><!-- .sidebar -->
                     </div><!-- .col -->
                     <div class="col-12 col-lg-9">
+
                         <div class="featured-courses courses-wrap">
                             <div class="row mx-m-25">
                                 <div v-show="searchResults.length < 1" v-for="(product,index) in paginatedData" v-bind:key="index" class="col-12 col-md-4 px-25">
                                     <div class="course-content">
                                         <figure class="course-thumbnail">
-                                            <a href="#"><img  :src="product.photo" alt="product image"></a>
+                                            <a :href="'/catalogue/' + currentCategory.ID_NAME +'/' + product.id "><img  :src="product.photo" alt="product image"></a>
                                         </figure><!-- .course-thumbnail -->
 
                                         <div class="course-content-wrap">

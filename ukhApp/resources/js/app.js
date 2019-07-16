@@ -26,10 +26,11 @@ Vue.use(VueRouter);
 //
 
 Vue.component('catalogue-component', require('./components/CatalogueComponent.vue').default);
+Vue.component('single-product', require('./components/SingleProduct.vue').default);
 
 Vue.component('products-list-component', require('./components/admin/products/ProductsListComponent').default);
 Vue.component('product-component', require('./components/admin/products/ProductComponent').default);
-// Vue.component('add-product-component', require('./components/admin/products/AddProductComponent').default);
+Vue.component('add-product-component', require('./components/admin/products/AddProductComponent').default);
 
 
 /**
@@ -37,17 +38,23 @@ Vue.component('product-component', require('./components/admin/products/ProductC
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+
 if($('#products').length !== 0){
     let products = new Vue({
         el :'#products'
     });
 };
 
+if($('#single_product').length !== 0){
+    let single_product = new Vue({
+        el :'#single_product'
+    });
+};
+
 if($('#catalogue').length !== 0){
-    const Foo = { template: '<div>foo</div>' };
 
     const routes = [
-        { path: '/:category_name', component: Foo },
+        { path: '/:category_name'},
     ];
 
     const router = new VueRouter({
