@@ -12,7 +12,6 @@ class Product extends Model
         'price',
         'price_500',
         'price_1000',
-        'old_price',
         'international_name',
         'manufacturer',
         'package',

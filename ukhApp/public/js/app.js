@@ -2408,10 +2408,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['toBeEditedProduct', 'categories'],
   data: function data() {
@@ -2584,7 +2580,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2604,7 +2599,6 @@ __webpack_require__.r(__webpack_exports__);
         'price': '',
         'price_500': '',
         'price_1000': '',
-        'old_price': '',
         'international_name': '',
         'package': '',
         'description': '',
@@ -2677,7 +2671,6 @@ __webpack_require__.r(__webpack_exports__);
         'category_id': '',
         'name': '',
         'price': '',
-        'old_price': '',
         'international_name': '',
         'package': '',
         'description': ''
@@ -40326,50 +40319,6 @@ var render = function() {
                         })
                       ]),
                       _vm._v(" "),
-                      _c("div", { staticClass: "form-group col-md-6" }, [
-                        _c(
-                          "label",
-                          {
-                            staticClass: "panelFormLabel",
-                            attrs: { for: "old_price" }
-                          },
-                          [_vm._v("Старая цена :")]
-                        ),
-                        _vm._v(" "),
-                        _c("input", {
-                          directives: [
-                            {
-                              name: "model",
-                              rawName: "v-model",
-                              value: _vm.toBeEditedProduct.old_price,
-                              expression: "toBeEditedProduct.old_price"
-                            }
-                          ],
-                          staticClass: "form-control",
-                          attrs: {
-                            type: "number",
-                            step: "any",
-                            min: "0",
-                            max: "9999999",
-                            id: "old_price",
-                            name: "old_price"
-                          },
-                          domProps: { value: _vm.toBeEditedProduct.old_price },
-                          on: {
-                            input: function($event) {
-                              if ($event.target.composing) {
-                                return
-                              }
-                              _vm.$set(
-                                _vm.toBeEditedProduct,
-                                "old_price",
-                                $event.target.value
-                              )
-                            }
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
                       _c("div", { staticClass: "form-group col-md-12" }, [
                         _c(
                           "label",
@@ -40928,8 +40877,6 @@ var render = function() {
                       ? _c("div", [_vm._v("Цена за 500 кг")])
                       : key === "price_1000"
                       ? _c("div", [_vm._v("Цена за 1000 кг")])
-                      : key === "old_price"
-                      ? _c("div", [_vm._v("Старая Цена за 25 кг (Скидка)")])
                       : key === "international_name"
                       ? _c("div", [_vm._v("Международное название")])
                       : key === "photo"

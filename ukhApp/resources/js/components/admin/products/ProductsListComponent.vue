@@ -59,7 +59,6 @@
                         <div v-else-if="key === 'price'">Цена за 25 кг</div>
                         <div v-else-if="key === 'price_500'">Цена за 500 кг</div>
                         <div v-else-if="key === 'price_1000'">Цена за 1000 кг</div>
-                        <div v-else-if=" key === 'old_price' ">Старая Цена за 25 кг (Скидка)</div>
                         <div v-else-if="key === 'international_name'">Международное название</div>
                         <div v-else-if="key === 'photo'">Картинка</div>
                         <div v-else-if="key === 'manufacturer'">Производитель</div>
@@ -105,7 +104,6 @@
                     'price':'',
                     'price_500':'',
                     'price_1000':'',
-                    'old_price' :'',
                     'international_name' :'',
                     'package' :'',
                     'description':'',
@@ -183,7 +181,6 @@
                     'category_id':'',
                     'name' :'',
                     'price':'',
-                    'old_price' :'',
                     'international_name' :'',
                     'package' :'',
                     'description':''
