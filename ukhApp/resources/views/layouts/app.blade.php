@@ -88,6 +88,13 @@
             </span>
         </div>
 
+        {{-- Changes fail --}}
+        <div class="changesSavedText d-none" id="fail">
+            <span class="alert alert-danger">
+                Ошибка
+            </span>
+        </div>
+
     </div>
 </body>
 </html>

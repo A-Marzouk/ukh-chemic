@@ -2434,15 +2434,31 @@ __webpack_require__.r(__webpack_exports__);
         } // save the product id :
 
 
-        _this.toBeEditedProduct.id = response.data.id;
-        _this.toBeEditedProduct.photo = response.data.photo;
-      }); // changes saved :
+        _this.toBeEditedProduct.id = response.data.product.id;
+        _this.toBeEditedProduct.photo = response.data.product.photo;
 
-      $('#changesSaved').removeClass('d-none');
-      setTimeout(function () {
-        $('#changesSaved').addClass('d-none');
-      }, 3500);
-      $('#closeProductModal').click();
+        if (response.data.status === 'success') {
+          // changes saved :
+          $('#changesSaved').removeClass('d-none');
+          setTimeout(function () {
+            $('#changesSaved').addClass('d-none');
+          }, 3500);
+        } else {
+          $('#fail').removeClass('d-none');
+          setTimeout(function () {
+            $('#fail').addClass('d-none');
+          }, 3500);
+        }
+
+        $('#closeProductModal').click();
+      })["catch"](function (error) {
+        console.log(error);
+        $('#fail').removeClass('d-none');
+        setTimeout(function () {
+          $('#fail').addClass('d-none');
+        }, 3500);
+        $('#closeProductModal').click();
+      });
     },
     handleFileUpload: function handleFileUpload() {
       this.productImage = this.$refs.file.files[0];
@@ -40257,7 +40273,8 @@ var render = function() {
                             min: "0",
                             max: "999999",
                             id: "price_500",
-                            name: "price_500"
+                            name: "price_500",
+                            required: ""
                           },
                           domProps: { value: _vm.toBeEditedProduct.price_500 },
                           on: {
@@ -40301,7 +40318,8 @@ var render = function() {
                             max: "9999999",
                             step: "any",
                             id: "price_1000",
-                            name: "price_1000"
+                            name: "price_1000",
+                            required: ""
                           },
                           domProps: { value: _vm.toBeEditedProduct.price_1000 },
                           on: {

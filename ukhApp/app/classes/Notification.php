@@ -12,20 +12,24 @@ namespace App\classes;
 class Notification
 {
 
-    public static function productHasBeenAdded(){
+    public static function productHasBeenAdded($product){
         $telegram = new Telegram('-393205618');
 
         $msg      = "New Product has been added.\n" ;
+        $msg      .= "Name : ".$product->name."\n" ;
+        $msg      .= "ID : " .$product->id."\n" ;
         $msg      .= "at .\n" ;
         $msg      .= date(now()) ;
 
         $telegram->sendMessage($msg);
     }
 
-    public static function productHasBeenEdited(){
+    public static function productHasBeenEdited($product){
         $telegram = new Telegram('-393205618');
 
         $msg      = "Product has been edited.\n" ;
+        $msg      .= "Name : ".$product->name."\n" ;
+        $msg      .= "ID : " .$product->id."\n" ;
         $msg      .= "at .\n" ;
         $msg      .= date(now()) ;
 

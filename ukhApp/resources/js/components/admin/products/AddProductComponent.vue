@@ -25,11 +25,11 @@
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="price_500" class="panelFormLabel">Цена : ( 500 кг ) </label>
-                                    <input type="number" step="any" min="0" max="999999" class="form-control" id="price_500" name="price_500" v-model="toBeEditedProduct.price_500" >
+                                    <input type="number" step="any" min="0" max="999999" class="form-control" id="price_500" name="price_500" v-model="toBeEditedProduct.price_500" required>
                                 </div>
                                 <div class="form-group col-md-6">
                                     <label for="price_1000" class="panelFormLabel">Цена : ( 1000 кг ) </label>
-                                    <input type="number" min="0" max="9999999" step="any" class="form-control" id="price_1000" name="price_1000" v-model="toBeEditedProduct.price_1000" >
+                                    <input type="number" min="0" max="9999999" step="any" class="form-control" id="price_1000" name="price_1000" v-model="toBeEditedProduct.price_1000" required>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="international_name" class="panelFormLabel">Международное название:</label>
@@ -109,16 +109,33 @@
                         this.$emit('productAdded',this.toBeEditedProduct);
                     }
                     // save the product id :
-                    this.toBeEditedProduct.id = response.data.id;
-                    this.toBeEditedProduct.photo = response.data.photo;
-                });
-                // changes saved :
-                $('#changesSaved').removeClass('d-none');
-                setTimeout(function() {
-                    $('#changesSaved').addClass('d-none');
-                }, 3500);
+                    this.toBeEditedProduct.id = response.data.product.id;
+                    this.toBeEditedProduct.photo = response.data.product.photo;
 
-                $('#closeProductModal').click();
+                    if(response.data.status === 'success'){
+                        // changes saved :
+                        $('#changesSaved').removeClass('d-none');
+                        setTimeout(function() {
+                            $('#changesSaved').addClass('d-none');
+                        }, 3500);
+                    }else{
+                        $('#fail').removeClass('d-none');
+                        setTimeout(function() {
+                            $('#fail').addClass('d-none');
+                        }, 3500);
+                    }
+
+                    $('#closeProductModal').click();
+
+                }).catch( (error) => {
+                    console.log(error);
+                    $('#fail').removeClass('d-none');
+                    setTimeout(function() {
+                        $('#fail').addClass('d-none');
+                    }, 3500);
+                    $('#closeProductModal').click();
+                });
+
 
             },
             handleFileUpload() {

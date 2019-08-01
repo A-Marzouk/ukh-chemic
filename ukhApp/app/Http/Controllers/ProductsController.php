@@ -44,11 +44,13 @@ class ProductsController extends Controller
             'name' => 'max:190|required',
             'ID_NAME ' => 'max:190',
             'price' => 'max:10',
+            'price_500' => 'max:10',
+            'price_1000' => 'max:10',
             'international_name' => 'max:190',
             'photo' => 'max:190',
             'manufacturer' => 'max:190',
             'package' => 'max:190',
-            'description' => 'max:1500',
+            'description' => 'max:3000',
         ]);
 
         $newProduct = false ;
@@ -67,8 +69,8 @@ class ProductsController extends Controller
         $product->name = $request->name;
         $product->ID_NAME = $request->ID_NAME;
         $product->price = $request->price;
-        $product->price_500 = $request->price_500 || '';
-        $product->price_1000 = $request->price_1000 || '';
+        $product->price_500 =  $request->price_500 ;
+        $product->price_1000 = $request->price_1000 ;
         $product->international_name = $request->international_name;
         $product->manufacturer = $request->manufacturer;
         $product->package = $request->package;
@@ -80,16 +82,23 @@ class ProductsController extends Controller
         }
 
 
-        $product->save();
+        $status = 'fail' ;
 
-        if($newProduct){
-            Notification::productHasBeenAdded();
-        }else{
-            Notification::productHasBeenEdited();
+        if($product->save()){
+           $status = 'success';
         }
 
-        return $product;
+        if($newProduct){
+            Notification::productHasBeenAdded($product);
+        }else{
+            Notification::productHasBeenEdited($product);
+        }
 
+        return [
+            'product' => $product,
+            'status' => $status,
+
+        ];
     }
 
     public function deleteProduct(Request $request){
