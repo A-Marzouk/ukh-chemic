@@ -75,7 +75,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="featured-event-content">
                         <figure class="event-thumbnail position-relative m-0">
-                            <a href="#"><img src="images/green-chemicals-min.png" alt=""></a>
+                            <a href="#"><img src="images/news1.png" alt=""></a>
 
                             <div class="posted-date position-absolute">
                                 <div class="day">23</div>
@@ -85,13 +85,14 @@
 
                         <header class="entry-header flex flex-wrap align-items-center">
                             <h2 class="entry-title"><a href="#">
-                                    Лорем ипсум долор сит амет, яуандо ерудити яуи еу, ехплицари витуператорибус ут.
+                                    В Украине за первое полугодие 2019 года производство ряда металлов испытало прирост.
                                 </a>
                             </h2>
 
-                            <div class="event-location"><i class="fa fa-map-marker"></i>40 Baуia улица 133/2 Киев, Украина</div>
+                            <div class="event-location"><i class="fa fa-link"></i>Ссылаясь на инфо-ресурс <a
+                                        href="https://metallurgprom.org/" class="event-location">"Металлургпром"</a>.</div>
 
-                            <div class="event-duration"><i class="fa fa-calendar"></i>10 - 12 Дек</div>
+                            <div class="event-duration"><i class="fa fa-calendar"></i>2019 года.</div>
                         </header><!-- .entry-header -->
                     </div><!-- .featured-event-content -->
                 </div><!-- .col -->
