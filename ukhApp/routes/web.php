@@ -19,6 +19,7 @@ Route::get('/catalogue/get-product-category/{product_id}','ProductsController@ge
 Route::get('/catalogue/get/categories','CatalogueController@getCategories')->name('get.categories');
 Route::get('/catalogue/get/{category_name}/products','CatalogueController@getCategoryProducts')->name('get.category.products');
 Route::post('/catalogue/search','CatalogueController@search')->name('search.product');
+Route::post('/catalogue','CatalogueController@mainSearch')->name('search.site');
 
 // edit products images path :
 Route::get('/catalogue/edit/products','CatalogueController@editProductsImagesPath')->name('edit.products');

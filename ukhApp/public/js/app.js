@@ -2052,6 +2052,11 @@ __webpack_require__.r(__webpack_exports__);
 
         if (!_this.currentCategory.id) {// this.setCategory(this.categories[0]);
         }
+
+        if (_this.$attrs['searchedproducts'] !== undefined && _this.$attrs['searchedproducts'].length > 0) {
+          _this.currentCategory = _this.categories[0];
+          _this.searchResults = _this.$attrs['searchedproducts'];
+        }
       });
     },
     setCategory: function setCategory(category) {
@@ -38938,8 +38943,11 @@ var render = function() {
                         {
                           name: "show",
                           rawName: "v-show",
-                          value: _vm.searchResults.length > 0,
-                          expression: "searchResults.length > 0"
+                          value:
+                            _vm.searchResults.length > 0 &&
+                            _vm.keyword.length > 0,
+                          expression:
+                            "searchResults.length > 0 && keyword.length > 0"
                         }
                       ],
                       staticClass: "noDecor"
@@ -39092,9 +39100,19 @@ var render = function() {
                                     { staticClass: "entry-header" },
                                     [
                                       _c("h2", { staticClass: "entry-title" }, [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v(_vm._s(product.name) + " ")
-                                        ])
+                                        _c(
+                                          "a",
+                                          {
+                                            attrs: {
+                                              href:
+                                                "/catalogue/" +
+                                                product.category_id +
+                                                "/" +
+                                                product.id
+                                            }
+                                          },
+                                          [_vm._v(_vm._s(product.name) + " ")]
+                                        )
                                       ]),
                                       _vm._v(" "),
                                       _c(
@@ -39213,9 +39231,19 @@ var render = function() {
                                     { staticClass: "entry-header" },
                                     [
                                       _c("h2", { staticClass: "entry-title" }, [
-                                        _c("a", { attrs: { href: "#" } }, [
-                                          _vm._v(_vm._s(product.name) + " ")
-                                        ])
+                                        _c(
+                                          "a",
+                                          {
+                                            attrs: {
+                                              href:
+                                                "/catalogue/" +
+                                                product.category_id +
+                                                "/" +
+                                                product.id
+                                            }
+                                          },
+                                          [_vm._v(_vm._s(product.name) + " ")]
+                                        )
                                       ]),
                                       _vm._v(" "),
                                       _c(

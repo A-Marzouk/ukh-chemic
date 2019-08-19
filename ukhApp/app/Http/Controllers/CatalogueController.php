@@ -34,7 +34,8 @@ class CatalogueController extends Controller
 
     public function showCataloguePage(){
         $currentRoute = $this->route ;
-        return view('catalogue',compact('currentRoute'));
+        $searchedProducts = [] ;
+        return view('catalogue',compact('currentRoute','searchedProducts'));
     }
 
     public function getCategories(){
@@ -69,6 +70,23 @@ class CatalogueController extends Controller
 
         $products = Product::where($searchArray)->get();
         return $products;
+    }
+
+    public function mainSearch(Request $request){
+        $keyword = $request->keyword ;
+        $currentRoute = $this->route ;
+        $searchedProducts = [] ;
+
+        // search in products name :
+        if(empty($keyword)){
+            return view('catalogue',compact('currentRoute','searchedProducts'));
+        }
+
+        $searchArray [] = ['name','like','%'.$keyword.'%'] ;
+        $products = Product::where($searchArray)->get();
+        $searchedProducts = $products ;
+        return view('catalogue',compact('currentRoute','searchedProducts'));
+
     }
 
 }

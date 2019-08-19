@@ -59,7 +59,7 @@
                                     <button type="submit" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
                                 </form><!-- .flex -->
                             </div><!-- .search-widget -->
-                                <span class="noDecor" v-show="searchResults.length > 0">
+                                <span class="noDecor" v-show="searchResults.length > 0 && keyword.length > 0">
                                     <a href="javascript:void(0)" class="btn btn-default" @click="searchResults=[]">Clear search</a>
                                 </span>
                             <div style="margin-top: 15px;">
@@ -119,7 +119,7 @@
 
                                         <div class="course-content-wrap">
                                             <header class="entry-header">
-                                                <h2 class="entry-title"><a href="#">{{ product.name }} </a></h2>
+                                                <h2 class="entry-title"><a :href="'/catalogue/' + product.category_id +'/' + product.id ">{{ product.name }} </a></h2>
 
                                                 <div class="entry-meta flex flex-wrap align-items-center">
                                                     <div class="course-date">Международное название: {{ product.international_name }}</div>
@@ -146,7 +146,7 @@
 
                                         <div class="course-content-wrap">
                                             <header class="entry-header">
-                                                <h2 class="entry-title"><a href="#">{{ product.name }} </a></h2>
+                                                <h2 class="entry-title"><a :href="'/catalogue/' + product.category_id +'/' + product.id ">{{ product.name }} </a></h2>
 
                                                 <div class="entry-meta flex flex-wrap align-items-center">
                                                     <div class="course-date">Международное название: {{ product.international_name }}</div>
@@ -286,6 +286,12 @@
                         if(!this.currentCategory.id){
                             // this.setCategory(this.categories[0]);
                         }
+
+                        if (this.$attrs['searchedproducts'] !== undefined && this.$attrs['searchedproducts'].length > 0){
+                            this.currentCategory =  this.categories[0] ;
+                            this.searchResults = this.$attrs['searchedproducts'] ;
+                        }
+
                     }
                 );
             },

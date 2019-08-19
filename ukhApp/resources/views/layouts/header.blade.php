@@ -45,8 +45,9 @@
 
                 <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center" style="padding: 0;">
                     <div class="header-bar-search">
-                        <form class="flex align-items-stretch">
-                            <input type="search" placeholder="Поиск">
+                        <form class="flex align-items-stretch" action="/catalogue" method="post">
+                            <input type="search" placeholder="Поиск" name="keyword">
+                            {{@csrf_field()}}
                             <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
                         </form>
                     </div><!-- .header-bar-search -->

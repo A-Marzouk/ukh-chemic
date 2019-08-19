@@ -2,6 +2,6 @@
 
 @section('content')
     <div id="catalogue">
-        <catalogue-component></catalogue-component>
+        <catalogue-component :searchedProducts = "{{json_encode($searchedProducts)}}" ></catalogue-component>
     </div>
 @endsection

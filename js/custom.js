@@ -5,7 +5,6 @@
     // back to top button :
 
     $(window).scroll(function() {
-        console.log($(window).scrollTop());
         if ($(window).scrollTop() > 1000) {
             $('#button').addClass('show');
         } else {
