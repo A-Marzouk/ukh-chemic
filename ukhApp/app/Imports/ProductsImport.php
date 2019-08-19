@@ -17,6 +17,10 @@ class ProductsImport implements ToModel, WithHeadingRow
     {
         $product = Product::find($row['id']);
 
+        if(!$product){
+            return ;
+        }
+
         $product->ID_NAME = $row['id_name'];
         $product->name = $row['name'];
         $product->description = $row['description'];

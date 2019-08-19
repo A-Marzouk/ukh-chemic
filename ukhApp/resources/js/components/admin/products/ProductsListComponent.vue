@@ -194,6 +194,9 @@
                 );
             },
             getImageSrc(src) {
+                if(src === null || src === undefined){
+                    return '' ;
+                }
                 if (src.charAt(0) !== '/') {
                     return '/' + src;
                 }

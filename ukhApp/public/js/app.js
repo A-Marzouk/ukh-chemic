@@ -2700,6 +2700,10 @@ __webpack_require__.r(__webpack_exports__);
       });
     },
     getImageSrc: function getImageSrc(src) {
+      if (src === null || src === undefined) {
+        return '';
+      }
+
       if (src.charAt(0) !== '/') {
         return '/' + src;
       }
