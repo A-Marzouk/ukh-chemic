@@ -101,7 +101,7 @@ class Upload
     }
 
     public static function productsSheet($name,$newName){
-        $target_dir = "ukhApp/uploadedExcelFiles/";
+        $target_dir = "../uploadedExcelFiles/";
         $target_file = $target_dir . $newName .'_' .basename($_FILES[$name]["name"]);
         $uploadOk = 1;
 
