@@ -10,17 +10,17 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
-    <script src="/ukhApp/public/js/app.js" defer></script>
+    <script src="/js/app.js" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="/ukhApp/public/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/ukhApp/public/css/default_styles.css">
-    <link rel="stylesheet" href="/ukhApp/public/css/app.css">
-    <link rel="icon" href="/ukhApp/public/images/favicon-default.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/default_styles.css">
+    <link rel="stylesheet" href="/css/app.css">
+    <link rel="icon" href="/images/favicon-default.png">
 
 </head>
 <body>

@@ -39512,9 +39512,7 @@ var staticRenderFns = [
               "flex flex-wrap justify-content-between align-items-center"
           },
           [
-            _c("img", {
-              attrs: { src: "/ukhApp/public/images/products/LiOH.png", alt: "" }
-            }),
+            _c("img", { attrs: { src: "/images/products/LiOH.png", alt: "" } }),
             _vm._v(" "),
             _c("div", { staticClass: "content-wrap" }, [
               _c("h3", [
@@ -40857,7 +40855,7 @@ var render = function() {
                       _c("a", { attrs: { href: "javascript:void(0)" } }, [
                         _c("img", {
                           attrs: {
-                            src: "/ukhApp/public/images/icons/close_blue.png",
+                            src: "/images/icons/close_blue.png",
                             alt: "edit profile"
                           }
                         }),
@@ -40898,7 +40896,7 @@ var render = function() {
                               height: "15px"
                             },
                             attrs: {
-                              src: "/ukhApp/public/images/icons/edit_blue.png",
+                              src: "/images/icons/edit_blue.png",
                               alt: "edit profile"
                             }
                           }),
@@ -41005,10 +41003,7 @@ var staticRenderFns = [
       },
       [
         _c("img", {
-          attrs: {
-            src: "/ukhApp/public/images/icons/add_blue.png",
-            alt: "edit profile"
-          }
+          attrs: { src: "/images/icons/add_blue.png", alt: "edit profile" }
         }),
         _vm._v("\n                    Add product\n                ")
       ]

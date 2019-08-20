@@ -16,7 +16,7 @@
             <div class="col-md-6">
                 <span class="deleteWorkBtn noDecor" @click="clearData" style="width:137px">
                     <a href="javascript:void(0)" data-toggle="modal" data-target="#addProductModal">
-                        <img src="/ukhApp/public/images/icons/add_blue.png" alt="edit profile">
+                        <img src="/images/icons/add_blue.png" alt="edit profile">
                         Add product
                     </a>
                 </span>
@@ -34,14 +34,14 @@
                     <div class="col-lg-6 offset-lg-4">
                         <span class="deleteWorkBtn noDecor" @click="deleteProduct(product)">
                             <a href="javascript:void(0)">
-                                <img src="/ukhApp/public/images/icons/close_blue.png" alt="edit profile">
+                                <img src="/images/icons/close_blue.png" alt="edit profile">
                                 Delete
                             </a>
                         </span>
 
                         <span class="deleteWorkBtn noDecor"  @click="editProduct(product.id)" style=" width: 75px; margin-right:5px;">
                             <a href="javascript:void(0)" data-target="#addProductModal"  data-toggle="modal">
-                                <img src="/ukhApp/public/images/icons/edit_blue.png" alt="edit profile" style="width: 20px;
+                                <img src="/images/icons/edit_blue.png" alt="edit profile" style="width: 20px;
             padding-right: 7px;
             padding-bottom: 2px;
             height: 15px;">

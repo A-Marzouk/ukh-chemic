@@ -338,7 +338,7 @@ a:hover, a:active {
 --------------------------------------------------------------*/
 
 .hero-content {
-    background: url("/ukhApp/public/images/main.jpg") no-repeat center;
+    background: url("/images/main.jpg") no-repeat center;
     background-size: cover;
     transition: 3s;
 }
@@ -1186,7 +1186,7 @@ a.btn:hover {
 }
 
 .courses-page .page-header {
-    background: url("/ukhApp/public/images/main-min.jpg") no-repeat center center fixed;
+    background: url("/images/main-min.jpg") no-repeat center center fixed;
     background-size: cover;
 }
 
@@ -1480,7 +1480,7 @@ a.btn:hover {
 # Single Courses Page
 --------------------------------------------------------------*/
 .single-courses-page .page-header {
-    background: url("/ukhApp/public/images/single-courses-bg.jpg") no-repeat center;
+    background: url("/images/single-courses-bg.jpg") no-repeat center;
 }
 
 .single-courses-page .page-header-overlay {
@@ -1922,7 +1922,7 @@ ul.black-doted {
 # About Page
 --------------------------------------------------------------*/
 .about-page .page-header {
-    background: url(/ukhApp/public/images/courses-header.jpg) no-repeat center;
+    background: url(/images/courses-header.jpg) no-repeat center;
 }
 
 .about-title{
@@ -2138,7 +2138,7 @@ ul.black-doted {
 # Single Blog Post
 --------------------------------------------------------------*/
 .single-blog-post .page-header {
-    background: url("/ukhApp/public/images/single-courses-bg.jpg") no-repeat center;
+    background: url("/images/single-courses-bg.jpg") no-repeat center;
 }
 
 .single-blog-post .page-header-overlay {
@@ -2540,7 +2540,7 @@ ul.author-social-profile li:hover .fa {
 # Contact Page
 --------------------------------------------------------------*/
 .contact-page .page-header {
-    background: url(/ukhApp/public/images/contact-us.jpg) no-repeat center fixed;
+    background: url(/images/contact-us.jpg) no-repeat center fixed;
 }
 
 .contact-page .contact-gmap {

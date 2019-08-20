@@ -82,7 +82,7 @@
 
                                 <ul class="p-0 m-0">
                                     <li class="flex flex-wrap justify-content-between align-items-center">
-                                        <img src="/ukhApp/public/images/products/LiOH.png" alt="">
+                                        <img src="/images/products/LiOH.png" alt="">
 
                                         <div class="content-wrap">
                                             <h3><a href="#">Натрий нитрат</a></h3>
