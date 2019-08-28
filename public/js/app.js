@@ -2620,6 +2620,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2629,7 +2634,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       products: [],
-      searchResult: [],
+      allProducts: [],
       searchBox: false,
       searchParams: {
         'name': '',
@@ -2665,6 +2670,7 @@ __webpack_require__.r(__webpack_exports__);
         var products = response.data;
         $.each(products, function (i) {});
         _this.products = products;
+        _this.allProducts = products;
       });
     },
     getSearchedProducts: function getSearchedProducts() {
@@ -2672,11 +2678,20 @@ __webpack_require__.r(__webpack_exports__);
 
       axios.post('/admin/search/products', this.searchParams).then(function (response) {
         console.log(response.data);
-        return;
-        var searchedProducts = response.data;
-        $.each(searchedProducts, function (i) {});
-        _this2.searchResult = searchedProducts;
+        _this2.products = response.data;
       });
+    },
+    clearSearch: function clearSearch() {
+      this.products = this.allProducts;
+      this.searchParams = {
+        'name': '',
+        'price_25': '',
+        'price_500': '',
+        'price_1000': '',
+        'international_name': '',
+        'manufacturer': '',
+        'description': ''
+      };
     },
     getProductsByCategoryName: function getProductsByCategoryName() {
       var _this3 = this;
@@ -40877,6 +40892,10 @@ var render = function() {
           staticClass: "searchBox"
         },
         [
+          _c("small", [
+            _vm._v("Искать по цене : пишите максимальное допустимое значение")
+          ]),
+          _vm._v(" "),
           _c("div", { staticClass: "row" }, [
             _c("input", {
               directives: [
@@ -40887,7 +40906,7 @@ var render = function() {
                   expression: "searchParams.name"
                 }
               ],
-              staticClass: "form-control col-4 m-2",
+              staticClass: "form-control col-2 m-2",
               attrs: { type: "text", placeholder: "Название продукта" },
               domProps: { value: _vm.searchParams.name },
               on: {
@@ -40909,13 +40928,13 @@ var render = function() {
                   expression: "searchParams.price"
                 }
               ],
-              staticClass: "form-control col-4 m-2",
+              staticClass: "form-control col-2 m-2",
               attrs: {
                 type: "number",
                 step: "any",
                 min: "0",
                 max: "999999",
-                placeholder: "Цена за 25 кг"
+                placeholder: "Цена-25 кг"
               },
               domProps: { value: _vm.searchParams.price },
               on: {
@@ -40937,13 +40956,13 @@ var render = function() {
                   expression: "searchParams.price_500"
                 }
               ],
-              staticClass: "form-control col-4 m-2",
+              staticClass: "form-control col-2 m-2",
               attrs: {
                 type: "number",
                 step: "any",
                 min: "0",
                 max: "999999",
-                placeholder: "Цена за 500 кг"
+                placeholder: "Цена-500 кг"
               },
               domProps: { value: _vm.searchParams.price_500 },
               on: {
@@ -40965,13 +40984,13 @@ var render = function() {
                   expression: "searchParams.price_1000"
                 }
               ],
-              staticClass: "form-control col-4 m-2",
+              staticClass: "form-control col-2 m-2",
               attrs: {
                 type: "number",
                 step: "any",
                 min: "0",
                 max: "999999",
-                placeholder: "Цена за 1000 кг"
+                placeholder: "Цена-1000 кг"
               },
               domProps: { value: _vm.searchParams.price_1000 },
               on: {
@@ -40993,7 +41012,7 @@ var render = function() {
                   expression: "searchParams.international_name"
                 }
               ],
-              staticClass: "form-control col-4 m-2",
+              staticClass: "form-control col-2 m-2",
               attrs: { type: "text", placeholder: "Международное название" },
               domProps: { value: _vm.searchParams.international_name },
               on: {
@@ -41019,7 +41038,7 @@ var render = function() {
                   expression: "searchParams.manufacturer"
                 }
               ],
-              staticClass: "form-control col-4 m-2",
+              staticClass: "form-control col-2 m-2",
               attrs: { type: "text", placeholder: "Производитель" },
               domProps: { value: _vm.searchParams.manufacturer },
               on: {
@@ -41045,7 +41064,7 @@ var render = function() {
                   expression: "searchParams.description"
                 }
               ],
-              staticClass: "form-control col-4 m-2",
+              staticClass: "form-control col-2 m-2",
               attrs: { type: "text", placeholder: "Описание" },
               domProps: { value: _vm.searchParams.description },
               on: {
@@ -41063,11 +41082,21 @@ var render = function() {
             _c(
               "a",
               {
-                staticClass: "btn btn-primary mt-2",
+                staticClass: "btn btn-primary mt-2 mr-2",
                 attrs: { href: "javascript:void(0)" },
                 on: { click: _vm.getSearchedProducts }
               },
-              [_vm._v("\n                Поиск\n            ")]
+              [_vm._v("\n                Применить\n            ")]
+            ),
+            _vm._v(" "),
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-primary mt-2",
+                attrs: { href: "javascript:void(0)" },
+                on: { click: _vm.clearSearch }
+              },
+              [_vm._v("\n                Очистить\n            ")]
             )
           ])
         ]

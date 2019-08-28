@@ -127,7 +127,54 @@ class ProductsController extends Controller
 
 
     public function searchProducts(Request $request){
-        return $request ;
+
+        $searchArray = [] ;
+        // product name :
+        if(isset($request->name)){
+            $name = $request->name ;
+            $searchArray [] = ['name','like','%'.$name.'%'] ;
+        }
+
+        // manufacturer :
+        if(isset($request->manufacturer)){
+            $manufacturer = $request->manufacturer ;
+            $searchArray [] = ['manufacturer','like','%'.$manufacturer.'%'] ;
+        }
+
+        // product international name :
+        if(isset($request->international_name)){
+            $international_name= $request->international_name ;
+            $searchArray [] = ['international_name','like','%'.$international_name.'%'] ;
+        }
+
+        // product description :
+        if(isset($request->description)){
+            $description= $request->description ;
+            $searchArray [] = ['description','like','%'.$description.'%'] ;
+        }
+
+        // price :
+        if(isset($request->price)){
+            $searchArray[] = ['price','<=',intval($request->price)];
+        }
+
+        // price_500 :
+        if(isset($request->price_500)){
+            $searchArray[] = ['price_500','<=',intval($request->price_500)];
+        }
+
+        // price_1000 :
+        if(isset($request->price_1000)){
+            $searchArray[] = ['price_1000','<=',intval($request->price_1000)];
+        }
+
+
+
+
+        $products =  Product::where($searchArray)->get();
+
+        return $products ;
+
     }
 
 }

@@ -26,18 +26,23 @@
         <a href="javascript:void(0)" @click="searchBox = !searchBox" class="btn btn-outline-dark">Поиск</a>
 
         <div class="searchBox" v-show="searchBox">
+            <small>Искать по цене : пишите максимальное допустимое значение</small>
             <div class="row">
-                <input type="text" class="form-control col-4 m-2" v-model="searchParams.name" placeholder="Название продукта">
-                <input type="number" step="any" min="0" max="999999" class="form-control col-4 m-2" v-model="searchParams.price"  placeholder="Цена за 25 кг">
-                <input type="number" step="any" min="0" max="999999" class="form-control col-4 m-2" v-model="searchParams.price_500" placeholder="Цена за 500 кг">
-                <input type="number" step="any" min="0" max="999999" class="form-control col-4 m-2" v-model="searchParams.price_1000" placeholder="Цена за 1000 кг">
-                <input type="text" class="form-control col-4 m-2" v-model="searchParams.international_name" placeholder="Международное название">
-                <input type="text" class="form-control col-4 m-2" v-model="searchParams.manufacturer" placeholder="Производитель">
-                <input type="text" class="form-control col-4 m-2" v-model="searchParams.description" placeholder="Описание">
+                <input type="text" class="form-control col-2 m-2" v-model="searchParams.name" placeholder="Название продукта">
+                <input type="number" step="any" min="0" max="999999" class="form-control col-2 m-2" v-model="searchParams.price"  placeholder="Цена-25 кг">
+                <input type="number" step="any" min="0" max="999999" class="form-control col-2 m-2" v-model="searchParams.price_500" placeholder="Цена-500 кг">
+                <input type="number" step="any" min="0" max="999999" class="form-control col-2 m-2" v-model="searchParams.price_1000" placeholder="Цена-1000 кг">
+                <input type="text" class="form-control col-2 m-2" v-model="searchParams.international_name" placeholder="Международное название">
+                <input type="text" class="form-control col-2 m-2" v-model="searchParams.manufacturer" placeholder="Производитель">
+                <input type="text" class="form-control col-2 m-2" v-model="searchParams.description" placeholder="Описание">
             </div>
             <div>
-                <a href="javascript:void(0)" class="btn btn-primary mt-2" @click="getSearchedProducts">
-                    Поиск
+                <a href="javascript:void(0)" class="btn btn-primary mt-2 mr-2" @click="getSearchedProducts">
+                    Применить
+                </a>
+
+                <a href="javascript:void(0)" class="btn btn-primary mt-2" @click="clearSearch">
+                    Очистить
                 </a>
             </div>
         </div>
@@ -113,7 +118,7 @@
         data() {
             return {
                 products: [],
-                searchResult:[],
+                allProducts:[],
                 searchBox:false,
                 searchParams:{
                     'name' : '',
@@ -150,6 +155,7 @@
                         $.each(products, function(i){
                         });
                         this.products = products;
+                        this.allProducts = products;
 
                     }
                 );
@@ -159,16 +165,21 @@
                 axios.post('/admin/search/products',this.searchParams).then(
                     (response) => {
                         console.log(response.data);
-                        return;
-
-                        let searchedProducts =  response.data;
-                        $.each(searchedProducts, function(i){
-
-                        });
-                        this.searchResult = searchedProducts;
-
+                        this.products = response.data;
                     }
                 );
+            },
+            clearSearch(){
+                this.products = this.allProducts ;
+                this.searchParams = {
+                    'name' : '',
+                    'price_25' : '',
+                    'price_500' : '',
+                    'price_1000' : '',
+                    'international_name' : '',
+                    'manufacturer' : '',
+                    'description' : '',
+                }
             },
             getProductsByCategoryName() {
                 if(this.currentCategory === 'all' ){
