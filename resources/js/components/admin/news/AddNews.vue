@@ -11,7 +11,7 @@
                     <div class="modal-body">
                         <form  method="post" @submit.prevent="submitForm">
                             <div class="row">
-                                <div class="form-group col-md-6">
+                                <div class="form-group col-md-12">
                                     <label for="title" class="panelFormLabel">Title :</label>
                                     <input type="text" class="form-control" id="title" name="title" v-model="toBeEditedNews.title" required>
                                 </div>
@@ -23,6 +23,11 @@
                                 <div class="form-group col-md-6">
                                     <label for="title" class="panelFormLabel">Link :</label>
                                     <input type="text" class="form-control" id="link" name="link" v-model="toBeEditedNews.link" required>
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="title" class="panelFormLabel">Link text :</label>
+                                    <input type="text" class="form-control" id="link" name="link" v-model="toBeEditedNews.link_text" required>
                                 </div>
 
 
@@ -87,6 +92,8 @@
                     }
                     // save the news id :
                     this.toBeEditedNews.id = response.data.id;
+                    this.toBeEditedNews.photo = response.data.photo;
+
 
                 });
                 $('#closeNewsModal').click();
@@ -96,12 +103,14 @@
                 this.newsImage = this.$refs.file.files[0];
             },
             getImageSrc(src) {
-                if(src === null || src === undefined){
-                    return ' ' ;
+                if(src === null || src === undefined || src.length < 1){
+                    return '/images/empty-image-holder.jpg' ;
                 }
+
                 if (src.charAt(0) !== '/') {
                     return '/' + src;
                 }
+
                 return src;
             },
 

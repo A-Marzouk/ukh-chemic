@@ -2388,6 +2388,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['toBeEditedNews'],
   data: function data() {
@@ -2415,6 +2420,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
         _this.toBeEditedNews.id = response.data.id;
+        _this.toBeEditedNews.photo = response.data.photo;
       });
       $('#closeNewsModal').click();
     },
@@ -2422,8 +2428,8 @@ __webpack_require__.r(__webpack_exports__);
       this.newsImage = this.$refs.file.files[0];
     },
     getImageSrc: function getImageSrc(src) {
-      if (src === null || src === undefined) {
-        return ' ';
+      if (src === null || src === undefined || src.length < 1) {
+        return '/images/empty-image-holder.jpg';
       }
 
       if (src.charAt(0) !== '/') {
@@ -2518,6 +2524,7 @@ __webpack_require__.r(__webpack_exports__);
         'description': '',
         'date': '',
         'link': '',
+        'link_text': '',
         'photo': ''
       }
     };
@@ -2570,6 +2577,7 @@ __webpack_require__.r(__webpack_exports__);
         'description': '',
         'date': '',
         'link': '',
+        'link_text': '',
         'photo': ''
       };
     },
@@ -40505,7 +40513,7 @@ var render = function() {
                   },
                   [
                     _c("div", { staticClass: "row" }, [
-                      _c("div", { staticClass: "form-group col-md-6" }, [
+                      _c("div", { staticClass: "form-group col-md-12" }, [
                         _c(
                           "label",
                           {
@@ -40624,6 +40632,48 @@ var render = function() {
                               _vm.$set(
                                 _vm.toBeEditedNews,
                                 "link",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-md-6" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "panelFormLabel",
+                            attrs: { for: "title" }
+                          },
+                          [_vm._v("Link text :")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.toBeEditedNews.link_text,
+                              expression: "toBeEditedNews.link_text"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: {
+                            type: "text",
+                            id: "link",
+                            name: "link",
+                            required: ""
+                          },
+                          domProps: { value: _vm.toBeEditedNews.link_text },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.toBeEditedNews,
+                                "link_text",
                                 $event.target.value
                               )
                             }
@@ -40900,7 +40950,7 @@ var render = function() {
                 [
                   _vm._v("\n                ссылка :\n                "),
                   _c("a", { attrs: { href: news.link } }, [
-                    _vm._v(" " + _vm._s(news.link) + " ")
+                    _vm._v(" " + _vm._s(news.link_text) + " ")
                   ])
                 ]
               ),

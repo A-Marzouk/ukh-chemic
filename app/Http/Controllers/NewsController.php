@@ -28,13 +28,16 @@ class NewsController extends Controller
 
         if(isset($request->id)){
             // update
-            return News::where('id',$request->id)->update([
+             News::where('id',$request->id)->update([
                 'title' => $request->title,
                 'description' => $request->description,
                 'link' => $request->link,
+                'link_text' => $request->link_text,
                 'date' => $request->date,
                 'photo' => $result['path']
             ]);
+
+             return   News::where('id',$request->id)->first();
         }
         else{
             // create
@@ -42,6 +45,7 @@ class NewsController extends Controller
                 'title' => $request->title,
                 'description' => $request->description,
                 'link' => $request->link,
+                'link_text' => $request->link_text,
                 'date' => $request->date,
                 'photo' => $result['path']
             ]);

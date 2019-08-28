@@ -36,7 +36,7 @@
                 <br/>
                 <div style="font-size: 16px;color: #30323D;font-family: Roboto;line-height: 19px;font-weight: bold; ">
                     ссылка :
-                    <a :href="news.link"> {{news.link}} </a></div>
+                    <a :href="news.link"> {{news.link_text}} </a></div>
                 <br/>
 
                 <div style="color: #30323D;font-family: Roboto;">дата : {{news.date}}</div>
@@ -70,6 +70,7 @@
                     'description':'',
                     'date' :'',
                     'link' :'',
+                    'link_text' :'',
                     'photo':''
                 },
             }
@@ -120,6 +121,7 @@
                         'description':'',
                         'date' :'',
                         'link' :'',
+                        'link_text' :'',
                         'photo':''
                 };
             },
