@@ -27,8 +27,11 @@ Route::get('/catalogue/edit/products','CatalogueController@editProductsImagesPat
 
 // products routes for admin.
 Route::get('/admin/get/products','ProductsController@getProducts')->name('admin.get.products');
+Route::get('/admin/get/news','NewsController@getNews')->name('admin.get.products');
 Route::post('/admin/search/products','ProductsController@searchProducts')->name('admin.search.products');
 Route::post('/admin/add/product','ProductsController@addProduct')->name('admin.add.product');
+Route::post('/admin/add/news','NewsController@addNews')->name('admin.add.news');
+Route::post('/admin/delete/news','NewsController@deleteNews')->name('admin.delete.news');
 Route::post('/admin/delete/product','ProductsController@deleteProduct')->name('admin.delete.product');
 Route::get('/admin/get/products/{category_id_name}', 'AdminController@getProductsByCategory')->name('admin.products.category');
 Route::get('/admin/export/products', 'ProductsController@export')->name('admin.products.export');
@@ -45,6 +48,7 @@ Route::get('/register',function (){
 });
 
 Route::get('/ukh-admin', 'AdminController@admin')->name('admin.home');
+Route::get('/ukh-admin/news', 'AdminController@showNewsPage')->name('admin.news');
 Route::get('/ukh-admin/products', 'AdminController@viewProducts')->name('admin.products');
 Route::get('/ukh-admin/{category_id_name}/products', 'AdminController@viewCategoryProducts')->name('admin.category.products');
 

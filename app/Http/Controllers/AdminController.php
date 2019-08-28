@@ -47,4 +47,8 @@ class AdminController extends Controller
         return view('admin.excel_actions');
     }
 
+    public function showNewsPage(){
+        return view('admin.news') ;
+    }
+
 }
