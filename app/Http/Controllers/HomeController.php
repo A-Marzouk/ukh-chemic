@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\News;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -16,7 +17,8 @@ class HomeController extends Controller
 
     public function showWelcomePage(){
         $currentRoute = $this->route ;
-        return view('welcome',compact('currentRoute'));
+        $news = News::all();
+        return view('welcome',compact('currentRoute','news'));
     }
 
     public function showContactsPage(){

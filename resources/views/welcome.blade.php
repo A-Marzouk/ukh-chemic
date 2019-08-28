@@ -75,24 +75,27 @@
                 <div class="col-12 col-lg-6">
                     <div class="featured-event-content">
                         <figure class="event-thumbnail position-relative m-0">
-                            <a href="#"><img src="images/news1.png" alt=""></a>
+                            <a href="{{$news[0]->link}}"><img src="{{$news[0]->photo}}" alt=""></a>
 
                             <div class="posted-date position-absolute">
-                                <div class="day">23</div>
-                                <div class="month">mar</div>
+                                <div class="day">{{date('d',strtotime($news[0]->date))}}</div>
+                                <div class="month">{{date('M',strtotime($news[0]->date))}}</div>
                             </div><!-- .posted-date -->
                         </figure><!-- .event-thumbnail -->
 
                         <header class="entry-header flex flex-wrap align-items-center">
-                            <h2 class="entry-title"><a href="#">
-                                    В Украине за первое полугодие 2019 года производство ряда металлов испытало прирост.
+                            <h2 class="entry-title"><a href="{{$news[0]->link}}">
+                                   {{$news[0]->title}}
                                 </a>
                             </h2>
 
-                            <div class="event-location"><i class="fa fa-link"></i>Ссылаясь на инфо-ресурс <a
-                                        href="https://metallurgprom.org/" class="event-location">"Металлургпром"</a>.</div>
+                            <div class="event-location"><i class="fa fa-link"></i>
+                                <a href="{{$news[0]->link}}" class="event-location">
+                                    {{$news[0]->link_text}}
+                                </a>.
+                            </div>
 
-                            <div class="event-duration"><i class="fa fa-calendar"></i>2019 года.</div>
+                            <div class="event-duration"><i class="fa fa-calendar"></i>{{date('Y',strtotime($news[0]->date))}} года.</div>
                         </header><!-- .entry-header -->
                     </div><!-- .featured-event-content -->
                 </div><!-- .col -->
@@ -100,52 +103,48 @@
                 <div class="col-12 col-lg-6 mt-5 mt-lg-0">
                     <div class="event-content flex flex-wrap justify-content-between align-content-stretch">
                         <figure class="event-thumbnail">
-                            <a href="#"><img src="images/36270_galleryImage-min.jpg" alt="news image" width="100%" height="220px"></a>
+                            <a href="{{$news[1]->link}}"><img src="{{$news[1]->photo}}" alt="news image" width="100%" height="220px"></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="event-content-wrap">
                             <header class="entry-header">
                                 <div class="posted-date">
-                                    <i class="fa fa-calendar"></i> 22 Мар 2019
+                                    <i class="fa fa-calendar"></i> {{date('d',strtotime($news[1]->date))}} {{date('M',strtotime($news[1]->date))}} {{date('Y',strtotime($news[1]->date))}}
                                 </div><!-- .posted-date -->
 
-                                <h2 class="entry-title"><a href="#">Лорем ипсум долор сит, ехплицари витуператорибус ут.</a></h2>
+                                <h2 class="entry-title"><a href="{{$news[1]->link}}">{{$news[1]->title}}</a></h2>
 
                                 <div class="entry-meta flex flex-wrap align-items-center">
-                                    <div class="post-author"><a href="#">Ms. Lara Croft </a></div>
-
-                                    <div class="post-comments">02 коммент  </div>
+                                    <div class="post-author"><a href="{{$news[1]->link}}">{{$news[1]->link_text}}</a></div>
                                 </div><!-- .entry-meta -->
+
                             </header><!-- .entry-header -->
 
                             <div class="entry-content">
-                                <p>Лорем ипсум долор сит амет, яуандо ерудити яуи еу, ехплицари витуператорибус ут.</p>
+                                <p>{{$news[1]->description}}</p>
                             </div><!-- .entry-content -->
                         </div><!-- .event-content-wrap -->
                     </div><!-- .event-content -->
 
-                    <div class="event-content flex flex-wrap justify-content-between align-content-lg-stretch">
+                    <div class="event-content flex flex-wrap justify-content-between align-content-stretch">
                         <figure class="event-thumbnail">
-                            <a href="#"><img src="images/event-3.jpg" alt=""></a>
+                            <a href="{{$news[2]->link}}"><img src="{{$news[2]->photo}}" alt="news image" width="100%" height="220px"></a>
                         </figure><!-- .course-thumbnail -->
 
                         <div class="event-content-wrap">
                             <header class="entry-header">
                                 <div class="posted-date">
-                                    <i class="fa fa-calendar"></i> 22 Maр 2019
+                                    <i class="fa fa-calendar"></i> {{date('d',strtotime($news[2]->date))}} {{date('M',strtotime($news[2]->date))}} {{date('Y',strtotime($news[2]->date))}}
                                 </div><!-- .posted-date -->
 
-                                <h2 class="entry-title"><a href="#">витуператорибус ут.</a></h2>
-
+                                <h2 class="entry-title"><a href="{{$news[2]->link}}">{{$news[2]->title}}</a></h2>
                                 <div class="entry-meta flex flex-wrap align-items-center">
-                                    <div class="post-author"><a href="#">Ms. Lara Croft </a></div>
-
-                                    <div class="post-comments">02 коммент  </div>
+                                    <div class="post-author"><a href="{{$news[2]->link}}">{{$news[2]->link_text}}</a></div>
                                 </div><!-- .entry-meta -->
                             </header><!-- .entry-header -->
 
                             <div class="entry-content">
-                                <p>Лорем ипсум долор сит амет, яуандо ерудити яуи еу, ехплицари витуператорибус ут.</p>
+                                <p>{{$news[2]->description}}</p>
                             </div><!-- .entry-content -->
                         </div><!-- .event-content-wrap -->
                     </div><!-- .event-content -->

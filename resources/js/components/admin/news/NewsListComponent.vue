@@ -48,7 +48,7 @@
             </news-post>
         </transition-group>
 
-        <span class="deleteWorkBtn NoDecor" @click="clearData" style="width:137px">
+        <span class="deleteWorkBtn NoDecor" @click="clearData" style="width:137px" v-show="newsList.length < newsLimit">
             <a href="javascript:void(0)" data-toggle="modal" data-target="#addNewsModal">
                 Добавить новости
             </a>
@@ -73,6 +73,7 @@
                     'link_text' :'',
                     'photo':''
                 },
+                newsLimit:3
             }
         },
         methods: {

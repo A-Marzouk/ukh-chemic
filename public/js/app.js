@@ -2526,7 +2526,8 @@ __webpack_require__.r(__webpack_exports__);
         'link': '',
         'link_text': '',
         'photo': ''
-      }
+      },
+      newsLimit: 3
     };
   },
   methods: {
@@ -40975,6 +40976,14 @@ var render = function() {
       _c(
         "span",
         {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.newsList.length < _vm.newsLimit,
+              expression: "newsList.length < newsLimit"
+            }
+          ],
           staticClass: "deleteWorkBtn NoDecor",
           staticStyle: { width: "137px" },
           on: { click: _vm.clearData }
