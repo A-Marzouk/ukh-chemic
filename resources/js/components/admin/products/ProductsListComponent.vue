@@ -22,6 +22,25 @@
                 </span>
             </div>
         </div>
+
+        <a href="javascript:void(0)" @click="searchBox = !searchBox" class="btn btn-outline-dark">Поиск</a>
+
+        <div class="searchBox" v-show="searchBox">
+            <div class="row">
+                <input type="text" class="form-control col-4 m-2" v-model="searchParams.name" placeholder="Название продукта">
+                <input type="number" step="any" min="0" max="999999" class="form-control col-4 m-2" v-model="searchParams.price"  placeholder="Цена за 25 кг">
+                <input type="number" step="any" min="0" max="999999" class="form-control col-4 m-2" v-model="searchParams.price_500" placeholder="Цена за 500 кг">
+                <input type="number" step="any" min="0" max="999999" class="form-control col-4 m-2" v-model="searchParams.price_1000" placeholder="Цена за 1000 кг">
+                <input type="text" class="form-control col-4 m-2" v-model="searchParams.international_name" placeholder="Международное название">
+                <input type="text" class="form-control col-4 m-2" v-model="searchParams.manufacturer" placeholder="Производитель">
+                <input type="text" class="form-control col-4 m-2" v-model="searchParams.description" placeholder="Описание">
+            </div>
+            <div>
+                <a href="javascript:void(0)" class="btn btn-primary mt-2" @click="getSearchedProducts">
+                    Поиск
+                </a>
+            </div>
+        </div>
         <hr>
         <h2>Лист продуктов</h2>
         <div v-show="products.length < 1">
@@ -94,6 +113,17 @@
         data() {
             return {
                 products: [],
+                searchResult:[],
+                searchBox:false,
+                searchParams:{
+                    'name' : '',
+                    'price_25' : '',
+                    'price_500' : '',
+                    'price_1000' : '',
+                    'international_name' : '',
+                    'manufacturer' : '',
+                    'description' : '',
+                },
                 categories: [],
                 canAdd:true,
                 currentCategory:'',
@@ -120,6 +150,22 @@
                         $.each(products, function(i){
                         });
                         this.products = products;
+
+                    }
+                );
+            },
+
+            getSearchedProducts() {
+                axios.post('/admin/search/products',this.searchParams).then(
+                    (response) => {
+                        console.log(response.data);
+                        return;
+
+                        let searchedProducts =  response.data;
+                        $.each(searchedProducts, function(i){
+
+                        });
+                        this.searchResult = searchedProducts;
 
                     }
                 );
@@ -228,5 +274,12 @@
     .list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
         opacity: 0;
         transform: translateY(30px);
+    }
+
+    .searchBox{
+        padding: 20px;
+        border-radius: 20px;
+        border: 1px lightblue solid;
+        margin-top:15px;
     }
 </style>

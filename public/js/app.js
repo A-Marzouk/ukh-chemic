@@ -2601,6 +2601,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2610,6 +2629,17 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       products: [],
+      searchResult: [],
+      searchBox: false,
+      searchParams: {
+        'name': '',
+        'price_25': '',
+        'price_500': '',
+        'price_1000': '',
+        'international_name': '',
+        'manufacturer': '',
+        'description': ''
+      },
       categories: [],
       canAdd: true,
       currentCategory: '',
@@ -2637,8 +2667,19 @@ __webpack_require__.r(__webpack_exports__);
         _this.products = products;
       });
     },
-    getProductsByCategoryName: function getProductsByCategoryName() {
+    getSearchedProducts: function getSearchedProducts() {
       var _this2 = this;
+
+      axios.post('/admin/search/products', this.searchParams).then(function (response) {
+        console.log(response.data);
+        return;
+        var searchedProducts = response.data;
+        $.each(searchedProducts, function (i) {});
+        _this2.searchResult = searchedProducts;
+      });
+    },
+    getProductsByCategoryName: function getProductsByCategoryName() {
+      var _this3 = this;
 
       if (this.currentCategory === 'all') {
         return this.getProducts();
@@ -2651,14 +2692,14 @@ __webpack_require__.r(__webpack_exports__);
       axios.get('/admin/get/products/' + this.currentCategory).then(function (response) {
         var products = response.data;
         $.each(products, function (i) {});
-        _this2.products = products;
+        _this3.products = products;
       });
     },
     addProductPost: function addProductPost(newProduct) {
       this.products.push(newProduct);
     },
     deleteProduct: function deleteProduct(product) {
-      var _this3 = this;
+      var _this4 = this;
 
       if (!confirm('Are you sure you want to delete this product ?')) {
         return;
@@ -2667,7 +2708,7 @@ __webpack_require__.r(__webpack_exports__);
       axios.post('/admin/delete/product', {
         productID: product.id
       }).then(function (response) {
-        var products = _this3.products;
+        var products = _this4.products;
         $.each(products, function (i) {
           if (products[i].id === product.id) {
             products.splice(i, 1);
@@ -2698,10 +2739,10 @@ __webpack_require__.r(__webpack_exports__);
       };
     },
     getCategories: function getCategories() {
-      var _this4 = this;
+      var _this5 = this;
 
       axios.get('/catalogue/get/categories').then(function (response) {
-        _this4.categories = response.data;
+        _this5.categories = response.data;
       });
     },
     getImageSrc: function getImageSrc(src) {
@@ -7225,7 +7266,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.list-item {\n    display: inline-block;\n    margin-right: 10px;\n}\n.list-enter-active, .list-leave-active {\n    transition: all 1s;\n}\n.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {\n    opacity: 0;\n    -webkit-transform: translateY(30px);\n            transform: translateY(30px);\n}\n", ""]);
+exports.push([module.i, "\n.list-item {\n    display: inline-block;\n    margin-right: 10px;\n}\n.list-enter-active, .list-leave-active {\n    transition: all 1s;\n}\n.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {\n    opacity: 0;\n    -webkit-transform: translateY(30px);\n            transform: translateY(30px);\n}\n.searchBox{\n    padding: 20px;\n    border-radius: 20px;\n    border: 1px lightblue solid;\n    margin-top:15px;\n}\n", ""]);
 
 // exports
 
@@ -40807,6 +40848,230 @@ var render = function() {
           )
         ])
       ]),
+      _vm._v(" "),
+      _c(
+        "a",
+        {
+          staticClass: "btn btn-outline-dark",
+          attrs: { href: "javascript:void(0)" },
+          on: {
+            click: function($event) {
+              _vm.searchBox = !_vm.searchBox
+            }
+          }
+        },
+        [_vm._v("Поиск")]
+      ),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          directives: [
+            {
+              name: "show",
+              rawName: "v-show",
+              value: _vm.searchBox,
+              expression: "searchBox"
+            }
+          ],
+          staticClass: "searchBox"
+        },
+        [
+          _c("div", { staticClass: "row" }, [
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.searchParams.name,
+                  expression: "searchParams.name"
+                }
+              ],
+              staticClass: "form-control col-4 m-2",
+              attrs: { type: "text", placeholder: "Название продукта" },
+              domProps: { value: _vm.searchParams.name },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.searchParams, "name", $event.target.value)
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.searchParams.price,
+                  expression: "searchParams.price"
+                }
+              ],
+              staticClass: "form-control col-4 m-2",
+              attrs: {
+                type: "number",
+                step: "any",
+                min: "0",
+                max: "999999",
+                placeholder: "Цена за 25 кг"
+              },
+              domProps: { value: _vm.searchParams.price },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.searchParams, "price", $event.target.value)
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.searchParams.price_500,
+                  expression: "searchParams.price_500"
+                }
+              ],
+              staticClass: "form-control col-4 m-2",
+              attrs: {
+                type: "number",
+                step: "any",
+                min: "0",
+                max: "999999",
+                placeholder: "Цена за 500 кг"
+              },
+              domProps: { value: _vm.searchParams.price_500 },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.searchParams, "price_500", $event.target.value)
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.searchParams.price_1000,
+                  expression: "searchParams.price_1000"
+                }
+              ],
+              staticClass: "form-control col-4 m-2",
+              attrs: {
+                type: "number",
+                step: "any",
+                min: "0",
+                max: "999999",
+                placeholder: "Цена за 1000 кг"
+              },
+              domProps: { value: _vm.searchParams.price_1000 },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.searchParams, "price_1000", $event.target.value)
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.searchParams.international_name,
+                  expression: "searchParams.international_name"
+                }
+              ],
+              staticClass: "form-control col-4 m-2",
+              attrs: { type: "text", placeholder: "Международное название" },
+              domProps: { value: _vm.searchParams.international_name },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(
+                    _vm.searchParams,
+                    "international_name",
+                    $event.target.value
+                  )
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.searchParams.manufacturer,
+                  expression: "searchParams.manufacturer"
+                }
+              ],
+              staticClass: "form-control col-4 m-2",
+              attrs: { type: "text", placeholder: "Производитель" },
+              domProps: { value: _vm.searchParams.manufacturer },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(
+                    _vm.searchParams,
+                    "manufacturer",
+                    $event.target.value
+                  )
+                }
+              }
+            }),
+            _vm._v(" "),
+            _c("input", {
+              directives: [
+                {
+                  name: "model",
+                  rawName: "v-model",
+                  value: _vm.searchParams.description,
+                  expression: "searchParams.description"
+                }
+              ],
+              staticClass: "form-control col-4 m-2",
+              attrs: { type: "text", placeholder: "Описание" },
+              domProps: { value: _vm.searchParams.description },
+              on: {
+                input: function($event) {
+                  if ($event.target.composing) {
+                    return
+                  }
+                  _vm.$set(_vm.searchParams, "description", $event.target.value)
+                }
+              }
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", [
+            _c(
+              "a",
+              {
+                staticClass: "btn btn-primary mt-2",
+                attrs: { href: "javascript:void(0)" },
+                on: { click: _vm.getSearchedProducts }
+              },
+              [_vm._v("\n                Поиск\n            ")]
+            )
+          ])
+        ]
+      ),
       _vm._v(" "),
       _c("hr"),
       _vm._v(" "),

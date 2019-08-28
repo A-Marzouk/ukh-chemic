@@ -27,6 +27,7 @@ Route::get('/catalogue/edit/products','CatalogueController@editProductsImagesPat
 
 // products routes for admin.
 Route::get('/admin/get/products','ProductsController@getProducts')->name('admin.get.products');
+Route::post('/admin/search/products','ProductsController@searchProducts')->name('admin.search.products');
 Route::post('/admin/add/product','ProductsController@addProduct')->name('admin.add.product');
 Route::post('/admin/delete/product','ProductsController@deleteProduct')->name('admin.delete.product');
 Route::get('/admin/get/products/{category_id_name}', 'AdminController@getProductsByCategory')->name('admin.products.category');
