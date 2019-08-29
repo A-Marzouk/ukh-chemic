@@ -42,6 +42,9 @@ class ProductsController extends Controller
 
         $request->validate([
             'name' => 'max:190|required',
+            'seo_title' => 'max:190',
+            'meta_description' => 'max:1500',
+            'label' => 'max:190',
             'ID_NAME ' => 'max:190',
             'price' => 'max:10',
             'price_500' => 'max:10',
@@ -67,6 +70,9 @@ class ProductsController extends Controller
         }
 
         $product->name = $request->name;
+        $product->seo_title = $request->seo_title;
+        $product->meta_description = $request->meta_description;
+        $product->label = $request->label;
         $product->ID_NAME = $request->ID_NAME;
         $product->price = $request->price;
         $product->price_500 =  $request->price_500 ;

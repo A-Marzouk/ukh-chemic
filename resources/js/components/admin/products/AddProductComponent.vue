@@ -16,6 +16,18 @@
                                     <input type="text" class="form-control" id="name" name="name" v-model="toBeEditedProduct.name" required>
                                 </div>
                                 <div class="form-group col-md-12">
+                                    <label for="name" class="panelFormLabel">SEO заголовок :</label>
+                                    <input type="text" class="form-control" v-model="toBeEditedProduct.seo_title" >
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="name" class="panelFormLabel">meta Описание :</label>
+                                    <input type="text" class="form-control" v-model="toBeEditedProduct.meta_description" >
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <label for="name" class="panelFormLabel">ярлык :</label>
+                                    <input type="text" class="form-control" v-model="toBeEditedProduct.label" >
+                                </div>
+                                <div class="form-group col-md-12">
                                     <label for="id_name" class="panelFormLabel">ID Name :</label>
                                     <input type="text" class="form-control" id="id_name" name="ID_NAME" v-model="toBeEditedProduct.ID_NAME" required>
                                 </div>

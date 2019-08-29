@@ -2721,6 +2721,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['toBeEditedProduct', 'categories'],
   data: function data() {
@@ -2933,6 +2945,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
@@ -2960,6 +2975,9 @@ __webpack_require__.r(__webpack_exports__);
         'id': '',
         'category_id': '',
         'name': '',
+        'seo_title': '',
+        'meta_description': '',
+        'label': '',
         'price': '',
         'price_500': '',
         'price_1000': '',
@@ -3055,7 +3073,12 @@ __webpack_require__.r(__webpack_exports__);
         'id': '',
         'category_id': '',
         'name': '',
+        'seo_title': '',
+        'meta_description': '',
+        'label': '',
         'price': '',
+        'price_500': '',
+        'price_1000': '',
         'international_name': '',
         'package': '',
         'description': ''
@@ -41141,6 +41164,119 @@ var render = function() {
                           "label",
                           {
                             staticClass: "panelFormLabel",
+                            attrs: { for: "name" }
+                          },
+                          [_vm._v("SEO заголовок :")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.toBeEditedProduct.seo_title,
+                              expression: "toBeEditedProduct.seo_title"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: { type: "text" },
+                          domProps: { value: _vm.toBeEditedProduct.seo_title },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.toBeEditedProduct,
+                                "seo_title",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-md-12" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "panelFormLabel",
+                            attrs: { for: "name" }
+                          },
+                          [_vm._v("meta Описание :")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.toBeEditedProduct.meta_description,
+                              expression: "toBeEditedProduct.meta_description"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: { type: "text" },
+                          domProps: {
+                            value: _vm.toBeEditedProduct.meta_description
+                          },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.toBeEditedProduct,
+                                "meta_description",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-md-12" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "panelFormLabel",
+                            attrs: { for: "name" }
+                          },
+                          [_vm._v("ярлык :")]
+                        ),
+                        _vm._v(" "),
+                        _c("input", {
+                          directives: [
+                            {
+                              name: "model",
+                              rawName: "v-model",
+                              value: _vm.toBeEditedProduct.label,
+                              expression: "toBeEditedProduct.label"
+                            }
+                          ],
+                          staticClass: "form-control",
+                          attrs: { type: "text" },
+                          domProps: { value: _vm.toBeEditedProduct.label },
+                          on: {
+                            input: function($event) {
+                              if ($event.target.composing) {
+                                return
+                              }
+                              _vm.$set(
+                                _vm.toBeEditedProduct,
+                                "label",
+                                $event.target.value
+                              )
+                            }
+                          }
+                        })
+                      ]),
+                      _vm._v(" "),
+                      _c("div", { staticClass: "form-group col-md-12" }, [
+                        _c(
+                          "label",
+                          {
+                            staticClass: "panelFormLabel",
                             attrs: { for: "id_name" }
                           },
                           [_vm._v("ID Name :")]
@@ -42103,6 +42239,12 @@ var render = function() {
                       ? _c("div", [_vm._v("Kатегория")])
                       : key === "name"
                       ? _c("div", [_vm._v("Название")])
+                      : key === "seo_title"
+                      ? _c("div", [_vm._v("SEO заголовок")])
+                      : key === "meta_description"
+                      ? _c("div", [_vm._v("meta Описание")])
+                      : key === "label"
+                      ? _c("div", [_vm._v("ярлык")])
                       : key === "price"
                       ? _c("div", [_vm._v("Цена за 25 кг")])
                       : key === "price_500"

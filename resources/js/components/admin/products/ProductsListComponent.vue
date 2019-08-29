@@ -80,6 +80,9 @@
                         <div v-else-if="key === 'ID_NAME'">Название продукта в УРЛ</div>
                         <div v-else-if="key === 'category_id'">Kатегория</div>
                         <div v-else-if=" key === 'name'">Название</div>
+                        <div v-else-if=" key === 'seo_title'">SEO заголовок</div>
+                        <div v-else-if=" key === 'meta_description'">meta Описание</div>
+                        <div v-else-if=" key === 'label'">ярлык</div>
                         <div v-else-if="key === 'price'">Цена за 25 кг</div>
                         <div v-else-if="key === 'price_500'">Цена за 500 кг</div>
                         <div v-else-if="key === 'price_1000'">Цена за 1000 кг</div>
@@ -136,6 +139,9 @@
                     'id':'',
                     'category_id':'',
                     'name' :'',
+                    'seo_title' :'',
+                    'meta_description' :'',
+                    'label' :'',
                     'price':'',
                     'price_500':'',
                     'price_1000':'',
@@ -237,7 +243,12 @@
                     'id':'',
                     'category_id':'',
                     'name' :'',
+                    'seo_title' :'',
+                    'meta_description' :'',
+                    'label' :'',
                     'price':'',
+                    'price_500':'',
+                    'price_1000':'',
                     'international_name' :'',
                     'package' :'',
                     'description':''
