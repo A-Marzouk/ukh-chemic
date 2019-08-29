@@ -66,42 +66,46 @@
     <section class="latest-news-events" id="news">
         <div class="container">
             <div class="row">
-                <div class="col-12">
-                    <header class="heading flex justify-content-between align-items-center">
-                        <h2 class="entry-title" style="color: #19c880; font-weight:400; ">Новости</h2>
-                    </header><!-- .heading -->
-                </div><!-- .col -->
+                @if(isset($news[0]))
+                    <div class="col-12">
+                        <header class="heading flex justify-content-between align-items-center">
+                            <h2 class="entry-title" style="color: #19c880; font-weight:400; ">Новости</h2>
+                        </header><!-- .heading -->
+                    </div><!-- .col -->
 
-                <div class="col-12 col-lg-6">
-                    <div class="featured-event-content">
-                        <figure class="event-thumbnail position-relative m-0">
-                            <a href="{{$news[0]->link}}"><img src="{{$news[0]->photo}}" alt=""></a>
+                    <div class="col-12 col-lg-6">
+                        <div class="featured-event-content">
+                            <figure class="event-thumbnail position-relative m-0">
+                                <a href="{{$news[0]->link}}"><img src="{{$news[0]->photo}}" alt=""></a>
 
-                            <div class="posted-date position-absolute">
-                                <div class="day">{{date('d',strtotime($news[0]->date))}}</div>
-                                <div class="month">{{date('M',strtotime($news[0]->date))}}</div>
-                            </div><!-- .posted-date -->
-                        </figure><!-- .event-thumbnail -->
+                                <div class="posted-date position-absolute">
+                                    <div class="day">{{date('d',strtotime($news[0]->date))}}</div>
+                                    <div class="month">{{date('M',strtotime($news[0]->date))}}</div>
+                                </div><!-- .posted-date -->
+                            </figure><!-- .event-thumbnail -->
 
-                        <header class="entry-header flex flex-wrap align-items-center">
-                            <h2 class="entry-title"><a href="{{$news[0]->link}}">
-                                   {{$news[0]->title}}
-                                </a>
-                            </h2>
+                            <header class="entry-header flex flex-wrap align-items-center">
+                                <h2 class="entry-title"><a href="{{$news[0]->link}}">
+                                       {{$news[0]->title}}
+                                    </a>
+                                </h2>
 
-                            <div class="event-location"><i class="fa fa-link"></i>
-                                <a href="{{$news[0]->link}}" class="event-location">
-                                    {{$news[0]->link_text}}
-                                </a>.
-                            </div>
+                                <div class="event-location"><i class="fa fa-link"></i>
+                                    <a href="{{$news[0]->link}}" class="event-location">
+                                        {{$news[0]->link_text}}
+                                    </a>.
+                                </div>
 
-                            <div class="event-duration"><i class="fa fa-calendar"></i>{{date('Y',strtotime($news[0]->date))}} года.</div>
-                        </header><!-- .entry-header -->
-                    </div><!-- .featured-event-content -->
-                </div><!-- .col -->
+                                <div class="event-duration"><i class="fa fa-calendar"></i>{{date('Y',strtotime($news[0]->date))}} года.</div>
+                            </header><!-- .entry-header -->
+                        </div><!-- .featured-event-content -->
+                    </div><!-- .col -->
+                @endif
+
 
                 <div class="col-12 col-lg-6 mt-5 mt-lg-0">
-                    <div class="event-content flex flex-wrap justify-content-between align-content-stretch">
+                    @if(isset($news[1]))
+                        <div class="event-content flex flex-wrap justify-content-between align-content-stretch">
                         <figure class="event-thumbnail">
                             <a href="{{$news[1]->link}}"><img src="{{$news[1]->photo}}" alt="news image" width="100%" height="220px"></a>
                         </figure><!-- .course-thumbnail -->
@@ -125,8 +129,9 @@
                             </div><!-- .entry-content -->
                         </div><!-- .event-content-wrap -->
                     </div><!-- .event-content -->
-
-                    <div class="event-content flex flex-wrap justify-content-between align-content-stretch">
+                    @endif
+                    @if(isset($news[2]))
+                        <div class="event-content flex flex-wrap justify-content-between align-content-stretch">
                         <figure class="event-thumbnail">
                             <a href="{{$news[2]->link}}"><img src="{{$news[2]->photo}}" alt="news image" width="100%" height="220px"></a>
                         </figure><!-- .course-thumbnail -->
@@ -148,6 +153,7 @@
                             </div><!-- .entry-content -->
                         </div><!-- .event-content-wrap -->
                     </div><!-- .event-content -->
+                    @endif
                 </div><!-- .col -->
             </div><!-- .row -->
         </div><!-- .container -->
