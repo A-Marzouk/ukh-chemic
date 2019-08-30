@@ -114,5 +114,13 @@
 {{--<script type='text/javascript' src='/js/app.js'></script>--}}
 <script type='text/javascript' src='/js/app.js'></script>
 
+<script type="text/javascript">
+    (function(d, w, s) {
+        var widgetHash = 'zvfjodckxl4ioluzklk5', gcw = d.createElement(s); gcw.type = 'text/javascript'; gcw.async = true;
+        gcw.src = '//widgets.binotel.com/getcall/widgets/'+ widgetHash +'.js';
+        var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(gcw, sn);
+    })(document, window, 'script');
+</script>
+
 </body>
 </html>
