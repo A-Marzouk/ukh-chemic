@@ -22,7 +22,9 @@
         <meta name="title" content="{{($product->seo_title)}}">
         <meta name="url" content="{{(url()->current())}}">
         <meta name="type" content="website">
-        <meta name="image" content="https://ukh.com.ua/{{($product->photo)}}">
+        <meta name="image" content="http://ukh.com.ua/{{($product->photo)}}">
+    @else
+        <meta name="description" content="УКРКОЛОРХИМ ДИНАМИЧНО КОМПАНИЯ СОЗДАНА ОПЫТНЫМИ СПЕЦИАЛИСТАМИ-ХИМИКАМИ.">
     @endif
 
     <link rel="stylesheet" href="/css/bootstrap.min.css">
