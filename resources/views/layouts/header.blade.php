@@ -17,6 +17,14 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    @if(isset($product))
+        <meta name="description" content="{{($product->meta_description)}}">
+        <meta name="title" content="{{($product->seo_title)}}">
+        <meta name="url" content="{{(url()->current())}}">
+        <meta name="type" content="website">
+        <meta name="image" content="https://ukh.com.ua/{{($product->photo)}}">
+    @endif
+
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link rel="stylesheet" href="/css/elegant-fonts.css">
