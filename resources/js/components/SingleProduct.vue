@@ -83,7 +83,7 @@
                             </div><!-- .course-students -->
                             <br/>
                             <div class="buy-course mt-3">
-                                <a class="btn" href="#">ADD to cart</a>
+                                <a class="btn" href="javascript:void(0)">Добавить в корзину</a>
                             </div><!-- .buy-course -->
                         </div><!-- .course-info -->
 
@@ -147,7 +147,7 @@
 
         data(){
             return{
-                selectedWeight : 25,
+                selectedWeight : 1000,
                 similarProducts:[]
             }
         },

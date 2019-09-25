@@ -2280,7 +2280,7 @@ __webpack_require__.r(__webpack_exports__);
   props: ['product', 'category'],
   data: function data() {
     return {
-      selectedWeight: 25,
+      selectedWeight: 1000,
       similarProducts: []
     };
   },
@@ -40465,8 +40465,8 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "buy-course mt-3" }, [
-      _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
-        _vm._v("ADD to cart")
+      _c("a", { staticClass: "btn", attrs: { href: "javascript:void(0)" } }, [
+        _vm._v("Добавить в корзину")
       ])
     ])
   },
