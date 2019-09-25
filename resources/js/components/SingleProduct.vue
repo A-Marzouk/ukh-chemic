@@ -74,7 +74,7 @@
                                 </div>
                                 <div class="d-flex flex-column course-students border-0">
                                     <label class="m-0">Весь</label>
-                                    <div class="author-name d-flex buy-course">
+                                    <div class="author-name d-flex flex-wrap-on-phone buy-course">
                                         <a href="javascript:void(0)" class="btn btn-price" :class="{'green-background' : selectedWeight === 25}" @click="selectedWeight = 25">25 кг</a>
                                         <a href="javascript:void(0)" class="btn btn-price" :class="{'green-background' : selectedWeight === 500}" @click="selectedWeight = 500">500 кг</a>
                                         <a href="javascript:void(0)" class="btn btn-price" :class="{'green-background' : selectedWeight === 1000}"  @click="selectedWeight = 1000">1000 кг</a>

@@ -40233,7 +40233,10 @@ var render = function() {
                     _vm._v(" "),
                     _c(
                       "div",
-                      { staticClass: "author-name d-flex buy-course" },
+                      {
+                        staticClass:
+                          "author-name d-flex flex-wrap-on-phone buy-course"
+                      },
                       [
                         _c(
                           "a",
