@@ -39540,8 +39540,8 @@ var render = function() {
                                             {
                                               name: "show",
                                               rawName: "v-show",
-                                              value: product.price,
-                                              expression: "product.price"
+                                              value: product.price_1000,
+                                              expression: "product.price_1000"
                                             }
                                           ],
                                           staticClass: "course-cost"
@@ -39549,7 +39549,7 @@ var render = function() {
                                         [
                                           _vm._v(
                                             "\n                                                " +
-                                              _vm._s(product.price) +
+                                              _vm._s(product.price_1000) +
                                               " грн\n                                            "
                                           )
                                         ]
@@ -39671,8 +39671,8 @@ var render = function() {
                                             {
                                               name: "show",
                                               rawName: "v-show",
-                                              value: product.price,
-                                              expression: "product.price"
+                                              value: product.price_1000,
+                                              expression: "product.price_1000"
                                             }
                                           ],
                                           staticClass: "course-cost"
@@ -39680,7 +39680,7 @@ var render = function() {
                                         [
                                           _vm._v(
                                             "\n                                                " +
-                                              _vm._s(product.price) +
+                                              _vm._s(product.price_1000) +
                                               " грн\n                                            "
                                           )
                                         ]
