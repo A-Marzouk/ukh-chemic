@@ -9,7 +9,7 @@
                         <div class="hero-content-wrap flex flex-column justify-content-center align-items-start">
                             <header class="entry-header">
                                 <h4>Укрколорхим</h4>
-                                <h1>Динамично компания <br/><span class="secondHeader">Создана опытными специалистами-химиками</span></h1>
+                                <h1>Динамично развивающаяся компания <br/><span class="secondHeader">Создана опытными специалистами-химиками</span></h1>
                             </header><!-- .entry-header -->
 
                             <div class="entry-content">
