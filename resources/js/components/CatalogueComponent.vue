@@ -23,7 +23,7 @@
                         <div class="breadcrumbs" id="next">
                             <ul class="flex flex-wrap align-items-center p-0 m-0">
                                 <li class="noDecor"><a href="/"><i class="fa fa-home"></i> Главная страница</a></li>
-                                <li class="noDecor"><a href="#/" @click="clearCategory" style="color: cornflowerblue">Каталог</a></li>
+                                <li class="noDecor"><a href="/catalogue" @click="clearCategory" style="color: cornflowerblue">Каталог</a></li>
                                 <li v-if="currentCategory.title">{{currentCategory.title}}</li>
                             </ul>
                         </div><!-- .breadcrumbs -->
@@ -36,12 +36,12 @@
                             <div v-for="(category,index) in categories" v-bind:key="index" class="col-12 col-md-4 px-25" @click="setCategory(category)">
                                 <div class="course-content">
                                     <figure class="course-thumbnail">
-                                        <a :href="'#/'+category.ID_NAME"><img  :src="category.photo" alt="category image"></a>
+                                        <a :href="'/catalogue/'+category.ID_NAME"><img  :src="getImageSrc(category.photo)" alt="category image"></a>
                                     </figure><!-- .course-thumbnail -->
 
                                     <div class="course-content-wrap">
                                         <header class="entry-header">
-                                            <h2 class="entry-title"><a :href="'#/'+category.ID_NAME">{{ category.title }} </a></h2>
+                                            <h2 class="entry-title"><a :href="'/'+category.ID_NAME">{{ category.title }} </a></h2>
                                         </header><!-- .entry-header -->
                                     </div><!-- .course-content-wrap -->
                                 </div><!-- .course-content -->
@@ -71,7 +71,7 @@
                                 <h2>Категории</h2>
                                 <ul class="p-0 m-0">
                                     <li v-for="(category,index) in categories" v-bind:key="index" class="noDecor"  @click="setCategory(category)">
-                                        <router-link :to="'/'+category.ID_NAME" :class="{ activeCategory : category.id === currentCategory.id}">
+                                        <router-link :to="'/catalogue'+category.ID_NAME" :class="{ activeCategory : category.id === currentCategory.id}">
                                             {{ category.title }}
                                         </router-link>
                                     </li>
@@ -114,7 +114,7 @@
                                 <div v-show="searchResults.length < 1" v-for="(product,index) in paginatedData" v-bind:key="index" class="col-12 col-md-4 px-25">
                                     <div class="course-content">
                                         <figure class="course-thumbnail">
-                                            <a :href="'/catalogue/' + currentCategory.ID_NAME +'/' + product.id "><img  :src="product.photo" alt="product image"></a>
+                                            <a :href="'/catalogue/' + currentCategory.ID_NAME +'/' + product.id "><img  :src="getImageSrc(product.photo)" alt="product image"></a>
                                         </figure><!-- .course-thumbnail -->
 
                                         <div class="course-content-wrap">
@@ -141,7 +141,7 @@
                                 <div v-show="searchResults.length > 0" v-for="(product,index) in searchResults" v-bind:key="'c'+index" class="col-12 col-md-4 px-25">
                                     <div class="course-content">
                                         <figure class="course-thumbnail">
-                                            <a :href="'/catalogue/' + product.category_id +'/' + product.id "><img  :src="product.photo" alt="product image"></a>
+                                            <a :href="'/catalogue/' + product.category_id +'/' + product.id "><img  :src="getImageSrc(product.photo)" alt="product image"></a>
                                         </figure><!-- .course-thumbnail -->
 
                                         <div class="course-content-wrap">
@@ -197,7 +197,7 @@
                 <div class="row">
                     <div class="col-12 flex flex-wrap justify-content-center justify-content-lg-between align-items-center">
                         <div class="logo-wrap">
-                            <img src="images/logo-1.png" alt="">
+                            <img src="/images/logo-1.png" alt="">
                         </div><!-- .logo-wrap -->
 
                         <div class="logo-wrap">
@@ -205,15 +205,15 @@
                         </div><!-- .logo-wrap -->
 
                         <div class="logo-wrap">
-                            <img src="images/logo-3.png" alt="">
+                            <img src="/images/logo-3.png" alt="">
                         </div><!-- .logo-wrap -->
 
                         <div class="logo-wrap">
-                            <img src="images/logo-4.png" alt="">
+                            <img src="/images/logo-4.png" alt="">
                         </div><!-- .logo-wrap -->
 
                         <div class="logo-wrap">
-                            <img src="images/logo-5.png" alt="">
+                            <img src="/images/logo-5.png" alt="">
                         </div><!-- .logo-wrap -->
                     </div><!-- .col -->
                 </div><!-- .row -->
@@ -224,6 +224,7 @@
 
 <script>
     export default {
+        props:['category'],
         data(){
           return{
               isLoading : true,
@@ -273,6 +274,17 @@
         }
         ,
         methods:{
+            getImageSrc(src) {
+                if(src === null || src === undefined || src.length < 1){
+                    return '/images/empty-image-holder.jpg' ;
+                }
+
+                if (src.charAt(0) !== '/') {
+                    return '/' + src;
+                }
+
+                return src;
+            },
             getCategories(){
                 axios.get('/catalogue/get/categories').then(
                     (response) => {
@@ -282,6 +294,12 @@
                             if(this.categories[i].ID_NAME === this.$route.path.replace('/','')){
                                 this.setCategory(this.categories[i]);
                             }
+                            if(this.category.length > 1){
+                                if(this.categories[i].ID_NAME === this.category){
+                                    this.setCategory(this.categories[i]);
+                                }
+                            }
+
                         });
                         if(!this.currentCategory.id){
                             // this.setCategory(this.categories[0]);

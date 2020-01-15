@@ -34,8 +34,15 @@ class CatalogueController extends Controller
 
     public function showCataloguePage(){
         $currentRoute = $this->route ;
+        $category_name = '';
         $searchedProducts = [] ;
-        return view('catalogue',compact('currentRoute','searchedProducts'));
+        return view('catalogue',compact('currentRoute','searchedProducts','category_name'));
+    }
+
+    public function showSingleCataloguePage($category_name){
+        $currentRoute = $this->route ;
+        $searchedProducts = [] ;
+        return view('catalogue',compact('currentRoute','searchedProducts','category_name'));
     }
 
     public function getCategories(){

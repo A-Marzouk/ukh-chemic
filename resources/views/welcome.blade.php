@@ -169,19 +169,19 @@
                     </div><!-- .logo-wrap -->
 
                     <div class="logo-wrap">
-                        <img src="images/logo-2.png" alt="">
+                        <img src="/images/logo-2.png" alt="">
                     </div><!-- .logo-wrap -->
 
                     <div class="logo-wrap">
-                        <img src="images/logo-3.png" alt="">
+                        <img src="/images/logo-3.png" alt="">
                     </div><!-- .logo-wrap -->
 
                     <div class="logo-wrap">
-                        <img src="images/logo-4.png" alt="">
+                        <img src="/images/logo-4.png" alt="">
                     </div><!-- .logo-wrap -->
 
                     <div class="logo-wrap">
-                        <img src="images/logo-5.png" alt="">
+                        <img src="/images/logo-5.png" alt="">
                     </div><!-- .logo-wrap -->
                 </div><!-- .col -->
             </div><!-- .row -->

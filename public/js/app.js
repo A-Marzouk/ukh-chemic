@@ -1988,6 +1988,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['category'],
   data: function data() {
     return {
       isLoading: true,
@@ -2038,6 +2039,17 @@ __webpack_require__.r(__webpack_exports__);
     }
   },
   methods: {
+    getImageSrc: function getImageSrc(src) {
+      if (src === null || src === undefined || src.length < 1) {
+        return '/images/empty-image-holder.jpg';
+      }
+
+      if (src.charAt(0) !== '/') {
+        return '/' + src;
+      }
+
+      return src;
+    },
     getCategories: function getCategories() {
       var _this = this;
 
@@ -2047,6 +2059,12 @@ __webpack_require__.r(__webpack_exports__);
         $.each(_this.categories, function (i) {
           if (_this.categories[i].ID_NAME === _this.$route.path.replace('/', '')) {
             _this.setCategory(_this.categories[i]);
+          }
+
+          if (_this.category.length > 1) {
+            if (_this.categories[i].ID_NAME === _this.category) {
+              _this.setCategory(_this.categories[i]);
+            }
           }
         });
 
@@ -39179,7 +39197,7 @@ var render = function() {
                         "a",
                         {
                           staticStyle: { color: "cornflowerblue" },
-                          attrs: { href: "#/" },
+                          attrs: { href: "/catalogue" },
                           on: { click: _vm.clearCategory }
                         },
                         [_vm._v("Каталог")]
@@ -39231,11 +39249,15 @@ var render = function() {
                           _c("figure", { staticClass: "course-thumbnail" }, [
                             _c(
                               "a",
-                              { attrs: { href: "#/" + category.ID_NAME } },
+                              {
+                                attrs: {
+                                  href: "/catalogue/" + category.ID_NAME
+                                }
+                              },
                               [
                                 _c("img", {
                                   attrs: {
-                                    src: category.photo,
+                                    src: _vm.getImageSrc(category.photo),
                                     alt: "category image"
                                   }
                                 })
@@ -39248,7 +39270,7 @@ var render = function() {
                               _c("h2", { staticClass: "entry-title" }, [
                                 _c(
                                   "a",
-                                  { attrs: { href: "#/" + category.ID_NAME } },
+                                  { attrs: { href: "/" + category.ID_NAME } },
                                   [_vm._v(_vm._s(category.title) + " ")]
                                 )
                               ])
@@ -39404,7 +39426,7 @@ var render = function() {
                                   activeCategory:
                                     category.id === _vm.currentCategory.id
                                 },
-                                attrs: { to: "/" + category.ID_NAME }
+                                attrs: { to: "/catalogue" + category.ID_NAME }
                               },
                               [
                                 _vm._v(
@@ -39469,7 +39491,7 @@ var render = function() {
                                     [
                                       _c("img", {
                                         attrs: {
-                                          src: product.photo,
+                                          src: _vm.getImageSrc(product.photo),
                                           alt: "product image"
                                         }
                                       })
@@ -39600,7 +39622,7 @@ var render = function() {
                                     [
                                       _c("img", {
                                         attrs: {
-                                          src: product.photo,
+                                          src: _vm.getImageSrc(product.photo),
                                           alt: "product image"
                                         }
                                       })
@@ -39981,7 +40003,7 @@ var staticRenderFns = [
             },
             [
               _c("div", { staticClass: "logo-wrap" }, [
-                _c("img", { attrs: { src: "images/logo-1.png", alt: "" } })
+                _c("img", { attrs: { src: "/images/logo-1.png", alt: "" } })
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "logo-wrap" }, [
@@ -39989,15 +40011,15 @@ var staticRenderFns = [
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "logo-wrap" }, [
-                _c("img", { attrs: { src: "images/logo-3.png", alt: "" } })
+                _c("img", { attrs: { src: "/images/logo-3.png", alt: "" } })
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "logo-wrap" }, [
-                _c("img", { attrs: { src: "images/logo-4.png", alt: "" } })
+                _c("img", { attrs: { src: "/images/logo-4.png", alt: "" } })
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "logo-wrap" }, [
-                _c("img", { attrs: { src: "images/logo-5.png", alt: "" } })
+                _c("img", { attrs: { src: "/images/logo-5.png", alt: "" } })
               ])
             ]
           )
@@ -40071,7 +40093,7 @@ var render = function() {
                       "a",
                       {
                         staticStyle: { color: "cornflowerblue" },
-                        attrs: { href: "/catalogue#/" + _vm.category.ID_NAME }
+                        attrs: { href: "/catalogue/" + _vm.category.ID_NAME }
                       },
                       [_vm._v(_vm._s(_vm.category.title))]
                     )
@@ -40328,11 +40350,9 @@ var render = function() {
               _vm._v("Похожие товары")
             ]),
             _vm._v(" "),
-            _c(
-              "a",
-              { attrs: { href: "/catalogue#/" + _vm.category.ID_NAME } },
-              [_vm._v("Показать все")]
-            )
+            _c("a", { attrs: { href: "/catalogue/" + _vm.category.ID_NAME } }, [
+              _vm._v("Показать все")
+            ])
           ]
         ),
         _vm._v(" "),
@@ -57238,6 +57258,7 @@ if ($('#catalogue').length !== 0) {
     path: '/:category_name'
   }];
   var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
+    mode: 'history',
     routes: routes // short for `routes: routes`
 
   });

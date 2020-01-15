@@ -22,7 +22,7 @@
                     <ul class="flex flex-wrap align-items-center p-0 m-0">
                         <li class="noDecor"><a href="/"><i class="fa fa-home"></i> Главная страница</a></li>
                         <li class="noDecor"><a href="/catalogue" style="color: cornflowerblue">Каталог</a></li>
-                        <li v-if="category.title" class="noDecor"><a style="color: cornflowerblue" :href="'/catalogue#/' + category.ID_NAME">{{category.title}}</a></li>
+                        <li v-if="category.title" class="noDecor"><a style="color: cornflowerblue" :href="'/catalogue/' + category.ID_NAME">{{category.title}}</a></li>
                         <li v-if="product.name">{{product.name}}</li>
                     </ul>
                 </div><!-- .breadcrumbs -->
@@ -104,7 +104,7 @@
                 <header class="entry-heading flex flex-wrap justify-content-between align-items-center">
                     <h2 class="entry-title">Похожие товары</h2>
 
-                    <a :href="'/catalogue#/' + category.ID_NAME ">Показать все</a>
+                    <a :href="'/catalogue/' + category.ID_NAME ">Показать все</a>
                 </header><!-- .entry-heading -->
 
                 <div class="row mx-m-25">
