@@ -47,7 +47,7 @@ Route::get('/register',function (){
 });
 
 Route::get('/ukh-admin', 'AdminController@admin')->name('admin.home');
-Route::get('/ukh-admin/generateSiteMap','AdminController@generateMap')->name('sitemap');
+Route::get('/ukh-admin/generateSiteMap','AdminController@generateMap')->name('admin.sitemap');
 Route::get('/ukh-admin/news', 'AdminController@showNewsPage')->name('admin.news');
 Route::get('/ukh-admin/products', 'AdminController@viewProducts')->name('admin.products');
 Route::get('/ukh-admin/{category_id_name}/products', 'AdminController@viewCategoryProducts')->name('admin.category.products');

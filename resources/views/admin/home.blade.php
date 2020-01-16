@@ -15,6 +15,10 @@
             <a href="{{route('admin.news')}}"  class="btn btn-dark">
                 Новости
             </a>
+
+            <a href="{{route('admin.sitemap')}}"  class="btn btn-dark">
+                UPDATE SITEMAP
+            </a>
         </div>
     </div>
     <div class="row">
