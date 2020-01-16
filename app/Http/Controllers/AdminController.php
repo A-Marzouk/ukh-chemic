@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Category;
 use App\Product;
 use Illuminate\Support\Facades\Session;
+use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Tags\Url;
 
 
 class AdminController extends Controller
@@ -36,6 +38,32 @@ class AdminController extends Controller
         Session::put('category_id_name', $category_id_name);
         return $categoryProducts ;
     }
+
+
+    public function generateMap(){
+        $path = public_path() . '/sitemap.json' ;
+
+        $site = SitemapGenerator::create('http://ukh.com.ua/') ;
+        $siteMap = $site->getSitemap();
+
+        Category::all()->each(function (Category $category) use ($siteMap) {
+            $siteMap->add(Url::create("/catalogue/{$category->ID_NAME}"));
+
+            Product::all()->each(function (Product $product) use ($siteMap,$category) {
+                $id = $product->id ;
+                if($product->ID_NAME != null){
+                    $id =  $product->ID_NAME ;
+                }
+                $siteMap->add(Url::create("/catalogue/{$category->ID_NAME}/{$id}"));
+            });
+
+        });
+
+        $siteMap->writeToFile($path);
+
+        return redirect('/ukh-admin');
+    }
+
 
     public function viewCategoryProducts($category_id_name){
         Session::put('category_id_name', $category_id_name);

@@ -14,6 +14,8 @@ use App\Photo;
 use App\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use Spatie\Sitemap\SitemapGenerator;
+use Spatie\Sitemap\Tags\Url;
 
 class CatalogueController extends Controller
 {
