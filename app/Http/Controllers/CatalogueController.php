@@ -94,7 +94,8 @@ class CatalogueController extends Controller
         $searchArray [] = ['name','like','%'.$keyword.'%'] ;
         $products = Product::where($searchArray)->get();
         $searchedProducts = $products ;
-        return view('catalogue',compact('currentRoute','searchedProducts'));
+        $category_name = '';
+        return view('catalogue',compact('currentRoute','searchedProducts','category_name'));
 
     }
 
