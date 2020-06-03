@@ -39426,7 +39426,7 @@ var render = function() {
                                   activeCategory:
                                     category.id === _vm.currentCategory.id
                                 },
-                                attrs: { to: "/catalogue" + category.ID_NAME }
+                                attrs: { to: "/catalogue/" + category.ID_NAME }
                               },
                               [
                                 _vm._v(

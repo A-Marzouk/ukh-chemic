@@ -71,7 +71,7 @@
                                 <h2>Категории</h2>
                                 <ul class="p-0 m-0">
                                     <li v-for="(category,index) in categories" v-bind:key="index" class="noDecor"  @click="setCategory(category)">
-                                        <router-link :to="'/catalogue'+category.ID_NAME" :class="{ activeCategory : category.id === currentCategory.id}">
+                                        <router-link :to="'/catalogue/'+category.ID_NAME" :class="{ activeCategory : category.id === currentCategory.id}">
                                             {{ category.title }}
                                         </router-link>
                                     </li>
