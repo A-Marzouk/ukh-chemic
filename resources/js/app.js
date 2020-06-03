@@ -70,7 +70,7 @@ if($('#catalogue').length !== 0){
 
     const router = new VueRouter({
         mode: 'history',
-        routes // short for `routes: routes`
+        routes
     });
 
     let catalogue = new Vue({

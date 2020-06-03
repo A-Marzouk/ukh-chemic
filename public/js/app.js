@@ -57259,8 +57259,7 @@ if ($('#catalogue').length !== 0) {
   }];
   var router = new vue_router__WEBPACK_IMPORTED_MODULE_0__["default"]({
     mode: 'history',
-    routes: routes // short for `routes: routes`
-
+    routes: routes
   });
   var catalogue = new Vue({
     router: router,
