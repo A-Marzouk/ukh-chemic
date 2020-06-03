@@ -11,7 +11,12 @@
   gtag('config', 'UA-138593144-1');
 </script>
 
-    <title>Главная | Укрколорхим </title>
+    @if(isset($title))
+        <title>{{($title)}} | Укрколорхим </title>
+    @else
+        <title>Укрколорхим</title>
+    @endif
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSRF Token -->

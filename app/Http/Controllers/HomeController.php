@@ -18,12 +18,14 @@ class HomeController extends Controller
     public function showWelcomePage(){
         $currentRoute = $this->route ;
         $news = News::all();
-        return view('welcome',compact('currentRoute','news'));
+        $title = 'Главная';
+        return view('welcome',compact('currentRoute','news','title'));
     }
 
     public function showContactsPage(){
         $currentRoute = $this->route ;
-        return view('contacts',compact('currentRoute'));
+        $title = 'Связаться с нами';
+        return view('contacts',compact('currentRoute','title'));
     }
 
 }

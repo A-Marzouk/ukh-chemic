@@ -31,20 +31,23 @@ class CatalogueController extends Controller
         $currentRoute = $this->route ;
         $product  = Product::find($product_id);
         $category = Category::find($product->category_id);
-        return view('single-product',compact('product','currentRoute','category'));
+        $title = $product->seo_title ;
+        return view('single-product',compact('product','currentRoute','category','title'));
     }
 
     public function showCataloguePage(){
         $currentRoute = $this->route ;
         $category_name = '';
         $searchedProducts = [] ;
-        return view('catalogue',compact('currentRoute','searchedProducts','category_name'));
+        $title = 'Каталог';
+        return view('catalogue',compact('currentRoute','searchedProducts','category_name','title'));
     }
 
     public function showSingleCataloguePage($category_name){
         $currentRoute = $this->route ;
         $searchedProducts = [] ;
-        return view('catalogue',compact('currentRoute','searchedProducts','category_name'));
+        $title = Category::where('ID_NAME',$category_name)->first()->title;
+        return view('catalogue',compact('currentRoute','searchedProducts','category_name','title'));
     }
 
     public function getCategories(){
