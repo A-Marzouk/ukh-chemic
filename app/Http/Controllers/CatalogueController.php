@@ -89,16 +89,23 @@ class CatalogueController extends Controller
         $currentRoute = $this->route ;
         $searchedProducts = [] ;
 
+        $error_in_search = '';
+
         // search in products name :
         if(empty($keyword)){
-            return view('catalogue',compact('currentRoute','searchedProducts'));
+            $error_in_search = "$keyword | Не найдено ни одного продукта, соответствующего параметрам поиска.";
+            return view('catalogue',compact('currentRoute','searchedProducts','error_in_search'));
         }
 
         $searchArray [] = ['name','like','%'.$keyword.'%'] ;
         $products = Product::where($searchArray)->get();
         $searchedProducts = $products ;
         $category_name = '';
-        return view('catalogue',compact('currentRoute','searchedProducts','category_name'));
+        if(count($searchedProducts) === 0){
+            $error_in_search = "$keyword | Не найдено ни одного продукта, соответствующего параметрам поиска.";
+        }
+
+        return view('catalogue',compact('currentRoute','searchedProducts','category_name', 'error_in_search'));
 
     }
 

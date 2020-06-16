@@ -30,6 +30,12 @@
                     </div><!-- .col -->
                 </div><!-- .row -->
 
+                <div class="row d-flex justify-content-center">
+                    <div v-if="showMainSearchError" class="error">
+                        {{error_in_search}}
+                    </div>
+                </div>
+
                 <div class="row"  v-show="!currentCategory.id" style="padding: 15px;">
                     <div class="featured-courses courses-wrap">
                         <div class="row mx-m-25 noDecor">
@@ -224,7 +230,7 @@
 
 <script>
     export default {
-        props:['category'],
+        props:['category','error_in_search'],
         data(){
           return{
               isLoading : true,
@@ -249,7 +255,8 @@
               productsPerPage : 9,
               searchResults:[],
               keyword:'',
-              showSearchError:false
+              showSearchError:false,
+              showMainSearchError: false
           }
         },
         computed:{
@@ -369,6 +376,11 @@
         },
         mounted() {
             this.getCategories();
+
+            if(this.error_in_search !== undefined){
+                this.showMainSearchError = true;
+                console.log(this.error_in_search);
+            }
         }
     }
 </script>
@@ -506,5 +518,10 @@
     .content h3 {
         font-style: italic;
         color: #96a2a7;
+    }
+
+    .error{
+        font-size: 18px;
+        color: red;
     }
 </style>

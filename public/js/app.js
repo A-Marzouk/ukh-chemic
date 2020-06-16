@@ -1987,8 +1987,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ['category'],
+  props: ['category', 'error_in_search'],
   data: function data() {
     return {
       isLoading: true,
@@ -2013,7 +2019,8 @@ __webpack_require__.r(__webpack_exports__);
       productsPerPage: 9,
       searchResults: [],
       keyword: '',
-      showSearchError: false
+      showSearchError: false,
+      showMainSearchError: false
     };
   },
   computed: {
@@ -2137,6 +2144,11 @@ __webpack_require__.r(__webpack_exports__);
   },
   mounted: function mounted() {
     this.getCategories();
+
+    if (this.error_in_search !== undefined) {
+      this.showMainSearchError = true;
+      console.log(this.error_in_search);
+    }
   }
 });
 
@@ -7609,7 +7621,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.activeCategory{\n color:  #19c880 !important;\n}\n.loader {\n    border: 15px solid lightblue;\n    border-radius: 50%;\n    border-top: 15px solid #3498db;\n    width: 150px;\n    height: 150px;\n    margin-right: 25px;\n    margin-top: 50px;\n    -webkit-animation: spin 2s linear infinite; /* Safari */\n    animation: spin 2s linear infinite;\n}\n\n/* Safari */\n@-webkit-keyframes spin {\n0% { -webkit-transform: rotate(0deg);\n}\n100% { -webkit-transform: rotate(360deg);\n}\n}\n@keyframes spin {\n0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);\n}\n100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);\n}\n}\n.shaded{\n    background: lightgrey;\n}\n.selectDefault{\n    border-top: 6px solid white;\n}\n.selectGREY{\n    border-top: 6px solid grey;\n}\n.selectRED{\n    border-top: 6px solid red;\n}\n.selectGREEN{\n    border-top: 6px solid green;\n}\n.selectLIGHTGREEN{\n    border-top: 6px solid lightgreen;\n}\n.selectORANGE{\n    border-top: 6px solid orange;\n}\n.float{\n    position:fixed;\n    width:100px;\n    height:30px;\n    bottom:40px;\n    right:40px;\n    background-color:red;\n    color: #FFF !important;\n    padding:5px;\n    border-radius:10px;\n    text-align:center;\n    box-shadow: 2px 2px 3px #999;\n}\n.margin{\n    margin: auto; margin-top: 100px;\n}\n.my-float{\n    margin-top:22px;\n}\n#button {\n    display: inline-block;\n    background-color: lightgreen;\n    width: 50px;\n    height: 50px;\n    text-align: center;\n    border-radius: 4px;\n    position: fixed;\n    bottom: 30px;\n    right: 30px;\n    transition: background-color .3s,\n    opacity .5s, visibility .5s;\n    opacity: 0;\n    visibility: hidden;\n    z-index: 1000;\n}\n#button::after {\n    content: \"\\F077\";\n    font-family: FontAwesome;\n    font-weight: normal;\n    font-style: normal;\n    font-size: 2em;\n    line-height: 50px;\n    color: #fff;\n}\n#button:hover {\n    cursor: pointer;\n    background-color: #333;\n}\n#button:active {\n    background-color: #555;\n}\n#button.show {\n    opacity: 1;\n    visibility: visible;\n}\n\n/* Styles for the content section */\n.content {\n    width: 77%;\n    margin: 50px auto;\n    font-family: 'Merriweather', serif;\n    font-size: 17px;\n    color: #6c767a;\n    line-height: 1.9;\n}\n@media (min-width: 500px) {\n.content {\n        width: 43%;\n}\n#button {\n        margin: 30px;\n}\n}\n.content h1 {\n    margin-bottom: -10px;\n    color: #03a9f4;\n    line-height: 1.5;\n}\n.content h3 {\n    font-style: italic;\n    color: #96a2a7;\n}\n", ""]);
+exports.push([module.i, "\n.activeCategory{\n color:  #19c880 !important;\n}\n.loader {\n    border: 15px solid lightblue;\n    border-radius: 50%;\n    border-top: 15px solid #3498db;\n    width: 150px;\n    height: 150px;\n    margin-right: 25px;\n    margin-top: 50px;\n    -webkit-animation: spin 2s linear infinite; /* Safari */\n    animation: spin 2s linear infinite;\n}\n\n/* Safari */\n@-webkit-keyframes spin {\n0% { -webkit-transform: rotate(0deg);\n}\n100% { -webkit-transform: rotate(360deg);\n}\n}\n@keyframes spin {\n0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);\n}\n100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);\n}\n}\n.shaded{\n    background: lightgrey;\n}\n.selectDefault{\n    border-top: 6px solid white;\n}\n.selectGREY{\n    border-top: 6px solid grey;\n}\n.selectRED{\n    border-top: 6px solid red;\n}\n.selectGREEN{\n    border-top: 6px solid green;\n}\n.selectLIGHTGREEN{\n    border-top: 6px solid lightgreen;\n}\n.selectORANGE{\n    border-top: 6px solid orange;\n}\n.float{\n    position:fixed;\n    width:100px;\n    height:30px;\n    bottom:40px;\n    right:40px;\n    background-color:red;\n    color: #FFF !important;\n    padding:5px;\n    border-radius:10px;\n    text-align:center;\n    box-shadow: 2px 2px 3px #999;\n}\n.margin{\n    margin: auto; margin-top: 100px;\n}\n.my-float{\n    margin-top:22px;\n}\n#button {\n    display: inline-block;\n    background-color: lightgreen;\n    width: 50px;\n    height: 50px;\n    text-align: center;\n    border-radius: 4px;\n    position: fixed;\n    bottom: 30px;\n    right: 30px;\n    transition: background-color .3s,\n    opacity .5s, visibility .5s;\n    opacity: 0;\n    visibility: hidden;\n    z-index: 1000;\n}\n#button::after {\n    content: \"\\F077\";\n    font-family: FontAwesome;\n    font-weight: normal;\n    font-style: normal;\n    font-size: 2em;\n    line-height: 50px;\n    color: #fff;\n}\n#button:hover {\n    cursor: pointer;\n    background-color: #333;\n}\n#button:active {\n    background-color: #555;\n}\n#button.show {\n    opacity: 1;\n    visibility: visible;\n}\n\n/* Styles for the content section */\n.content {\n    width: 77%;\n    margin: 50px auto;\n    font-family: 'Merriweather', serif;\n    font-size: 17px;\n    color: #6c767a;\n    line-height: 1.9;\n}\n@media (min-width: 500px) {\n.content {\n        width: 43%;\n}\n#button {\n        margin: 30px;\n}\n}\n.content h1 {\n    margin-bottom: -10px;\n    color: #03a9f4;\n    line-height: 1.5;\n}\n.content h3 {\n    font-style: italic;\n    color: #96a2a7;\n}\n.error{\n    font-size: 18px;\n    color: red;\n}\n", ""]);
 
 // exports
 
@@ -39209,6 +39221,18 @@ var render = function() {
                 )
               ])
             ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row d-flex justify-content-center" }, [
+            _vm.showMainSearchError
+              ? _c("div", { staticClass: "error" }, [
+                  _vm._v(
+                    "\n                    " +
+                      _vm._s(_vm.error_in_search) +
+                      "\n                "
+                  )
+                ])
+              : _vm._e()
           ]),
           _vm._v(" "),
           _c(
