@@ -26,6 +26,18 @@ class Product extends Model
         return $this->belongsTo(Category::class);
     }
 
+    public function getSlugAttribute(): string
+    {
+        return str_slug($this->seo_title);
+    }
+
+    public function getUrlAttribute(): string
+    {
+        $category = Category::find($this->category_id);
+        return action('CatalogueController@showProductSinglePage', [$category->ID_NAME,$this->id, $this->slug]);
+    }
+
+
     public function photos(){
         return $this->hasMany(Photo::class);
     }

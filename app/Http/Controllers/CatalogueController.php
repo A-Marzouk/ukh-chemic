@@ -27,11 +27,16 @@ class CatalogueController extends Controller
     }
 
 
-    public function showProductSinglePage($category_name,$product_id){
+    public function showProductSinglePage($category_name,$product_id,  $slug = ''){
         $currentRoute = $this->route ;
         $product  = Product::find($product_id);
         $category = Category::find($product->category_id);
         $title = $product->seo_title ;
+
+        if ($slug !== $product->slug) {
+            return redirect()->to($product->url);
+        }
+
         return view('single-product',compact('product','currentRoute','category','title'));
     }
 

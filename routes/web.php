@@ -54,5 +54,5 @@ Route::get('/ukh-admin/{category_id_name}/products', 'AdminController@viewCatego
 
 // public route for products :
 Route::get('/catalogue','CatalogueController@showCataloguePage')->name('catalogue');
-Route::get('/catalogue/{category_name}/{product_id}','CatalogueController@showProductSinglePage')->name('catalogue.single.product');
+Route::get('/catalogue/{category_name}/{product_id}/{slug?}','CatalogueController@showProductSinglePage')->name('catalogue.single.product');
 Route::get('/catalogue/{category_name}','CatalogueController@showSingleCataloguePage');
