@@ -90,9 +90,7 @@
                         <div class="single-course-cont-section">
                             <h2>Описание</h2>
 
-                            <p>
-                                {{product.description}}
-                            </p>
+                            <p v-html="product.description"></p>
                         </div>
                     </div><!-- .single-course-wrap -->
                 </div><!-- .col -->

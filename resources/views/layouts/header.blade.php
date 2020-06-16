@@ -17,6 +17,11 @@
         <title>Укрколорхим</title>
     @endif
 
+    @if(!isset($currentRoute))
+        <?php $currentRoute = 'Error' ; ?>
+    @endif
+
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSRF Token -->
@@ -84,9 +89,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-9 col-lg-3">
-                    <div class="site-branding">
+                    <a class="site-branding" href="/">
                         <img src="/images/favicon-default.png" alt="logo" style="height: 90px ; margin-top: 5px;;">
-                    </div><!-- .site-branding -->
+                    </a><!-- .site-branding -->
                 </div><!-- .col -->
 
                 <div class="col-3 col-lg-9 flex justify-content-end align-content-center">

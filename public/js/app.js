@@ -2292,8 +2292,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['product', 'category'],
   data: function data() {
@@ -40324,13 +40322,9 @@ var render = function() {
             _c("div", { staticClass: "single-course-cont-section" }, [
               _c("h2", [_vm._v("Описание")]),
               _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n                            " +
-                    _vm._s(_vm.product.description) +
-                    "\n                        "
-                )
-              ])
+              _c("p", {
+                domProps: { innerHTML: _vm._s(_vm.product.description) }
+              })
             ])
           ])
         ])
