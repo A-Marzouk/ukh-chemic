@@ -42,7 +42,7 @@ class AdminController extends Controller
 
 
     public function generateMap(){
-        $path = public_path() . '/sitemap.json' ;
+        $path = public_path() . '/sitemap.xml' ;
 
         $siteMap = Sitemap::create();
 
