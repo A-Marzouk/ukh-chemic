@@ -28,6 +28,8 @@ Route::get('/catalogue/edit/products','CatalogueController@editProductsImagesPat
 // products routes for admin.
 Route::get('/admin/get/products','ProductsController@getProducts')->name('admin.get.products');
 Route::get('/admin/get/news','NewsController@getNews')->name('admin.get.products');
+Route::get('/admin/contact-form','AdminController@showContactFormSubmissions')->name('admin.contact-form');
+Route::get('/admin/contact/delete/{id}','AdminController@deleteContact')->name('admin.contact.delete');
 Route::post('/admin/search/products','ProductsController@searchProducts')->name('admin.search.products');
 Route::post('/admin/add/product','ProductsController@addProduct')->name('admin.add.product');
 Route::post('/admin/add/news','NewsController@addNews')->name('admin.add.news');

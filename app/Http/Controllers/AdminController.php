@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Category;
+use App\Contact;
 use App\Product;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Spatie\Sitemap\Sitemap;
 use Spatie\Sitemap\SitemapGenerator;
@@ -66,6 +68,24 @@ class AdminController extends Controller
 
 
         return redirect('/ukh-admin');
+    }
+
+    public function showContactFormSubmissions(){
+        $contacts = Contact::all();
+        return view('admin.ContactForm',compact('contacts'));
+    }
+
+    public function deleteContact(Request $request){
+        // delete contact
+        $contact = Contact::where([
+            'id' => $request->id
+        ])->first();
+
+
+        if($contact->delete()){
+            $contacts = Contact::all();
+            return redirect('/admin/contact-form');
+        }
     }
 
 

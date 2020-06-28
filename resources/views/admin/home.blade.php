@@ -19,6 +19,10 @@
             <a href="{{route('admin.sitemap')}}"  class="btn btn-dark">
                 UPDATE SITEMAP
             </a>
+
+            <a href="{{route('admin.contact-form')}}"  class="btn btn-dark">
+                Contact from
+            </a>
         </div>
     </div>
     <div class="row">
