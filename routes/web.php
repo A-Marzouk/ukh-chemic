@@ -13,6 +13,7 @@
 
 Route::get('/','HomeController@showWelcomePage')->name('welcome');
 Route::get('/contacts','HomeController@showContactsPage')->name('contacts');
+Route::post('/contacts','HomeController@submitContact')->name('contacts');
 
 Route::get('/catalogue/get-product-category/{product_id}','ProductsController@getProductCategoryByID')->name('get.product.category');
 Route::get('/catalogue/get/categories','CatalogueController@getCategories')->name('get.categories');

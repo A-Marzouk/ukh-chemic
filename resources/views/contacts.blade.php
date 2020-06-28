@@ -36,19 +36,8 @@
                 </div><!-- .contact-gmap -->
             </div><!-- .col -->
 
-            <div class="col-12 col-lg-6">
-                <div class="contact-form">
-                    <h3>Контактная форма </h3>
-
-                    <form>
-                        <input type="text" placeholder="Имя.. *">
-                        <input type="email" placeholder="Почта.. *">
-                        <input type="text" placeholder="Номер телефона.. *">
-                        <input type="text" placeholder="Тема.. *">
-                        <textarea placeholder="Сообщение.. *" rows="2"></textarea>
-                        <input type="submit" value="Отправить">
-                    </form>
-                </div><!-- .contact-form -->
+            <div class="col-12 col-lg-6" id="ContactForm">
+               <contact-form></contact-form>
             </div><!-- .col -->
 
             <div class="col-12 col-lg-6">

@@ -37,6 +37,9 @@ Vue.component('news-post', require('./components/admin/news/NewsPost').default);
 Vue.component('add-news-modal', require('./components/admin/news/AddNews').default);
 
 
+Vue.component('contact-form', require('./components/ContactForm').default);
+
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -59,6 +62,12 @@ if($('#news').length !== 0){
 if($('#single_product').length !== 0){
     let single_product = new Vue({
         el :'#single_product'
+    });
+};
+
+if($('#ContactForm').length !== 0){
+    let ContactForm = new Vue({
+        el :'#ContactForm'
     });
 };
 
