@@ -138,7 +138,7 @@
                                                 </div><!-- .course-cost -->
                                             </footer><!-- .entry-footer -->
                                             <div class="buy-course">
-                                                <a class="btn" href="#">Заказать</a>
+                                                <!--<a class="btn" href="#">Заказать</a>-->
                                             </div><!-- .buy-course -->
 
                                         </div><!-- .course-content-wrap -->
@@ -165,7 +165,7 @@
                                                 </div><!-- .course-cost -->
                                             </footer><!-- .entry-footer -->
                                             <div class="buy-course">
-                                                <a class="btn" href="#">Заказать</a>
+                                                <!--<a class="btn" href="#">Заказать</a>-->
                                             </div><!-- .buy-course -->
 
                                         </div><!-- .course-content-wrap -->

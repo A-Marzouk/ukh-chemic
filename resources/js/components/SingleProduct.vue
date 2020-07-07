@@ -83,7 +83,7 @@
                             </div><!-- .course-students -->
                             <br/>
                             <div class="buy-course mt-3">
-                                <a class="btn" href="javascript:void(0)">Добавить в корзину</a>
+                                <!--<a class="btn" href="javascript:void(0)">Добавить в корзину</a>-->
                             </div><!-- .buy-course -->
                         </div><!-- .course-info -->
 
@@ -127,7 +127,7 @@
                                         </div><!-- .course-cost -->
                                     </footer><!-- .entry-footer -->
                                     <div class="buy-course">
-                                        <a class="btn" href="#">Заказать</a>
+                                        <!--<a class="btn" href="#">Заказать</a>-->
                                     </div><!-- .buy-course -->
 
                                 </div><!-- .course-content-wrap -->

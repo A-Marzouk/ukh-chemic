@@ -39718,7 +39718,7 @@ var render = function() {
                                     ]
                                   ),
                                   _vm._v(" "),
-                                  _vm._m(5, true)
+                                  _c("div", { staticClass: "buy-course" })
                                 ]
                               )
                             ])
@@ -39849,7 +39849,7 @@ var render = function() {
                                     ]
                                   ),
                                   _vm._v(" "),
-                                  _vm._m(6, true)
+                                  _c("div", { staticClass: "buy-course" })
                                 ]
                               )
                             ])
@@ -39999,7 +39999,7 @@ var render = function() {
       )
     ]),
     _vm._v(" "),
-    _vm._m(7)
+    _vm._m(5)
   ])
 }
 var staticRenderFns = [
@@ -40105,26 +40105,6 @@ var staticRenderFns = [
         staticStyle: { "margin-left": "25%" },
         attrs: { src: "images/favicon-default.png", width: "50%", alt: "" }
       })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "buy-course" }, [
-      _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
-        _vm._v("Заказать")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "buy-course" }, [
-      _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
-        _vm._v("Заказать")
-      ])
     ])
   },
   function() {
@@ -40634,7 +40614,7 @@ var render = function() {
               _vm._v(" "),
               _c("br"),
               _vm._v(" "),
-              _vm._m(2)
+              _c("div", { staticClass: "buy-course mt-3" })
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "single-course-cont-section" }, [
@@ -40756,7 +40736,7 @@ var render = function() {
                       ]
                     ),
                     _vm._v(" "),
-                    _vm._m(3, true)
+                    _c("div", { staticClass: "buy-course" })
                   ])
                 ])
               ]
@@ -40793,26 +40773,6 @@ var staticRenderFns = [
         },
         [_vm._v("Каталог")]
       )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "buy-course mt-3" }, [
-      _c("a", { staticClass: "btn", attrs: { href: "javascript:void(0)" } }, [
-        _vm._v("Добавить в корзину")
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "buy-course" }, [
-      _c("a", { staticClass: "btn", attrs: { href: "#" } }, [
-        _vm._v("Заказать")
-      ])
     ])
   }
 ]
